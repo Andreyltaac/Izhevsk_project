@@ -16,7 +16,7 @@ module PSS_ram
 
 	initial
 	begin
-		$readmemb("F:\\kintex_dsp_lite\\projects\\ip_repo\\IP_sync_1.0\\src\\PSS_hub_1024.txt", rom);
+		$readmemb("F:\\kintex_dsp_lite\\projects\\ip_repo\\IP_sync_1.0\\src\\PSS_hub_1024.txt", rom); // F:\\kintex_dsp_lite\\projects\\ip_repo\\IP_sync_1.0\\src\\PSS_hub_1024.txt
 	end
 
 	always_ff @ (posedge iclk)
