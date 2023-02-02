@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="77753fs"></ZoomEndTime>
+      <Cursor1Time time="1025000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="326"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="design_1_i/IP_sync_0/inst/IP_sync_v1_0_S00_AXI_inst/sync_pss_sub/w_addr_axi_reg" type="array">
+      <obj_property name="ElementShortName">design_1_i/IP_sync_0/inst/IP_sync_v1_0_S00_AXI_inst/sync_pss_sub/w_addr_axi_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_addr_axi_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_AXI_Peripheral_M10_AXI_AWADDR" type="array">
+      <obj_property name="ElementShortName">u_ila_0_AXI_Peripheral_M10_AXI_AWADDR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_AXI_Peripheral_M10_AXI_AWADDR[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_s00_axi_wdata" type="array">
+      <obj_property name="ElementShortName">u_ila_0_s00_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_s00_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_s00_axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">u_ila_0_s00_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_s00_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_w_axi_en" type="logic">
+      <obj_property name="ElementShortName">u_ila_0_w_axi_en</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_w_axi_en</obj_property>
+   </wvobject>
+</wave_config>

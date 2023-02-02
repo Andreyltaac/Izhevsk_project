@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER Samples_to_SOM
+	OPTION supported_peripherals = (Samples_to_SOM);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = Samples_to_SOM;
+END DRIVER
