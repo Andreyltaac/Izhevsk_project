@@ -6,7 +6,7 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 | Command      : upgrade_ip
 | Device       : xc7k325tffg676-2
 ------------------------------------------------------------------------------------
-
+Hello
 Upgrade Log for IP 'design_1_IP_sync_0_3'
 
 1. Summary
