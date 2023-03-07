@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Jan 27 13:20:28 2023
+| Date         : Mon Feb 20 11:49:51 2023
 | Host         : TOR00094 running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
 | Design       : design_1_wrapper
@@ -23,22 +23,22 @@ Id  Position  From                            To                              Co
 --  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
 1   140       [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]}]]
                                               [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]}]]
-                                                                              Slow             10.000       0.711      9.289
+                                                                              Slow             10.000       0.816      9.184
 2   142       [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]}]]
                                               [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]}]]
-                                                                              Slow             10.000       0.905      9.095
+                                                                              Slow             10.000       0.973      9.027
 3   148       [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]}]]
                                               [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]}]]
-                                                                              Slow             10.000       0.868      9.132
+                                                                              Slow             10.000       0.829      9.171
 4   150       [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]}]]
                                               [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]}]]
-                                                                              Slow             10.000       0.810      9.190
+                                                                              Slow             10.000       0.777      9.223
 5   156       [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow             10.000       0.858      9.142
+                                                                              Slow             10.000       0.640      9.360
 6   158       [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow             10.000       0.709      9.291
+                                                                              Slow             10.000       0.883      9.117
 
 
 2. Bus Skew Report Per Constraint
@@ -52,27 +52,27 @@ Endpoints: 8
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_out               axi_periph_clk_design_1_CLK_COMMON_0
-                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
-                                                                                                            Slow         0.711      9.289
+                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.816      9.184
 
 
-Slack (MET) :             9.289ns  (requirement - actual skew)
-  Endpoint Source:        design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+Slack (MET) :             9.184ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
                             (rising edge-triggered cell FDRE clocked by clk_out)
-  Endpoint Destination:   design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Endpoint Destination:   design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
-  Reference Source:       design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  Reference Source:       design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_out)
-  Reference Destination:  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  Reference Destination:  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    1.822ns
-  Reference Relative Delay:   2.226ns
-  Relative CRPR:             -0.758ns
+  Endpoint Relative Delay:    1.949ns
+  Reference Relative Delay:   2.249ns
+  Relative CRPR:             -0.760ns
   Uncertainty:                0.357ns
-  Actual Bus Skew:            0.711ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            0.816ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -86,12 +86,12 @@ Endpoint path:
                                                      -7.412    -2.911 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.791    -1.120    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.093    -1.027 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.462     0.435    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X23Y114        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=854, routed)         1.454     0.427    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X22Y121        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X23Y114        FDRE (Prop_fdre_C_Q)         0.204     0.639 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.286     0.926    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[3]
-    SLICE_X23Y115        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X22Y121        FDRE (Prop_fdre_C_Q)         0.259     0.686 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.478     1.164    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[6]
+    SLICE_X22Y120        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock axi_periph_clk_design_1_CLK_COMMON_0 rise edge)
@@ -104,15 +104,15 @@ Endpoint path:
                                                      -6.026    -3.572 r  design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.355    -2.217    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    -2.134 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
-                         net (fo=13844, routed)       1.328    -0.806    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X23Y115        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000    -0.806    
-    SLICE_X23Y115        FDRE (Setup_fdre_C_D)       -0.090    -0.896    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+                         net (fo=13844, routed)       1.324    -0.810    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X22Y120        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism              0.000    -0.810    
+    SLICE_X22Y120        FDRE (Setup_fdre_C_D)        0.026    -0.784    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
   -------------------------------------------------------------------
-                         data arrival                           0.926    
-                         clock arrival                         -0.896    
+                         data arrival                           1.164    
+                         clock arrival                         -0.784    
   -------------------------------------------------------------------
-                         relative delay                         1.822    
+                         relative delay                         1.949    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -126,12 +126,12 @@ Reference path:
                                                      -6.387    -2.494 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.674    -0.820    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.083    -0.737 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.329     0.592    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X20Y115        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                         net (fo=854, routed)         1.326     0.589    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X22Y117        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X20Y115        FDRE (Prop_fdre_C_Q)         0.206     0.798 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/Q
-                         net (fo=1, routed)           0.238     1.036    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[6]
-    SLICE_X22Y115        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+    SLICE_X22Y117        FDRE (Prop_fdre_C_Q)         0.206     0.795 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.228     1.023    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[2]
+    SLICE_X21Y118        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock axi_periph_clk_design_1_CLK_COMMON_0 rise edge)
@@ -144,15 +144,15 @@ Reference path:
                                                      -7.050    -4.361 r  design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.465    -2.896    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -2.803 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
-                         net (fo=13844, routed)       1.461    -1.342    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X22Y115        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
-                         clock pessimism              0.000    -1.342    
-    SLICE_X22Y115        FDRE (Hold_fdre_C_D)         0.152    -1.190    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+                         net (fo=13844, routed)       1.459    -1.344    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X21Y118        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000    -1.344    
+    SLICE_X21Y118        FDRE (Hold_fdre_C_D)         0.117    -1.227    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           1.036    
-                         clock arrival                         -1.190    
+                         data arrival                           1.023    
+                         clock arrival                         -1.227    
   -------------------------------------------------------------------
-                         relative delay                         2.226    
+                         relative delay                         2.249    
 
 
 
@@ -164,15 +164,15 @@ Endpoints: 8
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 axi_periph_clk_design_1_CLK_COMMON_0
-                      clk_out               design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                      clk_out               design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                                                                             design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
-                                                                                                            Slow         0.905      9.095
+                                                                                                            Slow         0.973      9.027
 
 
-Slack (MET) :             9.095ns  (requirement - actual skew)
-  Endpoint Source:        design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+Slack (MET) :             9.027ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
-  Endpoint Destination:   design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  Endpoint Destination:   design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by clk_out)
   Reference Source:       design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
@@ -180,11 +180,11 @@ Slack (MET) :             9.095ns  (requirement - actual skew)
                             (rising edge-triggered cell FDRE clocked by clk_out)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:   -1.194ns
-  Reference Relative Delay:  -0.960ns
-  Relative CRPR:             -0.782ns
+  Endpoint Relative Delay:   -1.072ns
+  Reference Relative Delay:  -0.950ns
+  Relative CRPR:             -0.738ns
   Uncertainty:                0.357ns
-  Actual Bus Skew:            0.905ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            0.973ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -199,12 +199,12 @@ Endpoint path:
                                                      -7.050    -4.361 r  design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.465    -2.896    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -2.803 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
-                         net (fo=13844, routed)       1.461    -1.342    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X20Y116        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=13844, routed)       1.459    -1.344    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X20Y118        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X20Y116        FDRE (Prop_fdre_C_Q)         0.236    -1.106 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.449    -0.656    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[1]
-    SLICE_X20Y115        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X20Y118        FDRE (Prop_fdre_C_Q)         0.236    -1.108 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.535    -0.573    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[3]
+    SLICE_X23Y118        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out rise edge)    0.000     0.000 r  
@@ -216,15 +216,15 @@ Endpoint path:
                                                      -6.387    -2.494 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.674    -0.820    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.083    -0.737 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.329     0.592    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X20Y115        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000     0.592    
-    SLICE_X20Y115        FDRE (Setup_fdre_C_D)       -0.054     0.538    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=854, routed)         1.325     0.588    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X23Y118        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     0.588    
+    SLICE_X23Y118        FDRE (Setup_fdre_C_D)       -0.088     0.500    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                          -0.656    
-                         clock arrival                          0.538    
+                         data arrival                          -0.573    
+                         clock arrival                          0.500    
   -------------------------------------------------------------------
-                         relative delay                        -1.194    
+                         relative delay                        -1.072    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -239,12 +239,12 @@ Reference path:
                                                      -6.026    -3.572 r  design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.355    -2.217    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    -2.134 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
-                         net (fo=13844, routed)       1.329    -0.805    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X18Y116        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
+                         net (fo=13844, routed)       1.328    -0.806    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X20Y116        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X18Y116        FDRE (Prop_fdre_C_Q)         0.206    -0.599 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/Q
-                         net (fo=1, routed)           0.195    -0.405    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[7]
-    SLICE_X19Y117        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+    SLICE_X20Y116        FDRE (Prop_fdre_C_Q)         0.206    -0.600 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/Q
+                         net (fo=1, routed)           0.236    -0.364    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[7]
+    SLICE_X22Y116        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out rise edge)    0.000     0.000 r  
@@ -256,15 +256,15 @@ Reference path:
                                                      -7.412    -2.911 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.791    -1.120    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.093    -1.027 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.461     0.434    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X19Y117        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/C
-                         clock pessimism              0.000     0.434    
-    SLICE_X19Y117        FDRE (Hold_fdre_C_D)         0.121     0.555    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]
+                         net (fo=854, routed)         1.460     0.433    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X22Y116        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/C
+                         clock pessimism              0.000     0.433    
+    SLICE_X22Y116        FDRE (Hold_fdre_C_D)         0.153     0.586    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]
   -------------------------------------------------------------------
-                         data arrival                          -0.405    
-                         clock arrival                          0.555    
+                         data arrival                          -0.364    
+                         clock arrival                          0.586    
   -------------------------------------------------------------------
-                         relative delay                        -0.960    
+                         relative delay                        -0.950    
 
 
 
@@ -277,26 +277,26 @@ From Clock            To Clock              Endpoint Pin                    Refe
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_out               axi_periph_clk_design_1_CLK_COMMON_0
                                             design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
-                                                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
-                                                                                                            Slow         0.868      9.132
+                                                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                                                                                                            Slow         0.829      9.171
 
 
-Slack (MET) :             9.132ns  (requirement - actual skew)
+Slack (MET) :             9.171ns  (requirement - actual skew)
   Endpoint Source:        design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]/C
                             (rising edge-triggered cell FDRE clocked by clk_out)
   Endpoint Destination:   design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
-  Reference Source:       design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  Reference Source:       design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]/C
                             (rising edge-triggered cell FDRE clocked by clk_out)
-  Reference Destination:  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  Reference Destination:  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    1.957ns
-  Reference Relative Delay:   2.206ns
-  Relative CRPR:             -0.759ns
+  Endpoint Relative Delay:    1.917ns
+  Reference Relative Delay:   2.180ns
+  Relative CRPR:             -0.735ns
   Uncertainty:                0.357ns
-  Actual Bus Skew:            0.868ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            0.829ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -310,12 +310,12 @@ Endpoint path:
                                                      -7.412    -2.911 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.791    -1.120    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.093    -1.027 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.454     0.427    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X9Y126         FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]/C
+                         net (fo=854, routed)         1.456     0.429    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X12Y122        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X9Y126         FDRE (Prop_fdre_C_Q)         0.204     0.631 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]/Q
-                         net (fo=1, routed)           0.422     1.053    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[7]
-    SLICE_X15Y123        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+    SLICE_X12Y122        FDRE (Prop_fdre_C_Q)         0.236     0.665 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]/Q
+                         net (fo=1, routed)           0.380     1.046    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[7]
+    SLICE_X12Y123        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock axi_periph_clk_design_1_CLK_COMMON_0 rise edge)
@@ -329,14 +329,14 @@ Endpoint path:
                          net (fo=1, routed)           1.355    -2.217    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    -2.134 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
                          net (fo=13844, routed)       1.322    -0.812    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X15Y123        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/C
+    SLICE_X12Y123        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/C
                          clock pessimism              0.000    -0.812    
-    SLICE_X15Y123        FDRE (Setup_fdre_C_D)       -0.092    -0.904    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]
+    SLICE_X12Y123        FDRE (Setup_fdre_C_D)       -0.059    -0.871    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]
   -------------------------------------------------------------------
-                         data arrival                           1.053    
-                         clock arrival                         -0.904    
+                         data arrival                           1.046    
+                         clock arrival                         -0.871    
   -------------------------------------------------------------------
-                         relative delay                         1.957    
+                         relative delay                         1.917    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -350,12 +350,12 @@ Reference path:
                                                      -6.387    -2.494 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.674    -0.820    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.083    -0.737 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.321     0.584    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X9Y124         FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                         net (fo=854, routed)         1.323     0.586    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X13Y122        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X9Y124         FDRE (Prop_fdre_C_Q)         0.178     0.762 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
-                         net (fo=1, routed)           0.247     1.009    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[0]
-    SLICE_X12Y124        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+    SLICE_X13Y122        FDRE (Prop_fdre_C_Q)         0.178     0.764 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]/Q
+                         net (fo=1, routed)           0.223     0.986    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[8]
+    SLICE_X14Y122        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock axi_periph_clk_design_1_CLK_COMMON_0 rise edge)
@@ -368,15 +368,15 @@ Reference path:
                                                      -7.050    -4.361 r  design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.465    -2.896    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -2.803 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
-                         net (fo=13844, routed)       1.453    -1.350    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X12Y124        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
-                         clock pessimism              0.000    -1.350    
-    SLICE_X12Y124        FDRE (Hold_fdre_C_D)         0.153    -1.197    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+                         net (fo=13844, routed)       1.456    -1.347    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X14Y122        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/C
+                         clock pessimism              0.000    -1.347    
+    SLICE_X14Y122        FDRE (Hold_fdre_C_D)         0.153    -1.194    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]
   -------------------------------------------------------------------
-                         data arrival                           1.009    
-                         clock arrival                         -1.197    
+                         data arrival                           0.986    
+                         clock arrival                         -1.194    
   -------------------------------------------------------------------
-                         relative delay                         2.206    
+                         relative delay                         2.180    
 
 
 
@@ -389,26 +389,26 @@ From Clock            To Clock              Endpoint Pin                    Refe
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 axi_periph_clk_design_1_CLK_COMMON_0
                       clk_out               design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
-                                                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
-                                                                                                            Slow         0.810      9.190
+                                                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                                                                                                            Slow         0.777      9.223
 
 
-Slack (MET) :             9.190ns  (requirement - actual skew)
+Slack (MET) :             9.223ns  (requirement - actual skew)
   Endpoint Source:        design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
   Endpoint Destination:   design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
                             (rising edge-triggered cell FDRE clocked by clk_out)
-  Reference Source:       design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  Reference Source:       design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
-  Reference Destination:  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  Reference Destination:  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
                             (rising edge-triggered cell FDRE clocked by clk_out)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:   -1.278ns
-  Reference Relative Delay:  -0.993ns
-  Relative CRPR:             -0.738ns
+  Endpoint Relative Delay:   -1.263ns
+  Reference Relative Delay:  -0.968ns
+  Relative CRPR:             -0.715ns
   Uncertainty:                0.357ns
-  Actual Bus Skew:            0.810ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            0.777ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -423,12 +423,12 @@ Endpoint path:
                                                      -7.050    -4.361 r  design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.465    -2.896    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -2.803 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
-                         net (fo=13844, routed)       1.454    -1.349    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X15Y123        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
+                         net (fo=13844, routed)       1.456    -1.347    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X14Y127        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X15Y123        FDRE (Prop_fdre_C_Q)         0.204    -1.145 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/Q
-                         net (fo=1, routed)           0.360    -0.784    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[7]
-    SLICE_X17Y122        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+    SLICE_X14Y127        FDRE (Prop_fdre_C_Q)         0.236    -1.111 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/Q
+                         net (fo=1, routed)           0.371    -0.740    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[7]
+    SLICE_X12Y126        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out rise edge)    0.000     0.000 r  
@@ -440,15 +440,15 @@ Endpoint path:
                                                      -6.387    -2.494 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.674    -0.820    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.083    -0.737 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.323     0.586    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X17Y122        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/C
-                         clock pessimism              0.000     0.586    
-    SLICE_X17Y122        FDRE (Setup_fdre_C_D)       -0.092     0.494    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]
+                         net (fo=854, routed)         1.322     0.585    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X12Y126        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/C
+                         clock pessimism              0.000     0.585    
+    SLICE_X12Y126        FDRE (Setup_fdre_C_D)       -0.062     0.523    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]
   -------------------------------------------------------------------
-                         data arrival                          -0.784    
-                         clock arrival                          0.494    
+                         data arrival                          -0.740    
+                         clock arrival                          0.523    
   -------------------------------------------------------------------
-                         relative delay                        -1.278    
+                         relative delay                        -1.263    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -463,12 +463,12 @@ Reference path:
                                                      -6.026    -3.572 r  design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.355    -2.217    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    -2.134 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
-                         net (fo=13844, routed)       1.322    -0.812    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X15Y123        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                         net (fo=13844, routed)       1.323    -0.811    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X13Y127        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X15Y123        FDRE (Prop_fdre_C_Q)         0.178    -0.634 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/Q
-                         net (fo=1, routed)           0.225    -0.410    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[6]
-    SLICE_X14Y121        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+    SLICE_X13Y127        FDRE (Prop_fdre_C_Q)         0.178    -0.633 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]/Q
+                         net (fo=1, routed)           0.246    -0.387    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[8]
+    SLICE_X12Y126        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out rise edge)    0.000     0.000 r  
@@ -480,15 +480,15 @@ Reference path:
                                                      -7.412    -2.911 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.791    -1.120    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.093    -1.027 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.457     0.430    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X14Y121        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
-                         clock pessimism              0.000     0.430    
-    SLICE_X14Y121        FDRE (Hold_fdre_C_D)         0.153     0.583    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+                         net (fo=854, routed)         1.454     0.427    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X12Y126        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/C
+                         clock pessimism              0.000     0.427    
+    SLICE_X12Y126        FDRE (Hold_fdre_C_D)         0.153     0.580    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]
   -------------------------------------------------------------------
-                         data arrival                          -0.410    
-                         clock arrival                          0.583    
+                         data arrival                          -0.387    
+                         clock arrival                          0.580    
   -------------------------------------------------------------------
-                         relative delay                        -0.993    
+                         relative delay                        -0.968    
 
 
 
@@ -500,27 +500,27 @@ Endpoints: 4
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_out               axi_periph_clk_design_1_CLK_COMMON_0
-                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
-                                                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                                                            Slow         0.858      9.142
+                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         0.640      9.360
 
 
-Slack (MET) :             9.142ns  (requirement - actual skew)
-  Endpoint Source:        design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+Slack (MET) :             9.360ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_out)
-  Endpoint Destination:   design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  Endpoint Destination:   design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
-  Reference Source:       design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  Reference Source:       design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by clk_out)
-  Reference Destination:  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Reference Destination:  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    1.945ns
-  Reference Relative Delay:   2.180ns
-  Relative CRPR:             -0.736ns
+  Endpoint Relative Delay:    1.804ns
+  Reference Relative Delay:   2.208ns
+  Relative CRPR:             -0.688ns
   Uncertainty:                0.357ns
-  Actual Bus Skew:            0.858ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            0.640ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -534,12 +534,12 @@ Endpoint path:
                                                      -7.412    -2.911 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.791    -1.120    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.093    -1.027 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.472     0.445    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X12Y102        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                         net (fo=854, routed)         1.469     0.442    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X11Y110        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X12Y102        FDRE (Prop_fdre_C_Q)         0.259     0.704 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
-                         net (fo=1, routed)           0.438     1.142    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[0]
-    SLICE_X13Y102        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+    SLICE_X11Y110        FDRE (Prop_fdre_C_Q)         0.204     0.646 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.267     0.913    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[1]
+    SLICE_X11Y108        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock axi_periph_clk_design_1_CLK_COMMON_0 rise edge)
@@ -552,15 +552,15 @@ Endpoint path:
                                                      -6.026    -3.572 r  design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.355    -2.217    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    -2.134 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
-                         net (fo=13844, routed)       1.336    -0.798    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X13Y102        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
-                         clock pessimism              0.000    -0.798    
-    SLICE_X13Y102        FDRE (Setup_fdre_C_D)       -0.005    -0.803    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+                         net (fo=13844, routed)       1.335    -0.799    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X11Y108        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000    -0.799    
+    SLICE_X11Y108        FDRE (Setup_fdre_C_D)       -0.091    -0.890    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           1.142    
-                         clock arrival                         -0.803    
+                         data arrival                           0.913    
+                         clock arrival                         -0.890    
   -------------------------------------------------------------------
-                         relative delay                         1.945    
+                         relative delay                         1.804    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -574,12 +574,12 @@ Reference path:
                                                      -6.387    -2.494 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.674    -0.820    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.083    -0.737 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.336     0.599    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X13Y101        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=854, routed)         1.334     0.597    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X11Y110        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X13Y101        FDRE (Prop_fdre_C_Q)         0.178     0.777 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.225     1.001    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[3]
-    SLICE_X14Y101        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X11Y110        FDRE (Prop_fdre_C_Q)         0.178     0.775 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.219     0.993    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[0]
+    SLICE_X11Y108        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock axi_periph_clk_design_1_CLK_COMMON_0 rise edge)
@@ -592,15 +592,15 @@ Reference path:
                                                      -7.050    -4.361 r  design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.465    -2.896    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -2.803 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
-                         net (fo=13844, routed)       1.472    -1.331    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X14Y101        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000    -1.331    
-    SLICE_X14Y101        FDRE (Hold_fdre_C_D)         0.152    -1.179    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+                         net (fo=13844, routed)       1.470    -1.333    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X11Y108        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000    -1.333    
+    SLICE_X11Y108        FDRE (Hold_fdre_C_D)         0.118    -1.215    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
   -------------------------------------------------------------------
-                         data arrival                           1.001    
-                         clock arrival                         -1.179    
+                         data arrival                           0.993    
+                         clock arrival                         -1.215    
   -------------------------------------------------------------------
-                         relative delay                         2.180    
+                         relative delay                         2.208    
 
 
 
@@ -613,26 +613,26 @@ From Clock            To Clock              Endpoint Pin                    Refe
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 axi_periph_clk_design_1_CLK_COMMON_0
                       clk_out               design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
-                                                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                                                            Slow         0.709      9.291
+                                                                            design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                                                            Slow         0.883      9.117
 
 
-Slack (MET) :             9.291ns  (requirement - actual skew)
+Slack (MET) :             9.117ns  (requirement - actual skew)
   Endpoint Source:        design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
   Endpoint Destination:   design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by clk_out)
-  Reference Source:       design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  Reference Source:       design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by axi_periph_clk_design_1_CLK_COMMON_0)
-  Reference Destination:  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  Reference Destination:  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by clk_out)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:   -1.320ns
-  Reference Relative Delay:  -0.938ns
-  Relative CRPR:             -0.735ns
+  Endpoint Relative Delay:   -1.105ns
+  Reference Relative Delay:  -0.918ns
+  Relative CRPR:             -0.713ns
   Uncertainty:                0.357ns
-  Actual Bus Skew:            0.709ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            0.883ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -647,12 +647,12 @@ Endpoint path:
                                                      -7.050    -4.361 r  design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.465    -2.896    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -2.803 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
-                         net (fo=13844, routed)       1.472    -1.331    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X10Y103        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=13844, routed)       1.470    -1.333    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X11Y109        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X10Y103        FDRE (Prop_fdre_C_Q)         0.236    -1.095 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.283    -0.812    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[1]
-    SLICE_X9Y103         FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X11Y109        FDRE (Prop_fdre_C_Q)         0.204    -1.129 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.529    -0.599    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[1]
+    SLICE_X11Y111        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out rise edge)    0.000     0.000 r  
@@ -664,15 +664,15 @@ Endpoint path:
                                                      -6.387    -2.494 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.674    -0.820    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.083    -0.737 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.336     0.599    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X9Y103         FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000     0.599    
-    SLICE_X9Y103         FDRE (Setup_fdre_C_D)       -0.090     0.509    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=854, routed)         1.333     0.596    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X11Y111        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     0.596    
+    SLICE_X11Y111        FDRE (Setup_fdre_C_D)       -0.090     0.506    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                          -0.812    
-                         clock arrival                          0.509    
+                         data arrival                          -0.599    
+                         clock arrival                          0.506    
   -------------------------------------------------------------------
-                         relative delay                        -1.320    
+                         relative delay                        -1.105    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -687,12 +687,12 @@ Reference path:
                                                      -6.026    -3.572 r  design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.355    -2.217    design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk_design_1_CLK_COMMON_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    -2.134 r  design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O
-                         net (fo=13844, routed)       1.337    -0.797    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X10Y103        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                         net (fo=13844, routed)       1.335    -0.799    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X11Y109        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X10Y103        FDRE (Prop_fdre_C_Q)         0.206    -0.591 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.251    -0.340    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[2]
-    SLICE_X10Y102        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X11Y109        FDRE (Prop_fdre_C_Q)         0.178    -0.621 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.298    -0.323    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[3]
+    SLICE_X10Y109        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out rise edge)    0.000     0.000 r  
@@ -704,15 +704,15 @@ Reference path:
                                                      -7.412    -2.911 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/gen_mmcme2.mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.791    -1.120    design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_out
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.093    -1.027 r  design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O
-                         net (fo=854, routed)         1.472     0.445    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X10Y102        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     0.445    
-    SLICE_X10Y102        FDRE (Hold_fdre_C_D)         0.152     0.597    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=854, routed)         1.470     0.443    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X10Y109        FDRE                                         r  design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     0.443    
+    SLICE_X10Y109        FDRE (Hold_fdre_C_D)         0.152     0.595    design_1_i/AXI_Peripheral/AXI_C2C/inst/axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_slave_rx_fifo/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                          -0.340    
-                         clock arrival                          0.597    
+                         data arrival                          -0.323    
+                         clock arrival                          0.595    
   -------------------------------------------------------------------
-                         relative delay                        -0.938    
+                         relative delay                        -0.918    
 
 
 

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.xpr">
+<Project Version="7" Minor="40" Path="F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="203a2a8d5a464168adb4e0478d940e52"/>

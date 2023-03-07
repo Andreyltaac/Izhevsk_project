@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Jan 27 12:59:54 2023
+| Date         : Mon Feb 20 11:28:22 2023
 | Host         : TOR00094 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 68987 |     0 |    203800 | 33.85 |
-|   LUT as Logic             | 68832 |     0 |    203800 | 33.77 |
+| Slice LUTs*                | 69008 |     0 |    203800 | 33.86 |
+|   LUT as Logic             | 68853 |     0 |    203800 | 33.78 |
 |   LUT as Memory            |   155 |     0 |     64000 |  0.24 |
 |     LUT as Distributed RAM |   150 |     0 |           |       |
 |     LUT as Shift Register  |     5 |     0 |           |       |
@@ -160,15 +160,15 @@ Table of Contents
 |  Ref Name  |  Used | Functional Category |
 +------------+-------+---------------------+
 | FDRE       | 68156 |        Flop & Latch |
-| LUT2       | 53009 |                 LUT |
+| LUT2       | 53021 |                 LUT |
 | FDCE       | 19433 |        Flop & Latch |
-| CARRY4     | 13306 |          CarryLogic |
+| CARRY4     | 13311 |          CarryLogic |
 | LUT6       |  6804 |                 LUT |
-| LUT3       |  6693 |                 LUT |
-| LUT5       |  3506 |                 LUT |
-| LUT4       |  3086 |                 LUT |
+| LUT3       |  6697 |                 LUT |
+| LUT5       |  3507 |                 LUT |
+| LUT4       |  3090 |                 LUT |
 | FDSE       |   799 |        Flop & Latch |
-| LUT1       |   391 |                 LUT |
+| LUT1       |   398 |                 LUT |
 | RAMB36E1   |   280 |        Block Memory |
 | MUXF7      |   225 |               MuxFx |
 | FDPE       |   115 |        Flop & Latch |

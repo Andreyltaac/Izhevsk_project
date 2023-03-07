@@ -17,94 +17,92 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 1
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7k325tffg676-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.cache/wt [current_project]
-set_property parent.project_path F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.xpr [current_project]
+set_property webtalk.parent_dir F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.cache/wt [current_project]
+set_property parent.project_path F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
-  f:/kintex_dsp_lite/projects/ip_repo/IP_sync_1.0
-  f:/kintex_dsp_lite/library
+  f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0
+  f:/work/Izhevsk_project/library
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.cache/ip [current_project]
+set_property ip_output_repo f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib -sv F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/sync/buffer_ram.sv
+read_verilog -library xil_defaultlib -sv F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/sync/buffer_ram.sv
 read_verilog -library xil_defaultlib {
-  F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/ibuf.v
-  F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/FPGA_reset.v
-  F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/RAshift16_4_up.v
-  F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/on_off_wire.v
-  F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/Decoder_SPI_2.v
-  F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/sync/mqc_t.v
-  F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+  F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/ibuf.v
+  F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/FPGA_reset.v
+  F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/RAshift16_4_up.v
+  F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/on_off_wire.v
+  F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/Decoder_SPI_2.v
+  F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/sync/mqc_t.v
+  F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
 }
-add_files F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_C2C_0/design_1_AXI_C2C_0.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_C2C_0/design_1_AXI_C2C_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_DMA_0/design_1_AXI_DMA_0_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_CLK_COMMON_0/design_1_CLK_COMMON_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_CLK_COMMON_0/design_1_CLK_COMMON_0.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_CLK_COMMON_0/design_1_CLK_COMMON_0_late.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_CLK_COMMON_0/design_1_CLK_COMMON_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_reset_0/design_1_AXI_reset_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_reset_0/design_1_AXI_reset_0.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_adc_fifo_ad9364_0_0/util_wfifo_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_dac_fifo_ad9364_0_0/util_rfifo_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_divclk_64_rst1_0/design_1_divclk_64_rst1_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_divclk_64_rst1_0/design_1_divclk_64_rst1_0.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9364_0/design_1_axi_ad9364_0_pps_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_cntrl_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/ad_rst_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_status_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_clock_mon_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9364_0/axi_ad9361_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_adc_fifo_ad9361_1_0/util_wfifo_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_dac_fifo_ad9361_1_0/util_rfifo_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_1_0/design_1_axi_ad9361_1_0_pps_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_cntrl_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/ad_rst_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_status_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_clock_mon_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_1_0/axi_ad9361_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_adc_fifo_ad9361_2_0/util_wfifo_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_dac_fifo_ad9361_2_0/util_rfifo_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_2_0/design_1_axi_ad9361_2_0_pps_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_cntrl_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/ad_rst_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_status_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_clock_mon_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_2_0/axi_ad9361_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_adc_fifo_ad9361_3_0/util_wfifo_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_dac_fifo_ad9361_3_0/util_rfifo_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_3_0/design_1_axi_ad9361_3_0_pps_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_cntrl_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/ad_rst_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_status_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_clock_mon_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_3_0/axi_ad9361_constr.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_DSP_0/design_1_clk_DSP_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_DSP_0/design_1_clk_DSP_0.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_DSP_0/design_1_clk_DSP_0_late.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_DSP_0/design_1_clk_DSP_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_DATA_rst_0/design_1_DATA_rst_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_DATA_rst_0/design_1_DATA_rst_0.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_spi_0/design_1_axi_spi_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_spi_0/design_1_axi_spi_0.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_spi_0/design_1_axi_spi_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_spi_0/design_1_axi_spi_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all f:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+add_files F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_C2C_0/design_1_AXI_C2C_0.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_C2C_0/design_1_AXI_C2C_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_DMA_0/design_1_AXI_DMA_0_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_CLK_COMMON_0/design_1_CLK_COMMON_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_CLK_COMMON_0/design_1_CLK_COMMON_0.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_CLK_COMMON_0/design_1_CLK_COMMON_0_late.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_CLK_COMMON_0/design_1_CLK_COMMON_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_reset_0/design_1_AXI_reset_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_reset_0/design_1_AXI_reset_0.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_adc_fifo_ad9364_0_0/util_wfifo_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_dac_fifo_ad9364_0_0/util_rfifo_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_divclk_64_rst1_0/design_1_divclk_64_rst1_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_divclk_64_rst1_0/design_1_divclk_64_rst1_0.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9364_0/design_1_axi_ad9364_0_pps_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_cntrl_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/ad_rst_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_status_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_clock_mon_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9364_0/axi_ad9361_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_adc_fifo_ad9361_1_0/util_wfifo_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_dac_fifo_ad9361_1_0/util_rfifo_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_1_0/design_1_axi_ad9361_1_0_pps_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_cntrl_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/ad_rst_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_status_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_clock_mon_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_1_0/axi_ad9361_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_adc_fifo_ad9361_2_0/util_wfifo_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_dac_fifo_ad9361_2_0/util_rfifo_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_2_0/design_1_axi_ad9361_2_0_pps_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_cntrl_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/ad_rst_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_status_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_clock_mon_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_2_0/axi_ad9361_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_adc_fifo_ad9361_3_0/util_wfifo_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_dac_fifo_ad9361_3_0/util_rfifo_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_3_0/design_1_axi_ad9361_3_0_pps_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_cntrl_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/ad_rst_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_xfer_status_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/xilinx/common/up_clock_mon_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_ad9361_3_0/axi_ad9361_constr.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_DSP_0/design_1_clk_DSP_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_DSP_0/design_1_clk_DSP_0.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_DSP_0/design_1_clk_DSP_0_late.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_DSP_0/design_1_clk_DSP_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_DATA_rst_0/design_1_DATA_rst_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_DATA_rst_0/design_1_DATA_rst_0.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_spi_0/design_1_axi_spi_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_spi_0/design_1_axi_spi_0.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_spi_0/design_1_axi_spi_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_spi_0/design_1_axi_spi_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -114,8 +112,8 @@ set_property used_in_implementation false [get_files -all F:/kintex_dsp_lite/pro
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/constrs_1/imports/Files_XDC/DSP_Kintex_PM.xdc
-set_property used_in_implementation false [get_files F:/kintex_dsp_lite/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/constrs_1/imports/Files_XDC/DSP_Kintex_PM.xdc]
+read_xdc F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/constrs_1/imports/Files_XDC/DSP_Kintex_PM.xdc
+set_property used_in_implementation false [get_files F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/constrs_1/imports/Files_XDC/DSP_Kintex_PM.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
