@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Mon Feb 20 11:49:49 2023
+| Date         : Mon Mar 20 13:34:20 2023
 | Host         : TOR00094 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
 | Design       : design_1_wrapper
@@ -33,19 +33,18 @@ Table of Contents
 17. Device Cell Placement Summary for Global Clock g11
 18. Device Cell Placement Summary for Global Clock g12
 19. Clock Region Cell Placement per Global Clock: Region X0Y0
-20. Clock Region Cell Placement per Global Clock: Region X1Y0
-21. Clock Region Cell Placement per Global Clock: Region X0Y1
-22. Clock Region Cell Placement per Global Clock: Region X1Y1
-23. Clock Region Cell Placement per Global Clock: Region X0Y2
-24. Clock Region Cell Placement per Global Clock: Region X1Y2
-25. Clock Region Cell Placement per Global Clock: Region X0Y3
-26. Clock Region Cell Placement per Global Clock: Region X1Y3
-27. Clock Region Cell Placement per Global Clock: Region X0Y4
-28. Clock Region Cell Placement per Global Clock: Region X1Y4
-29. Clock Region Cell Placement per Global Clock: Region X0Y5
-30. Clock Region Cell Placement per Global Clock: Region X1Y5
-31. Clock Region Cell Placement per Global Clock: Region X0Y6
-32. Clock Region Cell Placement per Global Clock: Region X1Y6
+20. Clock Region Cell Placement per Global Clock: Region X0Y1
+21. Clock Region Cell Placement per Global Clock: Region X1Y1
+22. Clock Region Cell Placement per Global Clock: Region X0Y2
+23. Clock Region Cell Placement per Global Clock: Region X1Y2
+24. Clock Region Cell Placement per Global Clock: Region X0Y3
+25. Clock Region Cell Placement per Global Clock: Region X1Y3
+26. Clock Region Cell Placement per Global Clock: Region X0Y4
+27. Clock Region Cell Placement per Global Clock: Region X1Y4
+28. Clock Region Cell Placement per Global Clock: Region X0Y5
+29. Clock Region Cell Placement per Global Clock: Region X1Y5
+30. Clock Region Cell Placement per Global Clock: Region X0Y6
+31. Clock Region Cell Placement per Global Clock: Region X1Y6
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -69,12 +68,12 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                | Driver Pin                                                                                                                                                                 | Net                                                                                                                                                                       |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                14 |       64575 |               0 |       32.552 | clk_out1_design_1_clk_wiz_0_0        | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clkout1_buf/O                                                                                                            | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1                                                                                                                |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                13 |       63493 |               0 |       32.552 | clk_out1_design_1_clk_wiz_0_0        | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clkout1_buf/O                                                                                                            | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1                                                                                                                |
 | g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 8 |       13766 |               0 |       10.000 | axi_periph_clk_design_1_CLK_COMMON_0 | design_1_i/CLK_AXI/CLK_COMMON/inst/clkout2_buf/O                                                                                                                           | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                                                                                                                         |
 | g2        | src2      | BUFG/O          | PBlock     | BUFGCTRL_X0Y1  | n/a          |                 2 |        1783 |               0 |        4.000 | prm_clk_ad2                          | design_1_i/AD9361_CTRL/AD9361_2/axi_ad9361_2/inst/i_dev_if/i_clk/i_clk_gbuf/O                                                                                              | design_1_i/AD9361_CTRL/AD9361_2/axi_ad9361_2/inst/i_dev_if/i_clk/clk                                                                                                      |
 | g3        | src3      | BUFG/O          | PBlock     | BUFGCTRL_X0Y2  | n/a          |                 2 |        1579 |               0 |        4.000 | prm_clk_ad1                          | design_1_i/AD9361_CTRL/AD9361_1/axi_ad9361_1/inst/i_dev_if/i_clk/i_clk_gbuf/O                                                                                              | design_1_i/AD9361_CTRL/AD9361_1/axi_ad9361_1/inst/i_dev_if/i_clk/clk                                                                                                      |
 | g4        | src4      | BUFG/O          | PBlock     | BUFGCTRL_X0Y3  | n/a          |                 2 |        1579 |               0 |        4.000 | prm_clk_ad3                          | design_1_i/AD9361_CTRL/AD9361_3/axi_ad9361_3/inst/i_dev_if/i_clk/i_clk_gbuf/O                                                                                              | design_1_i/AD9361_CTRL/AD9361_3/axi_ad9361_3/inst/i_dev_if/i_clk/clk                                                                                                      |
-| g5        | src5      | BUFG/O          | None       | BUFGCTRL_X0Y4  | n/a          |                13 |        1007 |               0 |       32.552 | sample_rate_30_72_design_1_clk_DSP_0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/clkout1_buf/O                                                                                                               | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72                                                                                                          |
+| g5        | src5      | BUFG/O          | None       | BUFGCTRL_X0Y4  | n/a          |                12 |        1007 |               0 |       32.552 | sample_rate_30_72_design_1_clk_DSP_0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/clkout1_buf/O                                                                                                               | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72                                                                                                          |
 | g6        | src6      | BUFG/O          | PBlock     | BUFGCTRL_X0Y17 | n/a          |                 2 |         922 |               0 |        4.000 | prm_clk_ad4                          | design_1_i/AD9364/axi_ad9364/inst/i_dev_if/i_clk/i_clk_gbuf/O                                                                                                              | design_1_i/AD9364/axi_ad9364/inst/i_dev_if/i_clk/clk                                                                                                                      |
 | g7        | src7      | BUFG/O          | PBlock     | BUFGCTRL_X0Y5  | n/a          |                 1 |         826 |               0 |       10.000 | clk_out                              | design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst/O    | design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/CLK           |
 | g8        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y6  | n/a          |                 5 |          27 |               0 |        5.000 | delay_clk_design_1_CLK_COMMON_0      | design_1_i/CLK_AXI/CLK_COMMON/inst/clkout1_buf/O                                                                                                                           | design_1_i/CLK_AXI/CLK_COMMON/inst/delay_clk                                                                                                                              |
@@ -120,20 +119,20 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+-------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used  | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+-------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |     0 |  4000 |    0 |  1150 |    0 |    60 |    4 |    30 |    0 |    60 |
-| X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |     0 |  3700 |    0 |  1200 |    0 |    80 |    4 |    40 |    0 |    60 |
-| X0Y1              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |   12 |    50 |   794 |  4000 |  285 |  1150 |    1 |    60 |   29 |    30 |    0 |    60 |
-| X1Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    7 |    50 |    8 |    50 |  3422 |  3700 | 1025 |  1200 |    0 |    80 |   34 |    40 |    0 |    60 |
-| X0Y2              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |   17 |    50 |   18 |    50 |  4095 |  3400 | 1755 |  1150 |    0 |    60 |   29 |    30 |    0 |    60 |
-| X1Y2              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    7 |    50 |    8 |    50 |  3193 |  3700 |  941 |  1200 |    0 |    80 |   37 |    40 |    0 |    60 |
-| X0Y3              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    7 |    50 |    8 |    50 |  7131 |  3400 | 2641 |  1150 |    0 |    60 |   28 |    30 |    0 |    60 |
-| X1Y3              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |    94 |  3150 |   60 |  1050 |    0 |    50 |   25 |    25 |    0 |    60 |
-| X0Y4              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    7 |    50 |    8 |    50 | 11364 |  4000 | 3153 |  1150 |    0 |    60 |   27 |    30 |    0 |    60 |
-| X1Y4              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 11486 |  3300 | 3812 |  1100 |    0 |    60 |   30 |    30 |    0 |    60 |
-| X0Y5              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  9572 |  4000 | 2282 |  1150 |    0 |    60 |   18 |    30 |    0 |    60 |
-| X1Y5              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 11730 |  3300 | 3953 |  1100 |    0 |    60 |   12 |    30 |    0 |    60 |
-| X0Y6              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  9818 |  4000 | 2540 |  1150 |    0 |    60 |    0 |    30 |    0 |    60 |
-| X1Y6              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 12624 |  3300 | 4201 |  1100 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |     0 |  4000 |    0 |  1150 |    0 |    60 |   10 |    30 |    0 |    60 |
+| X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |     0 |  3700 |    0 |  1200 |    0 |    80 |    0 |    40 |    0 |    60 |
+| X0Y1              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |   12 |    50 |   781 |  4000 |  327 |  1150 |    0 |    60 |   23 |    30 |    0 |    60 |
+| X1Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    7 |    50 |    8 |    50 |  3369 |  3700 |  885 |  1200 |    0 |    80 |   26 |    40 |    0 |    60 |
+| X0Y2              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |   17 |    50 |   18 |    50 |  3411 |  3400 | 1434 |  1150 |    0 |    60 |   29 |    30 |    0 |    60 |
+| X1Y2              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    7 |    50 |    8 |    50 |  3194 |  3700 |  924 |  1200 |    0 |    80 |   37 |    40 |    0 |    60 |
+| X0Y3              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    7 |    50 |    8 |    50 |  6979 |  3400 | 2663 |  1150 |    0 |    60 |   30 |    30 |    0 |    60 |
+| X1Y3              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |   114 |  3150 |   84 |  1050 |    0 |    50 |   20 |    25 |    0 |    60 |
+| X0Y4              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    7 |    50 |    8 |    50 | 11402 |  4000 | 3255 |  1150 |    0 |    60 |   28 |    30 |    0 |    60 |
+| X1Y4              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 11430 |  3300 | 3712 |  1100 |    0 |    60 |   30 |    30 |    1 |    60 |
+| X0Y5              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  9443 |  4000 | 2466 |  1150 |    0 |    60 |   25 |    30 |    0 |    60 |
+| X1Y5              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 12497 |  3300 | 4122 |  1100 |    0 |    60 |   19 |    30 |    0 |    60 |
+| X0Y6              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  9207 |  4000 | 2368 |  1150 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y6              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 12413 |  3300 | 4097 |  1100 |    0 |    60 |    0 |    30 |    0 |    60 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+-------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -151,7 +150,7 @@ All Modules
 | Y3 |  6 |  2 |
 | Y2 |  6 |  6 |
 | Y1 |  7 |  5 |
-| Y0 |  2 |  2 |
+| Y0 |  2 |  0 |
 +----+----+----+
 
 
@@ -161,7 +160,7 @@ All Modules
 +-----------+-----------------+-------------------+-------------------------------+-------------+----------------+-------------+----------+----------------+----------+------------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock                         | Period (ns) | Waveform (ns)  | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                        |
 +-----------+-----------------+-------------------+-------------------------------+-------------+----------------+-------------+----------+----------------+----------+------------------------------------------------------------+
-| g0        | BUFG/O          | n/a               | clk_out1_design_1_clk_wiz_0_0 |      32.552 | {0.000 16.276} |       64563 |        0 |              0 |        0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1 |
+| g0        | BUFG/O          | n/a               | clk_out1_design_1_clk_wiz_0_0 |      32.552 | {0.000 16.276} |       63481 |        0 |              0 |        0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1 |
 +-----------+-----------------+-------------------+-------------------------------+-------------+----------------+-------------+----------+----------------+----------+------------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -172,13 +171,13 @@ All Modules
 +----+-------+--------+
 |    | X0    | X1     |
 +----+-------+--------+
-| Y6 |  9801 |  12624 |
-| Y5 |  9572 |  11742 |
-| Y4 |  8846 |  11452 |
-| Y3 |   109 |     87 |
-| Y2 |    81 |     96 |
-| Y1 |    68 |     77 |
-| Y0 |     4 |      4 |
+| Y6 |  9189 |  12413 |
+| Y5 |  9408 |  12500 |
+| Y4 |  8029 |  11420 |
+| Y3 |   156 |     87 |
+| Y2 |    78 |     98 |
+| Y1 |    54 |     39 |
+| Y0 |    10 |      0 |
 +----+-------+--------+
 
 
@@ -199,11 +198,11 @@ All Modules
 +----+-------+-------+
 |    | X0    | X1    |
 +----+-------+-------+
-| Y6 |    18 |     0 |
-| Y5 |    18 |     0 |
-| Y4 |  1474 |     0 |
-| Y3 |  5401 |     0 |
-| Y2 |  3076 |  1499 |
+| Y6 |    19 |     0 |
+| Y5 |    17 |     0 |
+| Y4 |  2359 |     0 |
+| Y3 |  5194 |     0 |
+| Y2 |  2398 |  1499 |
 | Y1 |   720 |  1543 |
 | Y0 |     0 |     0 |
 +----+-------+-------+
@@ -308,12 +307,12 @@ All Modules
 |    | X0   | X1   |
 +----+------+------+
 | Y6 |    1 |    0 |
-| Y5 |   18 |   12 |
-| Y4 |  196 |   85 |
-| Y3 |  118 |   57 |
-| Y2 |  225 |  112 |
-| Y1 |   66 |  106 |
-| Y0 |    4 |    4 |
+| Y5 |   68 |   31 |
+| Y4 |  169 |   66 |
+| Y3 |  129 |   67 |
+| Y2 |  222 |  111 |
+| Y1 |   55 |   75 |
+| Y0 |   10 |    0 |
 +----+------+------+
 
 
@@ -512,40 +511,26 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |           4 |               0 |  0 |      0 |    4 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
-| g5        | n/a   | BUFG/O          | None       |           4 |               0 |  0 |      0 |    4 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
+| g0        | n/a   | BUFG/O          | None       |          10 |               0 |  0 |      0 |   10 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
+| g5        | n/a   | BUFG/O          | None       |          10 |               0 |  0 |      0 |   10 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-20. Clock Region Cell Placement per Global Clock: Region X1Y0
--------------------------------------------------------------
-
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                              |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |           4 |               0 |  0 |      0 |    4 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
-| g5        | n/a   | BUFG/O          | None       |           4 |               0 |  0 |      0 |    4 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
-* Clock Loads column represents the clock pin loads (pin count)
-** Non-Clock Loads column represents the non-clock pin loads (pin count)
-*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
-
-
-21. Clock Region Cell Placement per Global Clock: Region X0Y1
+20. Clock Region Cell Placement per Global Clock: Region X0Y1
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                  |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          68 |               0 |  39 |      0 |   29 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1           |
-| g1        | n/a   | BUFG/O          | None       |         720 |               0 | 718 |      0 |    1 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                    |
+| g0        | n/a   | BUFG/O          | None       |          54 |               0 |  31 |      0 |   23 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1           |
+| g1        | n/a   | BUFG/O          | None       |         720 |               0 | 718 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                    |
 | g2        | n/a   | BUFG/O          | PBlock     |           2 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/AD9361_2/axi_ad9361_2/inst/i_dev_if/i_clk/clk |
 | g3        | n/a   | BUFG/O          | PBlock     |           2 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/AD9361_1/axi_ad9361_1/inst/i_dev_if/i_clk/clk |
 | g4        | n/a   | BUFG/O          | PBlock     |           2 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/AD9361_3/axi_ad9361_3/inst/i_dev_if/i_clk/clk |
-| g5        | n/a   | BUFG/O          | None       |          66 |               0 |  37 |      0 |   29 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72     |
+| g5        | n/a   | BUFG/O          | None       |          55 |               0 |  32 |      0 |   23 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72     |
 | g6        | n/a   | BUFG/O          | PBlock     |           2 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9364/axi_ad9364/inst/i_dev_if/i_clk/clk                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -553,16 +538,16 @@ All Modules
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-22. Clock Region Cell Placement per Global Clock: Region X1Y1
+21. Clock Region Cell Placement per Global Clock: Region X1Y1
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                  |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          77 |               0 |   45 |      0 |   32 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1           |
+| g0        | n/a   | BUFG/O          | None       |          39 |               0 |   15 |      0 |   24 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1           |
 | g1        | n/a   | BUFG/O          | None       |        1543 |               0 | 1536 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                    |
 | g2        | n/a   | BUFG/O          | PBlock     |        1781 |               0 | 1764 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/AD9361_2/axi_ad9361_2/inst/i_dev_if/i_clk/clk |
-| g5        | n/a   | BUFG/O          | None       |         106 |               0 |   72 |      0 |   34 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72     |
+| g5        | n/a   | BUFG/O          | None       |          75 |               0 |   49 |      0 |   26 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72     |
 | g8        | n/a   | BUFG/O          | None       |           6 |               0 |    5 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/delay_clk                         |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -570,15 +555,15 @@ All Modules
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-23. Clock Region Cell Placement per Global Clock: Region X0Y2
+22. Clock Region Cell Placement per Global Clock: Region X0Y2
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                             |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          81 |               0 |   55 |      0 |   26 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1                                                                                                      |
-| g1        | n/a   | BUFG/O          | None       |        3076 |               0 | 3054 |      0 |    3 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                                                                                                               |
-| g5        | n/a   | BUFG/O          | None       |         225 |               0 |  198 |      0 |   26 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72                                                                                                |
+| g0        | n/a   | BUFG/O          | None       |          78 |               0 |   52 |      0 |   26 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1                                                                                                      |
+| g1        | n/a   | BUFG/O          | None       |        2398 |               0 | 2376 |      0 |    3 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                                                                                                               |
+| g5        | n/a   | BUFG/O          | None       |         222 |               0 |  195 |      0 |   26 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72                                                                                                |
 | g7        | n/a   | BUFG/O          | PBlock     |         822 |               0 |  786 |      2 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/CLK |
 | g8        | n/a   | BUFG/O          | None       |           3 |               0 |    2 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/delay_clk                                                                                                                    |
 | g9        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/clkfbout_buf_design_1_clk_DSP_0                                                                                  |
@@ -588,16 +573,16 @@ All Modules
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-24. Clock Region Cell Placement per Global Clock: Region X1Y2
+23. Clock Region Cell Placement per Global Clock: Region X1Y2
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                                       |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          96 |               0 |   60 |      0 |   36 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1                                                                                                                |
+| g0        | n/a   | BUFG/O          | None       |          98 |               0 |   62 |      0 |   36 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1                                                                                                                |
 | g1        | n/a   | BUFG/O          | None       |        1499 |               0 | 1492 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                                                                                                                         |
 | g4        | n/a   | BUFG/O          | PBlock     |        1577 |               0 | 1561 |      0 |    1 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/AD9361_3/axi_ad9361_3/inst/i_dev_if/i_clk/clk                                                                                                      |
-| g5        | n/a   | BUFG/O          | None       |         112 |               0 |   75 |      0 |   37 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72                                                                                                          |
+| g5        | n/a   | BUFG/O          | None       |         111 |               0 |   74 |      0 |   37 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72                                                                                                          |
 | g8        | n/a   | BUFG/O          | None       |           6 |               0 |    5 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/delay_clk                                                                                                                              |
 | g10       | n/a   | BUFG/O          | PBlock     |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clkfbout_bufg |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -606,16 +591,16 @@ All Modules
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-25. Clock Region Cell Placement per Global Clock: Region X0Y3
+24. Clock Region Cell Placement per Global Clock: Region X0Y3
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                   |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         109 |               0 |   82 |      0 |   27 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1            |
-| g1        | n/a   | BUFG/O          | None       |        5401 |               0 | 5393 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                     |
+| g0        | n/a   | BUFG/O          | None       |         156 |               0 |  127 |      0 |   29 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1            |
+| g1        | n/a   | BUFG/O          | None       |        5194 |               0 | 5187 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                     |
 | g3        | n/a   | BUFG/O          | PBlock     |        1577 |               0 | 1561 |      0 |    1 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/AD9361_1/axi_ad9361_1/inst/i_dev_if/i_clk/clk  |
-| g5        | n/a   | BUFG/O          | None       |         118 |               0 |   90 |      0 |   28 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72      |
+| g5        | n/a   | BUFG/O          | None       |         129 |               0 |   99 |      0 |   30 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72      |
 | g8        | n/a   | BUFG/O          | None       |           6 |               0 |    5 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/delay_clk                          |
 | g11       | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/clkfbout_buf_design_1_CLK_COMMON_0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------+
@@ -624,29 +609,29 @@ All Modules
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-26. Clock Region Cell Placement per Global Clock: Region X1Y3
+25. Clock Region Cell Placement per Global Clock: Region X1Y3
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          87 |               0 | 62 |      0 |   25 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
-| g5        | n/a   | BUFG/O          | None       |          57 |               0 | 32 |      0 |   25 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
+| g0        | n/a   | BUFG/O          | None       |          87 |               0 | 67 |      0 |   20 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
+| g5        | n/a   | BUFG/O          | None       |          67 |               0 | 47 |      0 |   20 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-27. Clock Region Cell Placement per Global Clock: Region X0Y4
+26. Clock Region Cell Placement per Global Clock: Region X0Y4
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        8846 |               0 | 8818 |      0 |   27 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
-| g1        | n/a   | BUFG/O          | None       |        1474 |               0 | 1466 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                |
-| g5        | n/a   | BUFG/O          | None       |         196 |               0 |  171 |      2 |   22 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
+| g0        | n/a   | BUFG/O          | None       |        8029 |               0 | 8000 |      0 |   28 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
+| g1        | n/a   | BUFG/O          | None       |        2359 |               0 | 2350 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                |
+| g5        | n/a   | BUFG/O          | None       |         169 |               0 |  143 |      2 |   23 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
 | g6        | n/a   | BUFG/O          | PBlock     |         920 |               0 |  904 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9364/axi_ad9364/inst/i_dev_if/i_clk/clk             |
 | g8        | n/a   | BUFG/O          | None       |           6 |               0 |    5 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/delay_clk                     |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
@@ -655,57 +640,57 @@ All Modules
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-28. Clock Region Cell Placement per Global Clock: Region X1Y4
+27. Clock Region Cell Placement per Global Clock: Region X1Y4
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+-------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF    | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+-------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |       11452 |               0 | 11422 |      0 |   30 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
-| g5        | n/a   | BUFG/O          | None       |          85 |               0 |    64 |      0 |   21 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
+| g0        | n/a   | BUFG/O          | None       |       11420 |               0 | 11389 |      0 |   30 |   1 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
+| g5        | n/a   | BUFG/O          | None       |          66 |               0 |    41 |      0 |   25 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
 +-----------+-------+-----------------+------------+-------------+-----------------+-------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-29. Clock Region Cell Placement per Global Clock: Region X0Y5
+28. Clock Region Cell Placement per Global Clock: Region X0Y5
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        9572 |               0 | 9554 |      0 |   18 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
-| g1        | n/a   | BUFG/O          | None       |          18 |               0 |   18 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                |
-| g5        | n/a   | BUFG/O          | None       |          18 |               0 |    0 |      0 |   18 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
+| g0        | n/a   | BUFG/O          | None       |        9408 |               0 | 9383 |      0 |   25 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
+| g1        | n/a   | BUFG/O          | None       |          17 |               0 |   17 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                |
+| g5        | n/a   | BUFG/O          | None       |          68 |               0 |   43 |      0 |   25 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-30. Clock Region Cell Placement per Global Clock: Region X1Y5
+29. Clock Region Cell Placement per Global Clock: Region X1Y5
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+-------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF    | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+-------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |       11742 |               0 | 11730 |      0 |   12 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
-| g5        | n/a   | BUFG/O          | None       |          12 |               0 |     0 |      0 |   12 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
+| g0        | n/a   | BUFG/O          | None       |       12500 |               0 | 12481 |      0 |   19 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1       |
+| g5        | n/a   | BUFG/O          | None       |          31 |               0 |    16 |      0 |   15 |   0 |  0 |    0 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72 |
 +-----------+-------+-----------------+------------+-------------+-----------------+-------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-31. Clock Region Cell Placement per Global Clock: Region X0Y6
+30. Clock Region Cell Placement per Global Clock: Region X0Y6
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        9801 |               0 | 9801 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1                          |
-| g1        | n/a   | BUFG/O          | None       |          18 |               0 |   17 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                                   |
+| g0        | n/a   | BUFG/O          | None       |        9189 |               0 | 9189 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1                          |
+| g1        | n/a   | BUFG/O          | None       |          19 |               0 |   18 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | design_1_i/CLK_AXI/CLK_COMMON/inst/axi_periph_clk                                   |
 | g5        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/sample_rate_30_72                    |
 | g12       | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clkfbout_buf_design_1_clk_wiz_0_0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
@@ -714,13 +699,13 @@ All Modules
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-32. Clock Region Cell Placement per Global Clock: Region X1Y6
+31. Clock Region Cell Placement per Global Clock: Region X1Y6
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+-------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF    | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                        |
 +-----------+-------+-----------------+------------+-------------+-----------------+-------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |       12624 |               0 | 12624 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1 |
+| g0        | n/a   | BUFG/O          | None       |       12413 |               0 | 12413 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1 |
 +-----------+-------+-----------------+------------+-------------+-----------------+-------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)

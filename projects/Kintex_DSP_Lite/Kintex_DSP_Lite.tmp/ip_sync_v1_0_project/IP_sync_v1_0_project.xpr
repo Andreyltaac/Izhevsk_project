@@ -6,7 +6,7 @@
 <Project Version="7" Minor="40" Path="f:/work/izhevsk_project/projects/kintex_dsp_lite/kintex_dsp_lite.tmp/ip_sync_v1_0_project/IP_sync_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="3fc634535c1a47e9809b46e7a18e37d6"/>
+    <Option Name="Id" Val="ebc53b6f1fa348ba9367026fe683df8e"/>
     <Option Name="Part" Val="xc7k325tffg676-2"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: tor.org:user:IP_sync:1.0
-// IP Revision: 86
+// IP Revision: 91
 
 (* X_CORE_INFO = "IP_sync_v1_0,Vivado 2019.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_IP_sync_0_3,IP_sync_v1_0,{}" *)

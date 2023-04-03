@@ -20,7 +20,7 @@ module sync_sign
   //
   output logic                         oena, 
   //
-  output logic          [pDAT_W-1 : 0] ocorr
+  output logic signed   [pDAT_W : 0] ocorr
                       
 );
 
@@ -60,7 +60,8 @@ logic           [1:0]          trh_trig; */
 logic           [10:0]         mask_cnt;
 logic           [1:0]          PSS_mask       [0:pDAT_Num-1]; 
  ////////////////////////////////////////////////////////////////////////////////////////////// assign
-assign ocorr = abs_re + abs_im;
+//assign ocorr = abs_re + abs_im;
+assign ocorr = adder_re_odat + adder_im_odat;
 assign ena_corr = iena && ~ival_pss;
 assign oena = oena_re;
 //assign osop = ~trh_trig[0] && trh_trig[1];
@@ -202,7 +203,7 @@ assign oena = oena_re;
   //------------------------------------------------------------------------------------------------------
   //--ABS
   //------------------------------------------------------------------------------------------------------				
-	always_ff @ (posedge iclk or negedge ireset)
+/* 	always_ff @ (posedge iclk or negedge ireset)
 	if (~ireset)
 		abs_re	<=	'0;
 	else
@@ -220,7 +221,7 @@ assign oena = oena_re;
 		abs_im	<=	adder_im_odat;
 	else	
 	if(adder_im_odat[pDAT_W-1])
-		abs_im	<= -adder_im_odat;
+		abs_im	<= -adder_im_odat; */
 
 		
   //------------------------------------------------------------------------------------------------------

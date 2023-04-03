@@ -1,7 +1,7 @@
 module sync_pss
 #(
   parameter int pDAT_W    = 12,
-  parameter int pDAT_Num  = 2048
+  parameter int pDAT_Num  = 1024
 )  
 (
   input  logic                         iclk,
@@ -49,8 +49,8 @@ module sync_pss
   logic [10:0] pss_addr_cnt; 
   
 //
-  logic [11:0] odata_corr_0;
-  logic [11:0] odata_corr_1;
+  logic signed [12:0]   odata_corr_0;
+  logic signed [12:0]   odata_corr_1;
   logic [pDAT_W-1 : 0]  ocorr_mlvl_0;
   logic [pDAT_W-1 : 0]  ocorr_mlvl_1;
   logic [5:0]  ocorr_maddr0;
@@ -95,8 +95,13 @@ module sync_pss
   logic        osop_vrf;   
   logic        wr_buff_lable;
   logic        w_axi_en;
+  logic [22:0] abs_corr; 
  
-  assign odata_corr   = odata_corr_0 + odata_corr_1;
+ 
+ 
+ 
+ 
+  assign odata_corr   = abs_corr >> 10;
   assign req_data     = req_data_rg[0]&~req_data_rg[1];
   assign corr_str_fr  = corr_str_rg[0] & ~corr_str_rg[1];
   assign Q2_pos_ram   = 48 - ((idata_ctrl[27:24]<<3)+(idata_ctrl[27:24]<<2))-(idata_ctrl[23:16]<<1);
@@ -352,8 +357,8 @@ module sync_pss
    //.trh_lvl  (trh_lvl),
    //
    .ival_pss (pss_init),
-   .ipss_I	 (ref_data[3]),
-   .ipss_Q	 (ref_data[2]),
+   .ipss_I	 (ref_data[3]),//Re
+   .ipss_Q	 (ref_data[2]),//Im
    //
    .idata_I	 (sync_data_I),
    .idata_Q	 (sync_data_Q),
@@ -376,22 +381,30 @@ module sync_pss
    //.trh_lvl  (trh_lvl),
    //
    .ival_pss (pss_init),
-   .ipss_I	 (ref_data[1]),
-   .ipss_Q	 (ref_data[0]),
+   .ipss_I	 (ref_data[2]),//Im
+   .ipss_Q	 (ref_data[3]),//Re
    //
    .idata_I	 (sync_data_I),
-   .idata_Q	 (sync_data_Q),
+   .idata_Q	 (~sync_data_Q),
     //
    .ocorr	 (odata_corr_1)
     );
   
+   	
+     always_ff @(posedge iclk or negedge ireset) begin
+            	if (~ireset)
+				abs_corr <= '0;
+                   else	 abs_corr <= (odata_corr_0*odata_corr_0 + odata_corr_1*odata_corr_1);	  	   
+           end	
+   	
+   	
    	
 	sync_detect	
    #(
     .pDAT_W         ( pDAT_W ),
     .pDAT_Num       ( pDAT_Num),
     .pSTAT_Num      ( 50),
-    .pSTAT_Gap      ( 2),
+    .pSTAT_Gap      ( 5),
 	.pSTAT_step_low ( 10),
 	.pSTAT_step_mid ( 25),
 	.pSTAT_step_high( 50),

@@ -1,11 +1,13 @@
 module sync_detect
 #(
-  parameter int pDAT_W     = 12,
-  parameter int pDAT_Num   = 1024,
-  parameter int pSTAT_Num  = 50,
-  parameter int pSTAT_Gap  = 2,
-  parameter int pSTAT_step = 10,
-  parameter int pVERF_Gap  = 32
+  parameter int pDAT_W          = 12,
+  parameter int pDAT_Num        = 1024,
+  parameter int pSTAT_Num       = 50,
+  parameter int pSTAT_Gap       = 5,
+  parameter int pSTAT_step_low  = 10,
+  parameter int pSTAT_step_mid  = 25,
+  parameter int pSTAT_step_high = 50,
+  parameter int pVERF_Gap       = 32
 )  
 (
   input  logic                         iclk,
@@ -52,7 +54,7 @@ logic [7:0]  ostat_1;
 logic        st_oval_1;
 logic        vrf_hold;
 logic [23:0] watchdog_cnt;
-
+logic        sync_mode_stb;
 
 assign osop_vrf     = osop & val_sop; 
 assign osop         = ~trh_trig[0] && trh_trig[1];
@@ -163,15 +165,25 @@ assign vrf_time_sop = (sync_mode)? time_sop<<1 : {1'b0,time_sop};
                 begin				
 			    if (trh_auto_rg[0] && ~trh_auto_rg[1]) trh_lvl_upd <= itrh_lvl; 
 				   else if (watchdog_cnt == frame_time)  trh_lvl_upd <= 12'd140;
-			         else if (st_oval_0 && (ostat_0 < (stat_num-8'd2)) && trh_lvl_upd > 12'd140) 
-					 begin 
-					 trh_lvl_upd <= trh_lvl_upd - pSTAT_step;
+			         else if (st_oval_0 && (ostat_0 < (stat_num - pSTAT_Gap)) && trh_lvl_upd > 12'd140) 
+					 begin
+					 if (ostat_0 < (stat_num-8'd20)) trh_lvl_upd <= trh_lvl_upd - pSTAT_step_high; 
+					   else 
+					   begin 
+					   trh_lvl_upd <= trh_lvl_upd - pSTAT_step_mid; 
+					   end
                      trh_hold <= 1'd0;					 
                      end					 
-			         else if (st_oval_0 && (ostat_0 > (stat_num+8'd2))) 
+			         else if (st_oval_0 && (ostat_0 > (stat_num + pSTAT_Gap))) 
 				         begin
-					     trh_lvl_upd <= trh_lvl_upd + pSTAT_step;	
-                         trh_hold <= 1'd0;					 
+						 if (ostat_0 > (stat_num + 8'd55)) trh_lvl_upd <= trh_lvl_upd + pSTAT_step_high; 
+						 else if (ostat_0 > (stat_num + 8'd25)) trh_lvl_upd <= trh_lvl_upd + pSTAT_step_mid;
+						      else 
+							  begin 
+							  trh_lvl_upd <= trh_lvl_upd + pSTAT_step_low;
+							  end
+	            
+						 trh_hold <= 1'd0;					 
                          end
 						 else if (st_oval_0) trh_hold <= 1'd1;
 		        end

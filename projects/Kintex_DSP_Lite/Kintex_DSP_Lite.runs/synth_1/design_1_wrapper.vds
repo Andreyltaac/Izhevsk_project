@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Feb 20 11:07:24 2023
-# Process ID: 8388
+# Start of session at: Mon Mar 20 12:49:59 2023
+# Process ID: 8704
 # Current directory: F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.runs/synth_1/design_1_wrapper.vds
@@ -42,18 +42,18 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/work/Izhevsk_project/library'.
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'analog.com:user:util_clkdiv:1.0'. The one found in IP location 'f:/work/Izhevsk_project/library/util_clkdiv' will take precedence over the same IP in location f:/work/Izhevsk_project/library/xilinx/util_clkdiv
-add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 388.055 ; gain = 9.996
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:27 . Memory (MB): peak = 389.156 ; gain = 10.625
 Command: synth_design -top design_1_wrapper -part xc7k325tffg676-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
-INFO: [Common 17-86] Your Synthesis license expires in 29 day(s)
+INFO: [Common 17-86] Your Synthesis license expires in 1 day(s)
 INFO: [Common 17-1540] The version limit for your license is '2022.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: [Device 21-403] Loading part xc7k325tffg676-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11888 
+INFO: Helper process launched with PID 11092 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 893.293 ; gain = 182.164
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 893.230 ; gain = 182.098
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/synth/design_1.v:3950]
@@ -3000,32 +3000,32 @@ WARNING: [Synth 8-5788] Register adc_valid_ch3_reg_reg in module adc_reading_fsm
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
-INFO: [Synth 8-226] default block is never used [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/hdl/IP_sync_v1_0_S00_AXI.v:255]
-INFO: [Synth 8-226] default block is never used [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/hdl/IP_sync_v1_0_S00_AXI.v:396]
+INFO: [Synth 8-226] default block is never used [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/hdl/IP_sync_v1_0_S00_AXI.v:255]
+INFO: [Synth 8-226] default block is never used [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/hdl/IP_sync_v1_0_S00_AXI.v:396]
 	Parameter pDAT_W bound to: 12 - type: integer 
 	Parameter pDAT_Num bound to: 1024 - type: integer 
-WARNING: [Synth 8-6104] Input port 'odata_I' has an internal driver [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/src/sync_pss.sv:108]
-WARNING: [Synth 8-6104] Input port 'odata_Q' has an internal driver [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/src/sync_pss.sv:109]
+WARNING: [Synth 8-6104] Input port 'odata_I' has an internal driver [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/src/sync_pss.sv:113]
+WARNING: [Synth 8-6104] Input port 'odata_Q' has an internal driver [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/src/sync_pss.sv:114]
 	Parameter pDAT_W bound to: 32'sb00000000000000000000000001001000 
 	Parameter pDAT_Num bound to: 1024 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'F:\kintex_dsp_lite\projects\ip_repo\IP_sync_1.0\src\PSS_hub_1024.txt' is read successfully [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/src/PSS_ram.sv:19]
+INFO: [Synth 8-3876] $readmem data file 'F:\kintex_dsp_lite\projects\ip_repo\IP_sync_1.0\src\PSS_hub_1024.txt' is read successfully [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/src/PSS_ram.sv:19]
 	Parameter pDAT_W bound to: 32'sb00000000000000000000000000000100 
 	Parameter pDAT_Num bound to: 1024 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'F:\kintex_dsp_lite\projects\ip_repo\IP_sync_1.0\src\SSS_hub_1024.txt' is read successfully [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/src/SSS_ram.v:24]
+INFO: [Synth 8-3876] $readmem data file 'F:\kintex_dsp_lite\projects\ip_repo\IP_sync_1.0\src\SSS_hub_1024.txt' is read successfully [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/src/SSS_ram.v:24]
 	Parameter pDAT_W bound to: 12 - type: integer 
 	Parameter pDAT_Num bound to: 1024 - type: integer 
 	Parameter cWind bound to: 32'sb00000000000000000000000000100000 
-WARNING: [Synth 8-324] index 1024 out of range [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/src/sync_sign.sv:138]
-WARNING: [Synth 8-324] index 1024 out of range [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/src/sync_sign.sv:140]
-WARNING: [Synth 8-324] index 1024 out of range [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/src/sync_sign.sv:143]
-WARNING: [Synth 8-324] index 1024 out of range [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/src/sync_sign.sv:145]
+WARNING: [Synth 8-324] index 1024 out of range [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/src/sync_sign.sv:139]
+WARNING: [Synth 8-324] index 1024 out of range [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/src/sync_sign.sv:141]
+WARNING: [Synth 8-324] index 1024 out of range [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/src/sync_sign.sv:144]
+WARNING: [Synth 8-324] index 1024 out of range [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/src/sync_sign.sv:146]
 	Parameter pDAT_W bound to: 12 - type: integer 
 	Parameter pDAT_Num bound to: 1024 - type: integer 
 	Parameter cADDER_NUM_PER_STAGE bound to: 32'sb00000000000000000000001000000000 
 	Parameter cADDER_STAGE_NUM bound to: 32'sb00000000000000000000000000001010 
 WARNING: [Synth 8-5856] 3D RAM acc_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
-WARNING: [Synth 8-7023] instance 'sync_sign_0' of module 'sync_sign' has 12 connections declared, but only 10 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/src/sync_pss.sv:345]
-WARNING: [Synth 8-7023] instance 'sync_sign_1' of module 'sync_sign' has 12 connections declared, but only 10 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/src/sync_pss.sv:369]
+WARNING: [Synth 8-7023] instance 'sync_sign_0' of module 'sync_sign' has 12 connections declared, but only 10 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/src/sync_pss.sv:350]
+WARNING: [Synth 8-7023] instance 'sync_sign_1' of module 'sync_sign' has 12 connections declared, but only 10 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/src/sync_pss.sv:374]
 	Parameter pDAT_W bound to: 12 - type: integer 
 	Parameter pDAT_Num bound to: 1024 - type: integer 
 	Parameter pSTAT_Num bound to: 32'sb00000000000000000000000000110010 
@@ -3039,9 +3039,9 @@ WARNING: [Synth 8-7023] instance 'sync_sign_1' of module 'sync_sign' has 12 conn
 	Parameter pST_W bound to: 32'sb00000000000000000000000000001000 
 	Parameter DATA_W bound to: 24 - type: integer 
 	Parameter ADDR_W bound to: 14 - type: integer 
-WARNING: [Synth 8-7023] instance 'sync_pss_sub' of module 'sync_pss' has 27 connections declared, but only 26 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/hdl/IP_sync_v1_0_S00_AXI.v:455]
-WARNING: [Synth 8-3848] Net sync_odat_re in module/entity IP_sync_v1_0_S00_AXI does not have driver. [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/hdl/IP_sync_v1_0_S00_AXI.v:36]
-WARNING: [Synth 8-3848] Net sync_odat_im in module/entity IP_sync_v1_0_S00_AXI does not have driver. [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/441f/hdl/IP_sync_v1_0_S00_AXI.v:37]
+WARNING: [Synth 8-7023] instance 'sync_pss_sub' of module 'sync_pss' has 27 connections declared, but only 26 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/hdl/IP_sync_v1_0_S00_AXI.v:455]
+WARNING: [Synth 8-3848] Net sync_odat_re in module/entity IP_sync_v1_0_S00_AXI does not have driver. [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/hdl/IP_sync_v1_0_S00_AXI.v:36]
+WARNING: [Synth 8-3848] Net sync_odat_im in module/entity IP_sync_v1_0_S00_AXI does not have driver. [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/hdl/IP_sync_v1_0_S00_AXI.v:37]
 WARNING: [Synth 8-7023] instance 'IP_sync_0' of module 'design_1_IP_sync_0_3' has 39 connections declared, but only 36 given [F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/synth/design_1.v:5049]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_spi_0' [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_spi_0/synth/design_1_axi_spi_0.vhd:97]
 	Parameter Async_Clk bound to: 0 - type: integer 
@@ -4575,7 +4575,7 @@ WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconn
 WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[2]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:14 ; elapsed = 00:01:23 . Memory (MB): peak = 1730.094 ; gain = 1018.965
+Finished RTL Elaboration : Time (s): cpu = 00:01:12 ; elapsed = 00:01:21 . Memory (MB): peak = 1729.703 ; gain = 1018.570
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -4588,14 +4588,14 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 1730.094 ; gain = 1018.965
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 1729.703 ; gain = 1018.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 1730.094 ; gain = 1018.965
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 1729.703 ; gain = 1018.570
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 462 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/single_end_clk_gen.ibufg_clk_inst' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -5032,7 +5032,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1919.809 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1918.602 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 268 instances were transformed.
   DSP48E => DSP48E1: 60 instances
@@ -5044,9 +5044,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 32 instances
   SRL16 => SRL16E: 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1919.809 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1918.602 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:27 ; elapsed = 00:02:42 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Constraint Validation : Time (s): cpu = 00:02:23 ; elapsed = 00:02:36 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -5054,7 +5054,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:27 ; elapsed = 00:02:42 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:23 ; elapsed = 00:02:36 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -6074,7 +6074,7 @@ Applied set_property DONT_TOUCH = true for design_1_i/AXI_Peripheral/AXI_C2C/ins
 Applied set_property DONT_TOUCH = true for design_1_i/SPI_MOD/axi_spi/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.RX_FIFO_II . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/SPI_MOD/axi_spi/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.TX_FIFO_II /\xpm_fifo_instance.xpm_fifo_async_inst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:31 ; elapsed = 00:02:46 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:27 ; elapsed = 00:02:41 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "adc_data_p" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-4471] merging register 'up_dac_dds_scale_tc_2_reg[15:0]' into 'up_dac_dds_scale_tc_1_reg[15:0]' [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/common/up_dac_channel.v:367]
@@ -6606,7 +6606,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'design_1_clk_wiz_0_0_slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:01 ; elapsed = 00:05:33 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:46 ; elapsed = 00:05:12 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -6649,13 +6649,13 @@ Report RTL Partitions:
 |30    |adder__GBM1                                  |           1|     13360|
 |31    |adder__GBM2                                  |           1|      9940|
 |32    |adder__GBM3                                  |           1|      9683|
-|33    |sync_sign__GCBM0                             |           1|     27772|
-|34    |sync_sign__GCBM1                             |           1|     11318|
-|35    |sync_sign__GCBM2                             |           1|     12261|
-|36    |sync_pss__GC0                                |           1|      4029|
+|33    |sync_sign__GCBM0                             |           1|     27396|
+|34    |sync_sign__GCBM1                             |           1|     12453|
+|35    |sync_sign__GCBM2                             |           1|     11341|
+|36    |sync_pss__GC0                                |           1|      4043|
 |37    |IP_sync_v1_0_S00_AXI__GC0                    |           1|       557|
 |38    |design_1_clk_wiz_0_0_clk_wiz__GC0            |           1|         3|
-|39    |case__3819_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|     54847|
+|39    |case__3813_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|     54847|
 |40    |design_1_clk_wiz_0_0_mmcm_drp__GB1           |           1|     10302|
 |41    |design_1_clk_wiz_0_0_clk_wiz_drp__GC0        |           1|      3709|
 |42    |design_1_clk_wiz_0_0_axi_clk_config__GC0     |           1|       282|
@@ -6675,8 +6675,8 @@ Detailed RTL Component Info :
 	   2 Input     16 Bit       Adders := 51    
 	   2 Input     15 Bit       Adders := 14    
 	   2 Input     14 Bit       Adders := 38    
-	   2 Input     13 Bit       Adders := 56    
-	   2 Input     12 Bit       Adders := 4100  
+	   2 Input     13 Bit       Adders := 58    
+	   2 Input     12 Bit       Adders := 4093  
 	   2 Input     11 Bit       Adders := 5     
 	   4 Input     10 Bit       Adders := 6     
 	   2 Input     10 Bit       Adders := 2     
@@ -6734,7 +6734,7 @@ Detailed RTL Component Info :
 	               28 Bit    Registers := 4     
 	               26 Bit    Registers := 2     
 	               24 Bit    Registers := 78    
-	               23 Bit    Registers := 8     
+	               23 Bit    Registers := 9     
 	               20 Bit    Registers := 6     
 	               19 Bit    Registers := 2     
 	               18 Bit    Registers := 2     
@@ -6743,7 +6743,7 @@ Detailed RTL Component Info :
 	               15 Bit    Registers := 14    
 	               14 Bit    Registers := 41    
 	               13 Bit    Registers := 60    
-	               12 Bit    Registers := 4304  
+	               12 Bit    Registers := 4300  
 	               11 Bit    Registers := 6     
 	               10 Bit    Registers := 34    
 	                9 Bit    Registers := 114   
@@ -6806,7 +6806,7 @@ Detailed RTL Component Info :
 	   2 Input     15 Bit        Muxes := 3     
 	   2 Input     14 Bit        Muxes := 3     
 	   7 Input     14 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 42    
+	   2 Input     12 Bit        Muxes := 38    
 	   5 Input     12 Bit        Muxes := 17    
 	  13 Input     12 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 13    
@@ -11698,15 +11698,13 @@ Detailed RTL Component Info :
 Module sync_sign 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     12 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 1     
 +---Registers : 
-	               12 Bit    Registers := 2     
 	               11 Bit    Registers := 1     
 	                2 Bit    Registers := 3070  
 	                1 Bit    Registers := 4096  
 +---Muxes : 
-	   2 Input     12 Bit        Muxes := 2     
 	   2 Input     11 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2046  
 	   2 Input      1 Bit        Muxes := 10    
@@ -11776,11 +11774,11 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     24 Bit       Adders := 1     
 	   2 Input     14 Bit       Adders := 10    
-	   2 Input     12 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 2     
 	   4 Input      7 Bit       Adders := 4     
 +---Registers : 
 	               24 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
 	               19 Bit    Registers := 1     
 	               14 Bit    Registers := 2     
 	               12 Bit    Registers := 1     
@@ -12903,6 +12901,11 @@ INFO: [Synth 8-5546] ROM "adc_data_p" won't be mapped to RAM because it is too s
 INFO: [Synth 8-5544] ROM "deskew_enable_gen.next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "deskew_enable_gen.next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "axi_lite_slave_gen.axi_chip2chip_lite_slave_inst/axi_chip2chip_lite_decoder_inst/next_ch0_data_out" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP abs_corr1, operation Mode is: A*B.
+DSP Report: operator abs_corr1 is absorbed into DSP abs_corr1.
+DSP Report: Generating DSP abs_corr0, operation Mode is: C+A*B.
+DSP Report: operator abs_corr0 is absorbed into DSP abs_corr0.
+DSP Report: operator abs_corr1 is absorbed into DSP abs_corr0.
 INFO: [Synth 8-5583] The signal i_mem/m_ram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -13163,7 +13166,6 @@ WARNING: [Synth 8-3917] design axi_ad9361__parameterized2__GC0 has port s_axi_br
 WARNING: [Synth 8-3917] design axi_ad9361__parameterized2__GC0 has port s_axi_bresp[0] driven by constant 0
 WARNING: [Synth 8-3917] design axi_ad9361__parameterized2__GC0 has port s_axi_rresp[1] driven by constant 0
 WARNING: [Synth 8-3917] design axi_ad9361__parameterized2__GC0 has port s_axi_rresp[0] driven by constant 0
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_FDR.CMD_ERR_S2AX_1_CDC) is unused and will be removed from module axi_quad_spi.
 INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_FDR.CMD_ERR_S2AX_2) is unused and will be removed from module axi_quad_spi.
@@ -13256,7 +13258,7 @@ INFO: [Synth 8-3332] Sequential element (inst/buffer_ram_sub/ram_reg_mux_sel__12
 INFO: [Synth 8-3332] Sequential element (inst/buffer_ram_sub/ram_reg_mux_sel__121) is unused and will be removed from module design_1_mqc_t_0_0.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:41 ; elapsed = 00:07:21 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:22 ; elapsed = 00:06:55 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -13315,6 +13317,16 @@ Distributed RAM: Preliminary Mapping  Report (see note below)
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------+----------------+----------------------+-----------------------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sync_pss    | A*B         | 13     | 13     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sync_pss    | C+A*B       | 13     | 13     | 23     | -      | 23     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -13456,13 +13468,13 @@ Report RTL Partitions:
 |30    |adder__GBM1                                  |           4|      7680|
 |31    |adder__GBM2                                  |           4|      4620|
 |32    |adder__GBM3                                  |           4|      4522|
-|33    |sync_sign__GCBM0                             |           2|      7241|
-|34    |sync_sign__GCBM1                             |           2|      3686|
-|35    |sync_sign__GCBM2                             |           2|      3786|
-|36    |sync_pss__GC0                                |           1|      1901|
+|33    |sync_sign__GCBM0                             |           2|      7165|
+|34    |sync_sign__GCBM1                             |           2|      4088|
+|35    |sync_sign__GCBM2                             |           2|      3397|
+|36    |sync_pss__GC0                                |           1|      1793|
 |37    |IP_sync_v1_0_S00_AXI__GC0                    |           1|       292|
 |38    |design_1_clk_wiz_0_0_clk_wiz__GC0            |           1|         3|
-|39    |case__3819_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|       674|
+|39    |case__3813_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|       674|
 |40    |design_1_clk_wiz_0_0_mmcm_drp__GB1           |           1|      1781|
 |41    |design_1_clk_wiz_0_0_clk_wiz_drp__GC0        |           1|      2607|
 |42    |design_1_clk_wiz_0_0_axi_clk_config__GC0     |           1|       291|
@@ -13476,7 +13488,7 @@ WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 69
 WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 74 of f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_DMA_0/design_1_AXI_DMA_0_constr.xdc. [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_DMA_0/design_1_AXI_DMA_0_constr.xdc:74]
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:16 ; elapsed = 00:07:58 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:00 ; elapsed = 00:07:36 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -13490,7 +13502,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:07:45 ; elapsed = 00:08:28 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Timing Optimization : Time (s): cpu = 00:07:28 ; elapsed = 00:08:05 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -13575,23 +13587,24 @@ Report RTL Partitions:
 |30    |adder__GBM1                                  |           4|      6280|
 |31    |adder__GBM2                                  |           4|      4620|
 |32    |adder__GBM3                                  |           4|      4520|
-|33    |sync_sign__GCBM0                             |           2|      7241|
-|34    |sync_sign__GCBM1                             |           2|      3431|
-|35    |sync_sign__GCBM2                             |           2|      3757|
+|33    |sync_sign__GCBM0                             |           2|      7165|
+|34    |sync_sign__GCBM1                             |           2|      3916|
+|35    |sync_sign__GCBM2                             |           2|      3374|
 |36    |design_1_clk_wiz_0_0_clk_wiz__GC0            |           1|         3|
-|37    |case__3819_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|       490|
+|37    |case__3813_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|       490|
 |38    |design_1_clk_wiz_0_0_mmcm_drp__GB1           |           1|      1780|
 |39    |design_1_clk_wiz_0_0_clk_wiz_drp__GC0        |           1|      2607|
 |40    |design_1_clk_wiz_0_0_axi_clk_config__GC0     |           1|       291|
 |41    |design_1__GC0                                |           1|     12219|
-|42    |design_1_IP_sync_0_3_GT0                     |           1|      2193|
+|42    |design_1_IP_sync_0_3_GT0                     |           1|      2085|
 +------+---------------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/cdab/src/sync_pss.sv:104]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:16:55 ; elapsed = 00:17:48 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Technology Mapping : Time (s): cpu = 00:19:13 ; elapsed = 00:20:04 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -13655,7 +13668,7 @@ WARNING: [Synth 8-3295] tying undriven pin master_fpga_gen.axi_chip2chip_master_
 WARNING: [Synth 8-3295] tying undriven pin master_fpga_gen.axi_chip2chip_master_phy_inst/axi_chip2chip_phy_init_inst/aurora_rst_out_r1_inferred:in0 to constant 0
 WARNING: [Synth 8-3295] tying undriven pin master_fpga_gen.axi_chip2chip_master_phy_inst/axi_chip2chip_phy_init_inst/aurora_rst_out_r2_inferred:in0 to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:17:06 ; elapsed = 00:18:00 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished IO Insertion : Time (s): cpu = 00:19:23 ; elapsed = 00:20:15 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -13668,7 +13681,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:17:08 ; elapsed = 00:18:02 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Renaming Generated Instances : Time (s): cpu = 00:19:25 ; elapsed = 00:20:17 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -13680,25 +13693,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:17:35 ; elapsed = 00:18:30 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:19:52 ; elapsed = 00:20:45 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:17:36 ; elapsed = 00:18:31 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Renaming Generated Ports : Time (s): cpu = 00:19:53 ; elapsed = 00:20:45 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:17:46 ; elapsed = 00:18:41 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Handling Custom Attributes : Time (s): cpu = 00:20:03 ; elapsed = 00:20:56 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:17:47 ; elapsed = 00:18:42 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Renaming Generated Nets : Time (s): cpu = 00:20:04 ; elapsed = 00:20:57 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -13791,78 +13804,80 @@ Report Cell Usage:
 |59    |DSP48E__67 |     1|
 |60    |DSP48E__9  |     1|
 |61    |BUFG       |    14|
-|62    |CARRY4     | 13311|
-|63    |IDDR       |    28|
-|64    |IDDR_1     |    17|
-|65    |IDELAYCTRL |     5|
-|66    |IDELAYE2   |    28|
-|67    |IDELAYE2_1 |    17|
-|68    |LUT1       |   398|
-|69    |LUT2       | 53021|
-|70    |LUT3       |  6697|
-|71    |LUT4       |  3090|
-|72    |LUT5       |  3507|
-|73    |LUT6       |  6804|
-|74    |MMCME2_ADV |     4|
-|75    |MUXF7      |   225|
-|76    |MUXF8      |    57|
-|77    |ODDR       |    18|
-|78    |ODDR_1     |    40|
-|79    |RAM16X1D   |     3|
-|80    |RAM32M     |    16|
-|81    |RAM64M     |    16|
-|82    |RAM64X1D   |     8|
-|83    |RAMB18E1   |     2|
-|84    |RAMB18E1_1 |     1|
-|85    |RAMB18E1_3 |     1|
-|86    |RAMB18E1_4 |     2|
-|87    |RAMB36E1   |     2|
-|88    |RAMB36E1_1 |     1|
-|89    |RAMB36E1_2 |    12|
-|90    |RAMB36E1_3 |     1|
-|91    |RAMB36E1_4 |     1|
-|92    |RAMB36E1_5 |   128|
-|93    |RAMB36E1_6 |   128|
-|94    |RAMB36E1_7 |     4|
-|95    |RAMB36E1_8 |     3|
-|96    |SRL16      |     3|
-|97    |SRL16E     |     2|
-|98    |FD         |     8|
-|99    |FDCE       | 19433|
-|100   |FDPE       |   115|
-|101   |FDR        |    85|
-|102   |FDRE       | 68063|
-|103   |FDSE       |   799|
-|104   |IBUF       |    32|
-|105   |IBUFDS     |    28|
-|106   |IBUFG      |     1|
-|107   |IBUFGDS    |     4|
-|108   |OBUF       |    65|
-|109   |OBUFDS     |    32|
+|62    |CARRY4     | 13295|
+|63    |DSP48E1    |     1|
+|64    |DSP48E1_1  |     1|
+|65    |IDDR       |    28|
+|66    |IDDR_1     |    17|
+|67    |IDELAYCTRL |     5|
+|68    |IDELAYE2   |    28|
+|69    |IDELAYE2_1 |    17|
+|70    |LUT1       |   397|
+|71    |LUT2       | 52963|
+|72    |LUT3       |  6723|
+|73    |LUT4       |  3247|
+|74    |LUT5       |  3729|
+|75    |LUT6       |  6426|
+|76    |MMCME2_ADV |     4|
+|77    |MUXF7      |   217|
+|78    |MUXF8      |    57|
+|79    |ODDR       |    18|
+|80    |ODDR_1     |    40|
+|81    |RAM16X1D   |     3|
+|82    |RAM32M     |    16|
+|83    |RAM64M     |    16|
+|84    |RAM64X1D   |     8|
+|85    |RAMB18E1   |     2|
+|86    |RAMB18E1_1 |     1|
+|87    |RAMB18E1_3 |     1|
+|88    |RAMB18E1_4 |     2|
+|89    |RAMB36E1   |     2|
+|90    |RAMB36E1_1 |     1|
+|91    |RAMB36E1_2 |    12|
+|92    |RAMB36E1_3 |     1|
+|93    |RAMB36E1_4 |     1|
+|94    |RAMB36E1_5 |   128|
+|95    |RAMB36E1_6 |   128|
+|96    |RAMB36E1_7 |     4|
+|97    |RAMB36E1_8 |     3|
+|98    |SRL16      |     3|
+|99    |SRL16E     |     2|
+|100   |FD         |     8|
+|101   |FDCE       | 18350|
+|102   |FDPE       |   115|
+|103   |FDR        |    85|
+|104   |FDRE       | 68063|
+|105   |FDSE       |   799|
+|106   |IBUF       |    32|
+|107   |IBUFDS     |    28|
+|108   |IBUFG      |     1|
+|109   |IBUFGDS    |     4|
+|110   |OBUF       |    65|
+|111   |OBUFDS     |    32|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+-----------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
 |      |Instance                                                                           |Module                                                            |Cells  |
 +------+-----------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
-|1     |top                                                                                |                                                                  | 185520|
-|2     |  design_1_i                                                                       |design_1                                                          | 185468|
-|3     |    IP_sync_0                                                                      |design_1_IP_sync_0_3                                              | 132696|
-|4     |      inst                                                                         |IP_sync_v1_0                                                      | 132696|
-|5     |        IP_sync_v1_0_S00_AXI_inst                                                  |IP_sync_v1_0_S00_AXI                                              | 132696|
-|6     |          sync_pss_sub                                                             |sync_pss                                                          | 132526|
-|7     |            PSS_ram_sub                                                            |PSS_ram                                                           |     62|
+|1     |top                                                                                |                                                                  | 184383|
+|2     |  design_1_i                                                                       |design_1                                                          | 184331|
+|3     |    IP_sync_0                                                                      |design_1_IP_sync_0_3                                              | 131559|
+|4     |      inst                                                                         |IP_sync_v1_0                                                      | 131558|
+|5     |        IP_sync_v1_0_S00_AXI_inst                                                  |IP_sync_v1_0_S00_AXI                                              | 131558|
+|6     |          sync_pss_sub                                                             |sync_pss                                                          | 131388|
+|7     |            PSS_ram_sub                                                            |PSS_ram                                                           |     32|
 |8     |            SSS_ram_sub                                                            |SSS_ram                                                           |      2|
-|9     |            sync_detect_sub                                                        |sync_detect                                                       |    745|
+|9     |            sync_detect_sub                                                        |sync_detect                                                       |    734|
 |10    |              sync_stat_sub_0                                                      |sync_stat                                                         |    152|
 |11    |              sync_stat_sub_1                                                      |sync_stat_384                                                     |    115|
 |12    |            sync_fifo_sub                                                          |sync_fifo                                                         |     12|
-|13    |            sync_sign_0                                                            |sync_sign                                                         |  65726|
-|14    |              adder_im                                                             |adder_382                                                         |  27623|
-|15    |              adder_re                                                             |adder_383                                                         |  27623|
-|16    |            sync_sign_1                                                            |sync_sign_380                                                     |  65710|
-|17    |              adder_im                                                             |adder                                                             |  27623|
-|18    |              adder_re                                                             |adder_381                                                         |  27623|
+|13    |            sync_sign_0                                                            |sync_sign                                                         |  64991|
+|14    |              adder_im                                                             |adder_382                                                         |  27609|
+|15    |              adder_re                                                             |adder_383                                                         |  27626|
+|16    |            sync_sign_1                                                            |sync_sign_380                                                     |  65346|
+|17    |              adder_im                                                             |adder                                                             |  27609|
+|18    |              adder_re                                                             |adder_381                                                         |  27626|
 |19    |    clk_wiz_0                                                                      |design_1_clk_wiz_0_0                                              |   3009|
 |20    |      inst                                                                         |design_1_clk_wiz_0_0_axi_clk_config                               |   3009|
 |21    |        AXI_LITE_IPIF_I                                                            |design_1_clk_wiz_0_0_axi_lite_ipif                                |    269|
@@ -14781,13 +14796,13 @@ Report Instance Areas:
 |934   |      on_off_f1956_data                                                            |design_1_on_off_f1956_data_0                                      |      1|
 +------+-----------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:17:47 ; elapsed = 00:18:42 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Finished Writing Synthesis Report : Time (s): cpu = 00:20:04 ; elapsed = 00:20:57 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4665 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:15:27 ; elapsed = 00:17:46 . Memory (MB): peak = 1920.773 ; gain = 1018.965
-Synthesis Optimization Complete : Time (s): cpu = 00:17:47 ; elapsed = 00:18:47 . Memory (MB): peak = 1920.773 ; gain = 1209.645
+Synthesis Optimization Runtime : Time (s): cpu = 00:17:48 ; elapsed = 00:20:04 . Memory (MB): peak = 1919.293 ; gain = 1018.570
+Synthesis Optimization Complete : Time (s): cpu = 00:20:04 ; elapsed = 00:21:04 . Memory (MB): peak = 1919.293 ; gain = 1208.160
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 14295 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 14273 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/single_end_clk_gen.ibufg_clk_inst' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -14802,7 +14817,7 @@ WARNING: [Shape Builder 18-132] Instance design_1_i/SPI_MOD/axi_spi/U0/NO_DUAL_Q
 WARNING: [Shape Builder 18-132] Instance design_1_i/SPI_MOD/axi_spi/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance design_1_i/SPI_MOD/axi_spi/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST cannot be placed in site OLOGIC_X1Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
 WARNING: [Shape Builder 18-132] Instance design_1_i/SPI_MOD/axi_spi/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance design_1_i/SPI_MOD/axi_spi/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST cannot be placed in site OLOGIC_X1Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 2030.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2036.734 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 236 instances were transformed.
   DSP48E => DSP48E1: 60 instances
@@ -14820,12 +14835,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1373 Infos, 368 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:18:37 ; elapsed = 00:19:45 . Memory (MB): peak = 2030.438 ; gain = 1642.383
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 2030.438 ; gain = 0.000
+synth_design: Time (s): cpu = 00:20:53 ; elapsed = 00:22:00 . Memory (MB): peak = 2036.734 ; gain = 1647.578
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2036.734 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.runs/synth_1/design_1_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 2030.438 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 2036.734 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2030.438 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 20 11:28:23 2023...
+report_utilization: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2036.734 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 20 13:13:14 2023...
