@@ -394,9 +394,9 @@
 	begin
 	      // Address decoding for reading registers
 	      case ( axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
-	        2'h0   : reg_data_out <= slv_reg0;
+	        2'h0   : reg_data_out <= sync_ostat_data;
 	        2'h1   : reg_data_out <= slv_reg1;
-	        2'h2   : reg_data_out <= {~ready_buff,2'd0,vrf_oval,sync_otrh_lvl,4'd0,sync_mlvl};
+	        2'h2   : reg_data_out <= {~ready_buff,1'd0,trh_hold,vrf_oval,sync_otrh_lvl,4'd0,sync_mlvl};
 	        2'h3   : reg_data_out <= slv_reg3;
 	        default : reg_data_out <= 0;
 	      endcase
@@ -434,6 +434,7 @@
    wire        sync_iena;
    wire        req_data;
    wire [23:0] sync_str_frm_cnt;
+   wire [31:0] sync_ostat_data;
    
    
    assign Npss = 3;
@@ -483,6 +484,7 @@
    .otrh_lvl      (sync_otrh_lvl),
    .vrf_val       (vrf_oval),
    .val_sop       (val_osop),
+   .ostat_data    (sync_ostat_data),
    .str_frame     (sync_str_frame)
     );
 

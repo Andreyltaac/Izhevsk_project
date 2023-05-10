@@ -29,7 +29,8 @@ module sync_detect
   output logic          [11:0]         trh_lvl,
   output logic                         vrf_val,
   output logic                         val_sop,
-  output logic                         osop_vrf
+  output logic                         osop_vrf,
+  output logic          [31:0]         ostat_data
           
 );
 localparam int cWind = 32;
@@ -47,16 +48,23 @@ logic           [7:0]          ostat_0;
 logic                          st_oval_0;
 logic           [7:0]          stat_num;
 logic           [18:0]         vrf_time_sop;
+logic                          vrf_even_val;
 
 logic [18:0] cnt_time_sop;
 logic        count_time_en;
 logic [7:0]  ostat_1;
 logic        st_oval_1;
+logic [7:0]  ostat_vrf;
+logic [7:0]  ostat_2;
+logic        st_oval_2;
 logic        vrf_hold;
 logic [23:0] watchdog_cnt;
 logic        sync_mode_stb;
 
-assign osop_vrf     = osop & val_sop; 
+assign ostat_vrf    = ostat_1 + ostat_2; 
+assign osop_vrf_0   = osop && val_sop && vrf_even_val; 
+assign osop_vrf_1   = osop && val_sop && ~vrf_even_val; 
+assign osop_vrf     = osop_vrf_0 || osop_vrf_1; 
 assign osop         = ~trh_trig[0] && trh_trig[1];
 assign sync_mode_stb = sync_mode && ~sync_mode_rg;
 assign trh_lvl      = (trh_auto)? trh_lvl_upd:itrh_lvl;	
@@ -164,8 +172,8 @@ assign vrf_time_sop = (sync_mode)? time_sop<<1 : {1'b0,time_sop};
 				else if (trh_auto)
                 begin				
 			    if (trh_auto_rg[0] && ~trh_auto_rg[1]) trh_lvl_upd <= itrh_lvl; 
-				   else if (watchdog_cnt == frame_time)  trh_lvl_upd <= 12'd140;
-			         else if (st_oval_0 && (ostat_0 < (stat_num - pSTAT_Gap)) && trh_lvl_upd > 12'd140) 
+				   else if (watchdog_cnt == frame_time)  trh_lvl_upd <= 12'd50;
+			         else if (st_oval_0 && (ostat_0 < (stat_num - pSTAT_Gap)) && trh_lvl_upd > 12'd50) 
 					 begin
 					 if (ostat_0 < (stat_num-8'd20)) trh_lvl_upd <= trh_lvl_upd - pSTAT_step_high; 
 					   else 
@@ -214,7 +222,11 @@ assign vrf_time_sop = (sync_mode)? time_sop<<1 : {1'b0,time_sop};
 			if	(~ireset)
 				val_sop <= 1'b0;
 			    else if	(~trh_auto || (cnt_time_sop == pVERF_Gap)) val_sop <= 1'b0;
-			       else if (cnt_time_sop == vrf_time_sop - pVERF_Gap)  val_sop <= 1'b1;
+			       else if (cnt_time_sop == vrf_time_sop - pVERF_Gap)  
+				        begin 
+						val_sop <= 1'b1;
+						vrf_even_val <= ~vrf_even_val;
+						end
 		   
 		end	
 		
@@ -229,13 +241,30 @@ assign vrf_time_sop = (sync_mode)? time_sop<<1 : {1'b0,time_sop};
 	.ireset	   (ireset),
     .iena      (trh_auto),
 	
-	.isop      (osop_vrf),
+	.isop      (osop_vrf_0),
     .frame_time(frame_time),    
     .ostat     (ostat_1),
     .oval      (st_oval_1)
 
     );
 		
+    sync_stat
+   #(
+    .pTM_W     (24),
+    .pST_W     (8)
+    )
+	sync_stat_sub_2
+    (	
+	.iclk 	   (iclk),
+	.ireset	   (ireset),
+    .iena      (trh_auto),
+	
+	.isop      (osop_vrf_1),
+    .frame_time(frame_time),    
+    .ostat     (ostat_2),
+    .oval      (st_oval_2)
+
+    );
 		
 	always_ff @ (posedge iclk or negedge ireset) begin
 			if	(~ireset)
@@ -244,13 +273,21 @@ assign vrf_time_sop = (sync_mode)? time_sop<<1 : {1'b0,time_sop};
 			    end	
 				else if (trh_auto)
                 begin				
-			    if (st_oval_1 && ((ostat_1 < (stat_num-pSTAT_Gap)) || (ostat_1 > (stat_num+pSTAT_Gap))) || sync_mode_stb) vrf_hold <= 8'd0; 
-                    else if (st_oval_1) vrf_hold <= 8'd1;	    
+			    if (~sync_mode_stb && st_oval_1 && (((ostat_vrf > (stat_num-pSTAT_Gap)) && (ostat_vrf < (stat_num+pSTAT_Gap)))|| (~sync_mode && trh_hold &&((ostat_vrf > ((stat_num>>1)-pSTAT_Gap)) && (ostat_vrf < ((stat_num >> 1)+pSTAT_Gap)))))) vrf_hold <= 8'd1; 
+                    else if (st_oval_1 || sync_mode_stb) vrf_hold <= 8'd0;	    
 				end
 			    else vrf_hold <= 8'd0;
                						 
 		end
 		
+	always_ff @ (posedge iclk or negedge ireset) begin
+			if	(~ireset)
+				ostat_data <= 1'd0;
+			    else  
+				begin
+				ostat_data <= {3'd0,vrf_hold,3'd0,trh_hold,ostat_2,ostat_1,ostat_0};              		
+				end			
+		end	
 		
 endmodule
 		  

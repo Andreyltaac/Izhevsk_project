@@ -34,8 +34,9 @@ module sync_pss
   output logic                         trh_hold,
   output logic                         vrf_val,
   output logic                         val_sop,
+  output logic           [31:0]        ostat_data,
   output logic                         str_frame,
-  output logic          [11:0]         otrh_lvl
+  output logic           [11:0]        otrh_lvl
   
 );
 
@@ -429,7 +430,8 @@ module sync_pss
     .trh_lvl        (otrh_lvl),
 	.vrf_val        (vrf_val),
 	.val_sop        (val_sop),
-	.osop_vrf       (osop_vrf)
+	.osop_vrf       (osop_vrf),
+	.ostat_data     (ostat_data)
     );
 	
 	always_ff @ (posedge iclk or negedge ireset)
