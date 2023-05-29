@@ -261,15 +261,15 @@ preplace netloc IP_sync_0_sync_osop_buff 1 4 5 27140 590 NJ 590 NJ 590 NJ 590 30
 preplace netloc IP_sync_0_sync_str_frame 1 4 6 27060 100 NJ 100 NJ 100 NJ 100 NJ 100 NJ
 preplace netloc AXI_Peripheral_fifo_wr_xfer_req 1 2 7 5870J 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 N
 preplace netloc IP_sync_0_sync_val_osop 1 4 6 27030 140 NJ 140 NJ 140 NJ 140 NJ 140 NJ
-preplace netloc AXI_Peripheral_M06_AXI 1 2 7 5680 850 N 850 N 850 N 850 N 850 N 850 30370
-preplace netloc AXI_Peripheral_M12_AXI 1 2 1 5750 200n
-preplace netloc AXI_Peripheral_M03_AXI 1 2 7 5700 830 N 830 N 830 N 830 N 830 N 830 30320
-preplace netloc AXI_Peripheral_M00_AXI 1 2 7 N 764 26280 770 N 770 N 770 N 770 N 770 30380
-preplace netloc AXI_Peripheral_M04_AXI 1 2 7 5670 840 N 840 N 840 N 840 N 840 N 840 30410
-preplace netloc AXI_Peripheral_M02_AXI 1 2 7 5760 790 N 790 N 790 N 790 N 790 N 790 30350
-preplace netloc AXI_Peripheral_M10_AXI 1 2 2 5900 980 N
-preplace netloc AXI_Peripheral_M14_AXI 1 2 7 5880 860 N 860 N 860 N 860 N 860 N 860 30190
 preplace netloc AXI_Peripheral_M01_AXI 1 2 7 5700 780 N 780 N 780 N 780 N 780 N 780 30400
+preplace netloc AXI_Peripheral_M04_AXI 1 2 7 5670 840 N 840 N 840 N 840 N 840 N 840 30410
+preplace netloc AXI_Peripheral_M10_AXI 1 2 2 5900 980 N
+preplace netloc AXI_Peripheral_M00_AXI 1 2 7 N 764 26280 770 N 770 N 770 N 770 N 770 30380
+preplace netloc AXI_Peripheral_M02_AXI 1 2 7 5760 790 N 790 N 790 N 790 N 790 N 790 30350
+preplace netloc AXI_Peripheral_M14_AXI 1 2 7 5880 860 N 860 N 860 N 860 N 860 N 860 30190
+preplace netloc AXI_Peripheral_M12_AXI 1 2 1 5750 200n
+preplace netloc AXI_Peripheral_M06_AXI 1 2 7 5680 850 N 850 N 850 N 850 N 850 N 850 30370
+preplace netloc AXI_Peripheral_M03_AXI 1 2 7 5700 830 N 830 N 830 N 830 N 830 N 830 30320
 levelinfo -pg 1 -1310 4500 5480 26154 26764 27270 29502 29772 29940 30872 31760
 pagesize -pg 1 -db -bbox -sgen -1520 -2690 31980 7500
 "

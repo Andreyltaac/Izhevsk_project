@@ -22,7 +22,7 @@ module sync_detect
   input  logic          [pDAT_W-1 : 0] icorr,
   //
   output logic          [pDAT_W-1 : 0] ocorr_mlvl,
-  output logic          [5:0]          ocorr_max_addr,
+  output logic          [10:0]         ocorr_max_addr,
   output logic                         osop,
   //   
   output logic                         trh_hold,
@@ -33,12 +33,14 @@ module sync_detect
   output logic          [31:0]         ostat_data
           
 );
-localparam int cWind = 32;
+localparam int cWind = 2000;
 
-logic           [5:0]          max_cnt;
-logic           [5:0]          max_addr;
+logic           [10:0]          max_cnt;
+logic           [10:0]          max_cnt_osop;
+logic           [10:0]          max_addr;
 logic	        [pDAT_W-1 : 0] max_lvl;
 logic           [1:0]          trh_trig;
+logic                          max_trh_trig;
 
 //logic           [11:0]         trh_lvl;
 logic           [11:0]         trh_lvl_upd;
@@ -49,6 +51,9 @@ logic                          st_oval_0;
 logic           [7:0]          stat_num;
 logic           [18:0]         vrf_time_sop;
 logic                          vrf_even_val;
+logic                          mode_pss_one;
+//logic           [1:0]          osop_trg;
+logic                          en_osop;
 
 logic [18:0] cnt_time_sop;
 logic        count_time_en;
@@ -59,13 +64,19 @@ logic [7:0]  ostat_2;
 logic        st_oval_2;
 logic        vrf_hold;
 logic [23:0] watchdog_cnt;
+logic [23:0] vrf_watchdog_cnt;
 logic        sync_mode_stb;
+logic        vrf_hold_full;
+logic        vrf_hold_cut;
+logic [7:0]  stat_num_trh;
+logic        vrf_solv; 
 
+assign vrf_solv     = ((ostat_1 > (stat_num - pSTAT_Gap)) && (ostat_1 < (stat_num+pSTAT_Gap)));
 assign ostat_vrf    = ostat_1 + ostat_2; 
-assign osop_vrf_0   = osop && val_sop && vrf_even_val; 
-assign osop_vrf_1   = osop && val_sop && ~vrf_even_val; 
-assign osop_vrf     = osop_vrf_0 || osop_vrf_1; 
-assign osop         = ~trh_trig[0] && trh_trig[1];
+assign osop_vrf     = osop && val_sop; //&& vrf_even_val; 
+//assign osop_vrf_1   = osop && val_sop && ~vrf_even_val; 
+//assign osop_vrf     = osop_vrf_0 || osop_vrf_1; 
+assign osop          =  max_trh_trig && (max_cnt_osop == max_addr);
 assign sync_mode_stb = sync_mode && ~sync_mode_rg;
 assign trh_lvl      = (trh_auto)? trh_lvl_upd:itrh_lvl;	
 assign vrf_val      = vrf_hold && trh_hold;
@@ -88,18 +99,37 @@ assign vrf_time_sop = (sync_mode)? time_sop<<1 : {1'b0,time_sop};
 				   begin
 				   trh_trig[0] <= '0;
 				   ocorr_mlvl     <= max_lvl;
-			       ocorr_max_addr <= max_addr;
+			       ocorr_max_addr <= cWind;
              	   end
 				trh_trig[1] <= trh_trig[0];		
 				end   
 		end
 		
-				
+			
+			
+	always_ff @ (posedge iclk or negedge ireset) begin
+			if	(~ireset)
+				max_cnt_osop <= '0;
+			    else if	(~max_trh_trig) max_cnt_osop <= '0;
+			         else max_cnt_osop <= max_cnt_osop + 11'd1;							
+		end		
+			
+			
+			
+    always_ff @ (posedge iclk or negedge ireset) begin
+			if	(~ireset)
+				max_trh_trig <= '0;
+			    else if	(~trh_trig[0] && trh_trig[1]) max_trh_trig <= '1;
+			       else if (osop) max_trh_trig <= 1'b0;							
+		end	
+
+
+			
     always_ff @ (posedge iclk or negedge ireset) begin
 			if	(~ireset)
 				max_cnt <= '0;
 			    else if	(~trh_trig[0]) max_cnt <= '0;
-			       else if (trh_trig[0]) max_cnt <= max_cnt + 6'd1;							
+			       else if (trh_trig[0]) max_cnt <= max_cnt + 11'd1;							
 		end		
 	
 	always_ff @ (posedge iclk or negedge ireset) begin
@@ -155,7 +185,7 @@ assign vrf_time_sop = (sync_mode)? time_sop<<1 : {1'b0,time_sop};
 	.iclk 	   (iclk),
 	.ireset	   (ireset),
     .iena      (trh_auto),
-	.isop      (osop),
+	.isop      (osop), //osop
     .frame_time(frame_time),    
     .ostat     (ostat_0),
     .oval      (st_oval_0)
@@ -204,28 +234,27 @@ assign vrf_time_sop = (sync_mode)? time_sop<<1 : {1'b0,time_sop};
 	
 	   	
 		
-		 always_ff @ (posedge iclk or negedge ireset) begin
+		always_ff @ (posedge iclk or negedge ireset) begin
 			if	(~ireset)
 				count_time_en <= 1'b0;
 			    else if	(~trh_auto) count_time_en <= 1'b0;
 			       else if (osop)  count_time_en <= 1'b1;
    		end	
 		
-		 always_ff @ (posedge iclk or negedge ireset) begin
+		always_ff @ (posedge iclk or negedge ireset) begin
 			if	(~ireset)
 				cnt_time_sop <= 19'd0;
-			    else if	((cnt_time_sop == vrf_time_sop) || (osop && (~trh_hold || ~vrf_hold)) || (osop_vrf)) cnt_time_sop <= 19'd0;			
+			    else if	((cnt_time_sop == vrf_time_sop) || ((osop && en_osop) || (osop_vrf))) cnt_time_sop <= 19'd0;			
 			       else if (count_time_en) cnt_time_sop <= cnt_time_sop + 19'd1;							
 		end
 		
-		 always_ff @ (posedge iclk or negedge ireset) begin
+		always_ff @ (posedge iclk or negedge ireset) begin
 			if	(~ireset)
 				val_sop <= 1'b0;
 			    else if	(~trh_auto || (cnt_time_sop == pVERF_Gap)) val_sop <= 1'b0;
-			       else if (cnt_time_sop == vrf_time_sop - pVERF_Gap)  
+			       else if ((cnt_time_sop == vrf_time_sop - pVERF_Gap) || (cnt_time_sop == 19'd0))  
 				        begin 
 						val_sop <= 1'b1;
-						vrf_even_val <= ~vrf_even_val;
 						end
 		   
 		end	
@@ -241,31 +270,14 @@ assign vrf_time_sop = (sync_mode)? time_sop<<1 : {1'b0,time_sop};
 	.ireset	   (ireset),
     .iena      (trh_auto),
 	
-	.isop      (osop_vrf_0),
+	.isop      (osop_vrf),
     .frame_time(frame_time),    
     .ostat     (ostat_1),
     .oval      (st_oval_1)
 
     );
 		
-    sync_stat
-   #(
-    .pTM_W     (24),
-    .pST_W     (8)
-    )
-	sync_stat_sub_2
-    (	
-	.iclk 	   (iclk),
-	.ireset	   (ireset),
-    .iena      (trh_auto),
-	
-	.isop      (osop_vrf_1),
-    .frame_time(frame_time),    
-    .ostat     (ostat_2),
-    .oval      (st_oval_2)
-
-    );
-		
+ 
 	always_ff @ (posedge iclk or negedge ireset) begin
 			if	(~ireset)
 			    begin
@@ -273,21 +285,52 @@ assign vrf_time_sop = (sync_mode)? time_sop<<1 : {1'b0,time_sop};
 			    end	
 				else if (trh_auto)
                 begin				
-			    if (~sync_mode_stb && st_oval_1 && (((ostat_vrf > (stat_num-pSTAT_Gap)) && (ostat_vrf < (stat_num+pSTAT_Gap)))|| (~sync_mode && trh_hold &&((ostat_vrf > ((stat_num>>1)-pSTAT_Gap)) && (ostat_vrf < ((stat_num >> 1)+pSTAT_Gap)))))) vrf_hold <= 8'd1; 
-                    else if (st_oval_1 || sync_mode_stb) vrf_hold <= 8'd0;	    
+			    if (~sync_mode_stb && (st_oval_1 && vrf_solv)) vrf_hold <= 8'd1;
+                    else if (st_oval_1 || sync_mode_stb) vrf_hold <= 8'd0;//	    
 				end
 			    else vrf_hold <= 8'd0;
                						 
 		end
 		
+		
+	
+		
 	always_ff @ (posedge iclk or negedge ireset) begin
 			if	(~ireset)
-				ostat_data <= 1'd0;
+				vrf_watchdog_cnt <= '0;
+				else if	(~trh_auto_rg[0] || osop_vrf) vrf_watchdog_cnt <= '0;
+		             else if (trh_auto_rg[0]) vrf_watchdog_cnt <= vrf_watchdog_cnt + 24'd1;	 
+		end	
+		
+		
+		
+	always_ff @ (posedge iclk or negedge ireset) begin
+			if	(~ireset)
+				en_osop <= '1;
+			    else 
+				if ((osop && en_osop) || (st_oval_1 && vrf_solv)) en_osop <= 1'b0; 
+				else if (st_oval_1 || (vrf_watchdog_cnt == frame_time)) en_osop <= 1'b1;
+							
+		    end	
+			
+	always_ff @ (posedge iclk or negedge ireset) begin
+			if	(~ireset)
+				ostat_data <= 32'd0;
 			    else  
 				begin
-				ostat_data <= {3'd0,vrf_hold,3'd0,trh_hold,ostat_2,ostat_1,ostat_0};              		
+				ostat_data <= {3'd0,vrf_hold,3'd0,trh_hold,3'd0,en_osop,3'd0,vrf_solv,ostat_1,ostat_0};              		
 				end			
 		end	
+		
+	  // always_ff @ (posedge iclk or negedge ireset) begin
+			// if	(~ireset)
+				// osop_trg <= '0;
+			    // else 
+				// begin 
+			    // osop_trg[0] <= osop;
+				// osop_trg[1] <= osop_trg[0];
+                // end				
+		// end	 
 		
 endmodule
 		  

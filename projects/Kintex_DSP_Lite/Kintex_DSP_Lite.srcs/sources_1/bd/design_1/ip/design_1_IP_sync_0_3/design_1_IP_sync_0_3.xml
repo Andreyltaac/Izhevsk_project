@@ -388,7 +388,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.PHASE">0.000</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.PHASE">0.0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -397,7 +397,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN"/>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN">design_1_CLK_COMMON_0_axi_periph_clk</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -517,7 +517,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.PHASE">0.000</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.PHASE">0.0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -526,7 +526,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.CLK_DOMAIN"/>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.CLK_DOMAIN">design_1_CLK_COMMON_0_axi_periph_clk</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -568,6 +568,99 @@
     </spirit:memoryMap>
   </spirit:memoryMaps>
   <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesis</spirit:name>
+        <spirit:displayName>Verilog Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>IP_sync_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri May 26 03:49:23 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:10a732c8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:10a732c8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_IP_sync_0_3</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri May 26 03:49:23 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:10a732c8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>IP_sync_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri May 26 03:49:23 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:d8fb2227</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_IP_sync_0_3</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri May 26 03:49:23 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:d8fb2227</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
     <spirit:ports>
       <spirit:port>
         <spirit:name>sync_iclk</spirit:name>
@@ -576,7 +669,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -588,7 +682,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -604,7 +699,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -620,7 +716,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -632,7 +729,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -644,7 +742,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -660,7 +759,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -676,7 +776,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -688,7 +789,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -700,7 +802,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -712,7 +815,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -724,7 +828,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -736,7 +841,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -752,7 +858,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -768,7 +875,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -784,7 +892,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -803,7 +912,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -818,7 +928,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -833,7 +944,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -849,7 +961,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -868,7 +981,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -883,7 +997,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -898,7 +1013,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -914,7 +1030,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -926,7 +1043,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -938,7 +1056,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -957,7 +1076,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -976,7 +1096,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -991,7 +1112,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -1006,7 +1128,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1022,7 +1145,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1038,7 +1162,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1050,7 +1175,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1062,7 +1188,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
@@ -1077,7 +1204,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1089,7 +1217,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1101,7 +1230,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1113,7 +1243,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1125,7 +1256,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -1177,6 +1309,110 @@
       <spirit:enumeration spirit:text="false">0</spirit:enumeration>
     </spirit:choice>
   </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/hdl/IP_sync_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/PSS_ram.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/SSS_ram.v</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/adder.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/sync_detect.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/sync_fifo.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/sync_pss.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/sync_sign.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/sync_stat.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/hdl/IP_sync_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/design_1_IP_sync_0_3.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/hdl/IP_sync_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/PSS_ram.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/SSS_ram.v</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/adder.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/sync_detect.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/sync_fifo.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/sync_pss.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/sync_sign.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/src/sync_stat.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8d7a/hdl/IP_sync_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_IP_sync_0_3.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
   <spirit:description>My new AXI IP</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
@@ -1252,7 +1488,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>IP_sync_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>97</xilinx:coreRevision>
+      <xilinx:coreRevision>112</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@502949c3_ARCHIVE_LOCATION">f:/kintex_dsp_lite/projects/ip_repo/IP_sync_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1c275b4_ARCHIVE_LOCATION">f:/kintex_dsp_lite/projects/ip_repo/IP_sync_1.0</xilinx:tag>
@@ -2425,13 +2661,120 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1a96d8b9_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@9d2d234_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@578b5f5_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15f3192f_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a884a3e_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eacc39b_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39914a11_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70788491_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@106eeeca_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@543051bc_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40b36d04_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d1da3b5_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c836e7f_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@318fc318_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44c61adc_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c432057_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@365c7474_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b40f7ad_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@630662ae_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20fa4245_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27a29c4b_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25f873f1_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@223afbc6_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15822469_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@587e76bd_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4248f8b6_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67fc6186_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bf30e8f_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@87a81a4_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d55706d_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b7fface_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6945511a_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f5abcd6_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a8dd94d_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65c3c36b_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c83f55a_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1edb9eb0_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f8442f8_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17652162_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@99c4147_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@492429d8_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31d08149_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@396b30a0_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@373a5c23_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a4053d7_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59e97bee_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34470180_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c8a37d7_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d5e1669_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bf0369e_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42487509_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@208f0292_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61a24106_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21830083_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72d7d4d7_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a831444_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d0c7a16_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@781a4c6d_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1effd024_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@365c23f1_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e51ec01_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b42b0ac_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14ac2a3a_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50d7196c_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e8c65e_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3264981e_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ee1ccc_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ab31264_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e6a2723_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1af0bd15_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2587a65c_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ef54f21_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@723baee3_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e4fcc78_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1753214b_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b17b27d_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e12ef7c_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@679af134_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e8c4ddd_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3db8f86e_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b6543eb_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13534985_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@244b965d_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@374f9d15_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11242ff3_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29d72c95_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69f13bf3_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fe8e8ad_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6209bbea_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@535528e_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b7f1ed_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a62660f_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f77818b_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aa3af3b_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5754330c_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@402f41d0_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1061fdc9_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5753a36e_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@409833b3_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18ededa8_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a0d56ce_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47c06e2b_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d694571_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a10a9b1_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35ed8a8b_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e43fab4_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@301ccec2_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b9fd884_ARCHIVE_LOCATION">f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.AWUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.BUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.DATA_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.FREQ_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BURST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_CACHE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
@@ -2445,10 +2788,14 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.MAX_BURST_LENGTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_OUTSTANDING" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_OUTSTANDING" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PROTOCOL" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.READ_WRITE_MODE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.RUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.FREQ_HZ" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.pDAT_Num_corr" xilinx:valueSource="user"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
@@ -2456,7 +2803,7 @@
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b76d6d2a"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="68b2d820"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="dabd1e9e"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="129fd630"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="c03cab62"/>
