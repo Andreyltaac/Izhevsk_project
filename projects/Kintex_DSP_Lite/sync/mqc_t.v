@@ -23,7 +23,7 @@
 module mqc_t
   #(
     pDAT_W       = 32,
-    pDAT_Num     = 200000,
+    pDAT_Num     = 163800,
     pDAT_FFT_Num = 17424//1024
     ) 
    (
@@ -56,23 +56,29 @@ module mqc_t
     input wire [pDAT_W-1:0]    Power_meter_3,
     input wire [pDAT_W-1:0]    Power_meter_4,
     //
+	output reg [17:0]		   buff_r_addr,
+	input wire [pDAT_W-1:0]	   opack,
+	output reg [17:0]		   datac,
+	output reg [pDAT_W-1:0]	   dt,
+	
+	//
     output wire [pDAT_W/2-1:0] odata_buff_0,
     output wire [pDAT_W/2-1:0] odata_buff_1,
 	output wire                oready_buff
     );
    
-   wire [pDAT_W-1:0]	   opack;
+   //wire [pDAT_W-1:0]	   opack;
    wire                    rd_buff_lte;
    wire                    oready_buff_i;
    wire                    sync_cpack;
-   reg [17:0]		       datac;
+   //reg [17:0]		       datac;
    
    reg			           flag_tusur;
-   reg [pDAT_W-1:0]	       dt;
+   //reg [pDAT_W-1:0]	       dt;
    reg [4:0]		       addr;
    reg [15:0]		       magic_num;
    reg [pDAT_W-1:0]	       pack;
-   reg [17:0]		       buff_r_addr;
+   //reg [17:0]		       buff_r_addr;
    reg			           rd_en;
    reg                     en_wr;
    reg                     buff_ready_i;
@@ -244,7 +250,7 @@ always @ (posedge iclk_dsp or negedge ireset) begin	//iclk_dsp
 end   
    
      
-   buffer_ram	
+  /*  buffer_ram	
      #(
     .DATA_W  ( 32 ),
     .ADDR_W  ( 18 )
@@ -261,6 +267,6 @@ end
 	//
 	.r_addr   (buff_r_addr),
 	.odata 	  (opack)
-	);
+	); */
    
 endmodule

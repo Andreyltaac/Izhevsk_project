@@ -1,6 +1,48 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Jun  6 12:21:41 2023
+| Host         : TOR00094 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_IP_sync_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_IP_sync_0_3 (tor.org:user:IP_sync:1.0) from (Rev. 113) to (Rev. 115)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Jun  5 11:24:02 2023
+| Host         : TOR00094 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_IP_sync_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_IP_sync_0_3 (tor.org:user:IP_sync:1.0) from (Rev. 112) to (Rev. 113)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
 | Date         : Fri May 26 10:45:19 2023
 | Host         : TOR00094 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

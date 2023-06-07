@@ -45,7 +45,7 @@ module sync_pss
 //
   logic [71:0] pss_odat;
   logic [10:0] pss_addr;
-  logic        pss_init;
+  logic [1:0]  pss_init;
   logic        pss_ready; 
   logic [10:0] pss_addr_cnt; 
   
@@ -262,12 +262,14 @@ module sync_pss
 		end
 	       else if	(pss_addr_cnt == pDAT_Num - 1) 
 		   begin 
-		   pss_init <= '0; 
+		   pss_init[0] <= '0;
+           pss_init[1] <= pss_init[0]; 		   
 		   pss_ready <= '1; 
 		   end
-		     else if (corr_str_fr && iena && ~pss_init) 
+		     else if (corr_str_fr && iena && ~pss_init[0]) 
 			 begin 
-			 pss_init <= '1; 
+			 pss_init[0] <= '1;
+             pss_init[1] <= pss_init[0]; 			 
 			 pss_ready <= '0; 
 			 end
     end	
@@ -276,8 +278,8 @@ module sync_pss
 	begin	
 		if (~ireset)
 		pss_addr_cnt <= '0;
-		else if	(~pss_init) pss_addr_cnt   <= '0; 
-	       else if	(pss_init) pss_addr_cnt  <=  pss_addr_cnt + 11'd1; 
+		else if	(~pss_init[0]) pss_addr_cnt   <= '0; 
+	       else if	(pss_init[0]) pss_addr_cnt  <=  pss_addr_cnt + 11'd1; 
     end	
 	
 		
@@ -290,7 +292,7 @@ module sync_pss
     (	
 	.iclk 	  (iclk),
 	.addr 	  (pss_addr_cnt),
-	.ival     (pss_init),
+	.ival     (pss_init[0]),
 	.odat 	  (pss_odat)
     );
 
@@ -342,7 +344,7 @@ module sync_pss
 	//
 	.iclk 	  (iclk),
 	.addr 	  (pss_addr_cnt),
-	.ival     (pss_init),
+	.ival     (pss_init[0]),
 	.odat 	  (sss_odat)
     );
 
@@ -365,7 +367,7 @@ module sync_pss
    .corr_size (fft_size),
    //.trh_lvl  (trh_lvl),
    //
-   .ival_pss (pss_init),
+   .ival_pss (pss_init[1]),
    .ipss_I	 (ref_data[3]),//Re
    .ipss_Q	 (ref_data[2]),//Im
    //
@@ -389,7 +391,7 @@ module sync_pss
    .corr_size (fft_size),
    //.trh_lvl  (trh_lvl),
    //
-   .ival_pss (pss_init),
+   .ival_pss (pss_init[1]),
    .ipss_I	 (ref_data[2]),//Im
    .ipss_Q	 (ref_data[3]),//Re
    //
@@ -475,7 +477,7 @@ module sync_pss
 				   r_addr_fifo <= 14'd0;
 			
 			else if (osop_buff)
-					r_addr_fifo	<=	(sync_mode) ? (wr_addr_fifo - {3'd0, ocorr_maddr} - 14'd1) : (wr_addr_fifo - {2'd0, fft_size} - {3'd0, ocorr_maddr} - addr_shift);
+					r_addr_fifo	<=	(sync_mode) ? (wr_addr_fifo - {3'd0, ocorr_maddr} - 14'd1) : (wr_addr_fifo - {2'd0, fft_size} - {3'd0, ocorr_maddr} - addr_shift - 14'd1);
 					
 			else				
 					r_addr_fifo <= r_addr_fifo + 14'd1;

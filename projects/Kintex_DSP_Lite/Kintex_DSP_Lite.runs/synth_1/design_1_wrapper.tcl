@@ -17,6 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
+set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7k325tffg676-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -35,7 +38,6 @@ set_property ip_repo_paths {
 update_ip_catalog
 set_property ip_output_repo f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib -sv F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/sync/buffer_ram.sv
 read_verilog -library xil_defaultlib {
   F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/ibuf.v
   F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/imports/Single_mod/FPGA_reset.v
@@ -102,6 +104,7 @@ set_property used_in_implementation false [get_files -all f:/work/Izhevsk_projec
 set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

@@ -1982,6 +1982,32 @@ proc create_root_design { parentCell } {
   # Create instance: SPI_MOD
   create_hier_cell_SPI_MOD [current_bd_instance .] SPI_MOD
 
+  # Create instance: blk_mem_gen_0, and set properties
+  set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
+  set_property -dict [ list \
+   CONFIG.Algorithm {Minimum_Area} \
+   CONFIG.Byte_Size {9} \
+   CONFIG.EN_SAFETY_CKT {false} \
+   CONFIG.Enable_32bit_Address {false} \
+   CONFIG.Enable_A {Always_Enabled} \
+   CONFIG.Enable_B {Always_Enabled} \
+   CONFIG.Memory_Type {Simple_Dual_Port_RAM} \
+   CONFIG.Operating_Mode_A {NO_CHANGE} \
+   CONFIG.Port_B_Clock {100} \
+   CONFIG.Port_B_Enable_Rate {100} \
+   CONFIG.Port_B_Write_Rate {0} \
+   CONFIG.Read_Width_A {32} \
+   CONFIG.Read_Width_B {32} \
+   CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+   CONFIG.Register_PortB_Output_of_Memory_Primitives {true} \
+   CONFIG.Use_Byte_Write_Enable {false} \
+   CONFIG.Use_RSTA_Pin {false} \
+   CONFIG.Write_Depth_A {163840} \
+   CONFIG.Write_Width_A {32} \
+   CONFIG.Write_Width_B {32} \
+   CONFIG.use_bram_block {Stand_Alone} \
+ ] $blk_mem_gen_0
+
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \
@@ -2017,7 +2043,10 @@ proc create_root_design { parentCell } {
      catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
-  
+    set_property -dict [ list \
+   CONFIG.pDAT_Num {163800} \
+ ] $mqc_t_0
+
   # Create instance: xlconcat_1, and set properties
   set xlconcat_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_1 ]
   set_property -dict [ list \
@@ -2032,6 +2061,13 @@ proc create_root_design { parentCell } {
    CONFIG.CONST_WIDTH {32} \
  ] $xlconstant_0
 
+  # Create instance: xlconstant_1, and set properties
+  set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
+  set_property -dict [ list \
+   CONFIG.CONST_VAL {1} \
+   CONFIG.CONST_WIDTH {1} \
+ ] $xlconstant_1
+
   # Create interface connections
   connect_bd_intf_net -intf_net AXI_Peripheral_M00_AXI [get_bd_intf_pins AD9361_CTRL/s_axi2] [get_bd_intf_pins AXI_Peripheral/M00_AXI]
   connect_bd_intf_net -intf_net AXI_Peripheral_M01_AXI [get_bd_intf_pins AD9361_CTRL/s_axi] [get_bd_intf_pins AXI_Peripheral/M01_AXI]
@@ -2044,7 +2080,7 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net AXI_Peripheral_M14_AXI [get_bd_intf_pins AXI_Peripheral/M14_AXI] [get_bd_intf_pins Current_turning_off_0/S00_AXI]
 
   # Create port connections
-  connect_bd_net -net AD9361_CTRL_clk_out1 [get_bd_pins AD9361_CTRL/clk_out1] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins mqc_t_0/iclk_dsp]
+  connect_bd_net -net AD9361_CTRL_clk_out1 [get_bd_pins AD9361_CTRL/clk_out1] [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins mqc_t_0/iclk_dsp]
   connect_bd_net -net AD9361_CTRL_dout_data_4 [get_bd_pins AD9361_CTRL/dout_data_4] [get_bd_pins IP_sync_0/sync_idat_re] [get_bd_pins xlconcat_1/In0]
   connect_bd_net -net AD9361_CTRL_dout_data_5 [get_bd_pins AD9361_CTRL/dout_data_5] [get_bd_pins IP_sync_0/sync_idat_im] [get_bd_pins xlconcat_1/In1]
   connect_bd_net -net AD9361_CTRL_peripheral_aresetn1 [get_bd_pins AD9361_CTRL/peripheral_aresetn1] [get_bd_pins IP_sync_0/sync_ireset] [get_bd_pins mqc_t_0/ireset]
@@ -2122,7 +2158,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net IP_sync_0_sync_trh_hold [get_bd_ports LED3] [get_bd_pins IP_sync_0/sync_trh_hold]
   connect_bd_net -net IP_sync_0_sync_val_osop [get_bd_ports PIN_2] [get_bd_pins IP_sync_0/sync_val_osop]
   connect_bd_net -net IP_sync_0_sync_vrf_oval [get_bd_ports LED2] [get_bd_pins IP_sync_0/sync_vrf_oval]
-  connect_bd_net -net Net [get_bd_pins IP_sync_0/sync_iclk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins mqc_t_0/iclk_lte]
+  connect_bd_net -net Net [get_bd_pins IP_sync_0/sync_iclk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins mqc_t_0/iclk_lte]
   connect_bd_net -net SPI_MOD_ip2intc_irpt [get_bd_pins AXI_Peripheral/In0] [get_bd_pins SPI_MOD/ip2intc_irpt]
   connect_bd_net -net ad9361_1_P1_N_1 [get_bd_ports ad9361_1_P1_N] [get_bd_pins AD9361_CTRL/ad9361_1_P1_N]
   connect_bd_net -net ad9361_1_P1_P_1 [get_bd_ports ad9361_1_P1_P] [get_bd_pins AD9361_CTRL/ad9361_1_P1_P]
@@ -2154,9 +2190,13 @@ proc create_root_design { parentCell } {
   connect_bd_net -net ad9364_SPI_DO_1 [get_bd_ports ad9364_SPI_DO] [get_bd_pins SPI_MOD/ad9364_SPI_DO]
   connect_bd_net -net ad9364_TX_FRAME_N_1 [get_bd_ports ad9364_RX_FRAME_N] [get_bd_pins AD9364/ad9364_TX_FRAME_N]
   connect_bd_net -net ad9364_TX_FRAME_P_1 [get_bd_ports ad9364_RX_FRAME_P] [get_bd_pins AD9364/ad9364_TX_FRAME_P]
+  connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins mqc_t_0/opack]
   connect_bd_net -net clk_axi_reset_n [get_bd_pins AD9361_CTRL/ext_reset_in] [get_bd_pins AD9364/ext_reset_in] [get_bd_pins CLK_AXI/reset_n]
   connect_bd_net -net clk_wiz_0_axi_periph_clk [get_bd_pins AD9361_CTRL/s_axi_aclk] [get_bd_pins AD9364/s_axi_aclk] [get_bd_pins AXI_Peripheral/m_aclk] [get_bd_pins CLK_AXI/axi_periph_clk] [get_bd_pins Control_from_SOM_0/s00_axi_aclk] [get_bd_pins Current_turning_off_0/s00_axi_aclk] [get_bd_pins IP_sync_0/s00_axi_aclk] [get_bd_pins SPI_MOD/s_axi4_aclk] [get_bd_pins clk_wiz_0/s_axi_aclk]
   connect_bd_net -net ibuf_0_out_ref [get_bd_pins AD9361_CTRL/FPGA_REF_40MHZ] [get_bd_pins CLK_AXI/out_ref]
+  connect_bd_net -net mqc_t_0_buff_r_addr [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins mqc_t_0/buff_r_addr]
+  connect_bd_net -net mqc_t_0_datac [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins mqc_t_0/datac]
+  connect_bd_net -net mqc_t_0_dt [get_bd_pins blk_mem_gen_0/dina] [get_bd_pins mqc_t_0/dt]
   connect_bd_net -net mqc_t_0_odata_buff_0 [get_bd_pins AXI_Peripheral/fifo_wr_data_0] [get_bd_pins mqc_t_0/odata_buff_0]
   connect_bd_net -net mqc_t_0_odata_buff_1 [get_bd_pins AXI_Peripheral/fifo_wr_data_1] [get_bd_pins mqc_t_0/odata_buff_1]
   connect_bd_net -net mqc_t_0_oready_buff [get_bd_pins IP_sync_0/ready_buff] [get_bd_pins mqc_t_0/oready_buff]
@@ -2175,6 +2215,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net up_txnrx_1 [get_bd_pins AD9361_CTRL/dout] [get_bd_pins AD9364/up_enable] [get_bd_pins AD9364/up_txnrx]
   connect_bd_net -net xlconcat_1_dout [get_bd_pins mqc_t_0/Service_1_RX_0] [get_bd_pins mqc_t_0/Service_1_TX_4] [get_bd_pins mqc_t_0/Service_2_RX_1] [get_bd_pins mqc_t_0/Service_2_TX_5] [get_bd_pins mqc_t_0/Service_3_RX_2] [get_bd_pins mqc_t_0/Service_3_TX_6] [get_bd_pins mqc_t_0/Service_4_RX_3] [get_bd_pins mqc_t_0/Service_4_TX_7] [get_bd_pins xlconcat_1/dout]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins mqc_t_0/AD9364_Samples] [get_bd_pins mqc_t_0/DL_RX_LNK_8] [get_bd_pins mqc_t_0/DL_TX_LNK_9] [get_bd_pins mqc_t_0/Power_meter_1] [get_bd_pins mqc_t_0/Power_meter_2] [get_bd_pins mqc_t_0/Power_meter_3] [get_bd_pins mqc_t_0/Power_meter_4] [get_bd_pins mqc_t_0/UL_RX_LNK_10] [get_bd_pins mqc_t_0/UL_TX_LNK_11] [get_bd_pins xlconstant_0/dout]
+  connect_bd_net -net xlconstant_1_dout [get_bd_pins blk_mem_gen_0/wea] [get_bd_pins xlconstant_1/dout]
 
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x83CB0000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs AXI_Peripheral/AXI_DMA/s_axi/axi_lite] SEG_AXI_DMA_axi_lite

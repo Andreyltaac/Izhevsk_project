@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Fri May 26 10:49:22 2023
+//Date        : Tue Jun  6 13:51:02 2023
 //Host        : TOR00094 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -3946,7 +3946,7 @@ module ad9361_clk_imp_1I4OLDI
         .sample_rate_30_72(clk_DSP_data_rate));
 endmodule
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=91,numReposBlks=64,numNonXlnxBlks=14,numHierBlks=27,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=18,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=91,da_board_cnt=5,da_clkrst_cnt=25,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=93,numReposBlks=66,numNonXlnxBlks=14,numHierBlks=27,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=18,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=91,da_board_cnt=5,da_clkrst_cnt=25,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (AXI_RX_CLK_OUT,
     AXI_RX_DATA_OUT,
@@ -4452,9 +4452,13 @@ module design_1
   wire ad9364_SPI_DO_1;
   wire ad9364_TX_FRAME_N_1;
   wire ad9364_TX_FRAME_P_1;
+  wire [31:0]blk_mem_gen_0_doutb;
   wire clk_axi_reset_n;
   wire clk_wiz_0_axi_periph_clk;
   wire ibuf_0_out_ref;
+  wire [17:0]mqc_t_0_buff_r_addr;
+  wire [17:0]mqc_t_0_datac;
+  wire [31:0]mqc_t_0_dt;
   wire [15:0]mqc_t_0_odata_buff_0;
   wire [15:0]mqc_t_0_odata_buff_1;
   wire mqc_t_0_oready_buff;
@@ -4473,6 +4477,7 @@ module design_1
   wire [0:0]up_txnrx_1;
   wire [31:0]xlconcat_1_dout;
   wire [31:0]xlconstant_0_dout;
+  wire [0:0]xlconstant_1_dout;
 
   assign AXI_RX_CLK_OUT = AXI_Peripheral_AXI_RX_CLK_OUT;
   assign AXI_RX_DATA_OUT[16:0] = AXI_Peripheral_AXI_RX_DATA_OUT;
@@ -5114,6 +5119,14 @@ module design_1
         .ip2intc_irpt(SPI_MOD_ip2intc_irpt),
         .s_axi4_aclk(clk_wiz_0_axi_periph_clk),
         .s_axi4_aresetn(rst_sys_ps7_100M_peripheral_aresetn));
+  design_1_blk_mem_gen_0_1 blk_mem_gen_0
+       (.addra(mqc_t_0_datac),
+        .addrb(mqc_t_0_buff_r_addr),
+        .clka(Net),
+        .clkb(AD9361_CTRL_clk_out1),
+        .dina(mqc_t_0_dt),
+        .doutb(blk_mem_gen_0_doutb),
+        .wea(xlconstant_1_dout));
   design_1_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(AD9361_CTRL_clk_out1),
         .clk_out1(Net),
@@ -5154,6 +5167,9 @@ module design_1
         .Service_4_TX_7(xlconcat_1_dout),
         .UL_RX_LNK_10(xlconstant_0_dout),
         .UL_TX_LNK_11(xlconstant_0_dout),
+        .buff_r_addr(mqc_t_0_buff_r_addr),
+        .datac(mqc_t_0_datac),
+        .dt(mqc_t_0_dt),
         .iclk_dsp(AD9361_CTRL_clk_out1),
         .iclk_lte(Net),
         .idata_im(IP_sync_0_sync_odat_im),
@@ -5164,6 +5180,7 @@ module design_1
         .isync_cpack(AXI_Peripheral_fifo_wr_xfer_req),
         .odata_buff_0(mqc_t_0_odata_buff_0),
         .odata_buff_1(mqc_t_0_odata_buff_1),
+        .opack(blk_mem_gen_0_doutb),
         .oready_buff(mqc_t_0_oready_buff));
   design_1_xlconcat_1_1 xlconcat_1
        (.In0(AD9361_CTRL_dout_data_4),
@@ -5171,6 +5188,8 @@ module design_1
         .dout(xlconcat_1_dout));
   design_1_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
+  design_1_xlconstant_0_1 xlconstant_1
+       (.dout(xlconstant_1_dout));
 endmodule
 
 module design_1_AXI_C2C_axi_periph_0

@@ -80,6 +80,10 @@ module design_1_mqc_t_0_0 (
   Power_meter_2,
   Power_meter_3,
   Power_meter_4,
+  buff_r_addr,
+  opack,
+  datac,
+  dt,
   odata_buff_0,
   odata_buff_1,
   oready_buff
@@ -110,13 +114,17 @@ input wire [31 : 0] Power_meter_1;
 input wire [31 : 0] Power_meter_2;
 input wire [31 : 0] Power_meter_3;
 input wire [31 : 0] Power_meter_4;
+output wire [17 : 0] buff_r_addr;
+input wire [31 : 0] opack;
+output wire [17 : 0] datac;
+output wire [31 : 0] dt;
 output wire [15 : 0] odata_buff_0;
 output wire [15 : 0] odata_buff_1;
 output wire oready_buff;
 
   mqc_t #(
     .pDAT_W(32),
-    .pDAT_Num(200000),
+    .pDAT_Num(163800),
     .pDAT_FFT_Num(17424)
   ) inst (
     .iclk_lte(iclk_lte),
@@ -144,6 +152,10 @@ output wire oready_buff;
     .Power_meter_2(Power_meter_2),
     .Power_meter_3(Power_meter_3),
     .Power_meter_4(Power_meter_4),
+    .buff_r_addr(buff_r_addr),
+    .opack(opack),
+    .datac(datac),
+    .dt(dt),
     .odata_buff_0(odata_buff_0),
     .odata_buff_1(odata_buff_1),
     .oready_buff(oready_buff)

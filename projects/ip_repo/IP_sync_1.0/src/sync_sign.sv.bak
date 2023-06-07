@@ -20,7 +20,7 @@ module sync_sign
   //
   output logic                         oena, 
   //
-  output logic signed   [pDAT_W-1 : 0] ocorr
+  output logic signed   [pDAT_W : 0] ocorr
                       
 );
 
