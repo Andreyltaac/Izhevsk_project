@@ -19,7 +19,7 @@ module sync_detect
   input  logic                         trh_auto,
   input  logic          [23:0]         frame_time,
   input  logic          [18:0]         time_sop,   
-  input  logic          [pDAT_W-1 : 0] icorr,
+  input  logic          [pDAT_W : 0]   icorr,
   //
   output logic          [pDAT_W-1 : 0] ocorr_mlvl,
   output logic          [10:0]         ocorr_max_addr,
@@ -38,7 +38,7 @@ localparam int cWind = 2000;
 logic           [10:0]          max_cnt;
 logic           [10:0]          max_cnt_osop;
 logic           [10:0]          max_addr;
-logic	        [pDAT_W-1 : 0] max_lvl;
+logic	        [pDAT_W : 0] max_lvl;
 logic           [1:0]          trh_trig;
 logic                          max_trh_trig;
 
@@ -94,11 +94,11 @@ assign vrf_time_sop = (sync_mode)? time_sop<<1 : {1'b0,time_sop};
 			end	
 				else 
 				begin
-			    if((icorr > trh_lvl) && ~trh_trig[0] && iena) trh_trig[0] <= '1;
+			    if((icorr > trh_lvl) && ~trh_trig[0] && iena && ~max_trh_trig) trh_trig[0] <= '1;
             	   else if	((max_cnt == cWind && trh_trig[0]) || ~iena) 
 				   begin
 				   trh_trig[0] <= '0;
-				   ocorr_mlvl     <= max_lvl;
+				   ocorr_mlvl     <= max_lvl>>1;
 			       ocorr_max_addr <= cWind;
              	   end
 				trh_trig[1] <= trh_trig[0];		

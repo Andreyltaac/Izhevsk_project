@@ -259,19 +259,21 @@ module sync_pss
 		begin
 		pss_init <= '0;
 	    pss_ready <= '0; 
-		end
-	       else if	(pss_addr_cnt == pDAT_Num - 1) 
+		end 
+		else
+		begin
+		pss_init[1] <=  pss_init[0]; 
+	       if	(pss_addr_cnt == pDAT_Num - 1) 
 		   begin 
-		   pss_init[0] <= '0;
-           pss_init[1] <= pss_init[0]; 		   
+		   pss_init[0] <= '0;   
 		   pss_ready <= '1; 
 		   end
 		     else if (corr_str_fr && iena && ~pss_init[0]) 
 			 begin 
-			 pss_init[0] <= '1;
-             pss_init[1] <= pss_init[0]; 			 
+			 pss_init[0] <= '1;	 
 			 pss_ready <= '0; 
 			 end
+		end	 
     end	
 	
 	always_ff @ (posedge iclk or negedge ireset)

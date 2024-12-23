@@ -24,8 +24,7 @@ module sync_sign
                       
 );
 
-// `include "PSS_mask.svh"
-// `include "PSS_mask1.svh"
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////// localparam
 localparam int cWind = 32;
@@ -159,12 +158,12 @@ assign oena = oena_re;
           // end // expand
       // endgenerate
 
- always_comb begin
-    for (int i = 0; i < pDAT_Num; i++) begin
-      sgn_msk_reg_I[i] = $signed(sign_reg_I[i]);
-      sgn_msk_reg_Q[i] = $signed(sign_reg_Q[i]);
-    end
-  end
+ // always_comb begin
+    // for (int i = 0; i < pDAT_Num; i++) begin
+      // sgn_msk_reg_I[i] = $signed(sign_reg_I[i]);
+      // sgn_msk_reg_Q[i] = $signed(sign_reg_Q[i]);
+    // end
+  // end
 
 	
   //------------------------------------------------------------------------------------------------------
@@ -180,7 +179,7 @@ assign oena = oena_re;
   (
     .iclk ( iclk          ),
     .iena ( ena_corr      ),
-    .idat ( sgn_msk_reg_I ),
+    .idat ( sign_reg_I ),
     .oena ( oena_re       ),
     .odat ( adder_re_odat )
   );
@@ -194,99 +193,11 @@ assign oena = oena_re;
   (
     .iclk ( iclk          ),
     .iena ( ena_corr      ),
-    .idat ( sgn_msk_reg_Q ),
+    .idat ( sign_reg_Q ),
     .oena ( oena_im       ),
     .odat ( adder_im_odat )
   );
 
 		
-  //------------------------------------------------------------------------------------------------------
-  //--ABS
-  //------------------------------------------------------------------------------------------------------				
-/* 	always_ff @ (posedge iclk or negedge ireset)
-	if (~ireset)
-		abs_re	<=	'0;
-	else
-	if(~adder_re_odat[pDAT_W-1])
-		abs_re	<=	adder_re_odat;
-	else	
-	if(adder_re_odat[pDAT_W-1])
-		abs_re	<= -adder_re_odat;
-	
-	always_ff @ (posedge iclk or negedge ireset)
-	if (~ireset)
-		abs_im	<=	'0;
-	else
-	if(~adder_im_odat[pDAT_W-1])
-		abs_im	<=	adder_im_odat;
-	else	
-	if(adder_im_odat[pDAT_W-1])
-		abs_im	<= -adder_im_odat; */
-
-		
-  //------------------------------------------------------------------------------------------------------
-  //--TRESHOLD_DETECT
-  //------------------------------------------------------------------------------------------------------
-	/* always_ff @ (posedge iclk or negedge ireset) begin
-			if	(~ireset)
-			begin
-				trh_trig <= '0;
-			    ocorr_mlvl <= '0;
-				ocorr_max_addr <='0;
-			end	
-				begin
-			    if((ocorr > trh_lvl) && ~trh_trig[0] && ena_corr) 
-				begin
-				trh_trig[0] <= '1;
-            	end
-				   else if	((max_cnt == cWind && trh_trig[0]) || ~ena_corr) 
-				   begin
-				   trh_trig[0] <= '0;
-				   ocorr_mlvl     <= max_lvl;
-			       ocorr_max_addr <= max_addr;
-             	   end
-				trh_trig[1] <= trh_trig[0];		
-				end   
-		end
-		
-				
-    always_ff @ (posedge iclk or negedge ireset) begin
-			if	(~ireset)
-				max_cnt <= '0;
-			    else if	(~trh_trig[0]) max_cnt <= '0;
-			       else if (trh_trig[0]) max_cnt <= max_cnt + 6'd1;							
-		end		
-	
-	always_ff @ (posedge iclk or negedge ireset) begin
-			if	(~ireset)
-			begin
-				max_lvl  <= '0;
-				max_addr <= '0;
-			end
-			    else if	(~trh_trig[0]) max_lvl <= '0;	
-				   else if	(ocorr > max_lvl) 
-				   begin
-				   max_lvl <= ocorr;
-				   max_addr <= max_cnt;
-                   end				   
-		end	 */	
-  //------------------------------------------------------------------------------------------------------
-  //
-  //------------------------------------------------------------------------------------------------------
-
-
-  //------------------------------------------------------------------------------------------------------
-  //
-  //------------------------------------------------------------------------------------------------------
-
-  
-  //------------------------------------------------------------------------------------------------------
-  //
-  //------------------------------------------------------------------------------------------------------
-
-  //------------------------------------------------------------------------------------------------------
-  //
-  //------------------------------------------------------------------------------------------------------
-
-
+ 
 endmodule

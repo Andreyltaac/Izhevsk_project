@@ -2,21 +2,19 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Jun  6 13:51:58 2023
-# Process ID: 1104
+# Start of session at: Mon Jun 26 14:26:29 2023
+# Process ID: 7972
 # Current directory: F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.runs/synth_1/design_1_wrapper.vds
 # Journal file: F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 353.449 ; gain = 77.938
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/work/Izhevsk_project/library'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/2019.1/data/ip'.
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'analog.com:user:util_clkdiv:1.0'. The one found in IP location 'f:/work/Izhevsk_project/library/util_clkdiv' will take precedence over the same IP in location f:/work/Izhevsk_project/library/xilinx/util_clkdiv
-update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 378.332 ; gain = 24.883
 INFO: [IP_Flow 19-5107] Inferred bus interface 'reset_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
 INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
 WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
@@ -44,17 +42,17 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/work/Izhevsk_project/projects/ip_repo/IP_sync_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/work/Izhevsk_project/library'.
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'analog.com:user:util_clkdiv:1.0'. The one found in IP location 'f:/work/Izhevsk_project/library/util_clkdiv' will take precedence over the same IP in location f:/work/Izhevsk_project/library/xilinx/util_clkdiv
-add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:33 . Memory (MB): peak = 388.004 ; gain = 9.672
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 388.152 ; gain = 10.113
 Command: synth_design -top design_1_wrapper -part xc7k325tffg676-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Device 21-403] Loading part xc7k325tffg676-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12732 
-WARNING: [Synth 8-6901] identifier 'sync_ostat_data' is used before its declaration [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/hdl/IP_sync_v1_0_S00_AXI.v:397]
+INFO: Helper process launched with PID 1080 
+WARNING: [Synth 8-6901] identifier 'sync_ostat_data' is used before its declaration [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/hdl/IP_sync_v1_0_S00_AXI.v:397]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 915.230 ; gain = 202.461
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 915.195 ; gain = 201.594
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/synth/design_1.v:3950]
@@ -3001,18 +2999,18 @@ WARNING: [Synth 8-5788] Register adc_valid_ch3_reg_reg in module adc_reading_fsm
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
-INFO: [Synth 8-226] default block is never used [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/hdl/IP_sync_v1_0_S00_AXI.v:255]
-INFO: [Synth 8-226] default block is never used [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/hdl/IP_sync_v1_0_S00_AXI.v:396]
+INFO: [Synth 8-226] default block is never used [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/hdl/IP_sync_v1_0_S00_AXI.v:255]
+INFO: [Synth 8-226] default block is never used [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/hdl/IP_sync_v1_0_S00_AXI.v:396]
 	Parameter pDAT_W bound to: 12 - type: integer 
 	Parameter pDAT_Num bound to: 1024 - type: integer 
-WARNING: [Synth 8-6104] Input port 'odata_I' has an internal driver [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/src/sync_pss.sv:115]
-WARNING: [Synth 8-6104] Input port 'odata_Q' has an internal driver [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/src/sync_pss.sv:116]
+WARNING: [Synth 8-6104] Input port 'odata_I' has an internal driver [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/src/sync_pss.sv:115]
+WARNING: [Synth 8-6104] Input port 'odata_Q' has an internal driver [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/src/sync_pss.sv:116]
 	Parameter pDAT_W bound to: 32'sb00000000000000000000000001001000 
 	Parameter pDAT_Num bound to: 1024 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'F:\kintex_dsp_lite\projects\ip_repo\IP_sync_1.0\src\PSS_hub_1024.txt' is read successfully [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/src/PSS_ram.sv:19]
+INFO: [Synth 8-3876] $readmem data file 'F:\kintex_dsp_lite\projects\ip_repo\IP_sync_1.0\src\PSS_hub_1024.txt' is read successfully [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/src/PSS_ram.sv:19]
 	Parameter pDAT_W bound to: 32'sb00000000000000000000000000000100 
 	Parameter pDAT_Num bound to: 1024 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'F:\kintex_dsp_lite\projects\ip_repo\IP_sync_1.0\src\SSS_hub_1024.txt' is read successfully [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/src/SSS_ram.v:24]
+INFO: [Synth 8-3876] $readmem data file 'F:\kintex_dsp_lite\projects\ip_repo\IP_sync_1.0\src\SSS_hub_1024.txt' is read successfully [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/src/SSS_ram.v:24]
 	Parameter pDAT_W bound to: 12 - type: integer 
 	Parameter pDAT_Num bound to: 1024 - type: integer 
 	Parameter cWind bound to: 32'sb00000000000000000000000000100000 
@@ -3021,8 +3019,8 @@ INFO: [Synth 8-3876] $readmem data file 'F:\kintex_dsp_lite\projects\ip_repo\IP_
 	Parameter cADDER_NUM_PER_STAGE bound to: 32'sb00000000000000000000001000000000 
 	Parameter cADDER_STAGE_NUM bound to: 32'sb00000000000000000000000000001010 
 WARNING: [Synth 8-5856] 3D RAM acc_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
-WARNING: [Synth 8-7023] instance 'sync_sign_0' of module 'sync_sign' has 12 connections declared, but only 10 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/src/sync_pss.sv:363]
-WARNING: [Synth 8-7023] instance 'sync_sign_1' of module 'sync_sign' has 12 connections declared, but only 10 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/src/sync_pss.sv:387]
+WARNING: [Synth 8-7023] instance 'sync_sign_0' of module 'sync_sign' has 12 connections declared, but only 10 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/src/sync_pss.sv:363]
+WARNING: [Synth 8-7023] instance 'sync_sign_1' of module 'sync_sign' has 12 connections declared, but only 10 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/src/sync_pss.sv:387]
 	Parameter pDAT_W bound to: 12 - type: integer 
 	Parameter pDAT_Num bound to: 1024 - type: integer 
 	Parameter pSTAT_Num bound to: 32'sb00000000000000000000000000110010 
@@ -3036,9 +3034,9 @@ WARNING: [Synth 8-7023] instance 'sync_sign_1' of module 'sync_sign' has 12 conn
 	Parameter pST_W bound to: 32'sb00000000000000000000000000001000 
 	Parameter DATA_W bound to: 24 - type: integer 
 	Parameter ADDR_W bound to: 14 - type: integer 
-WARNING: [Synth 8-7023] instance 'sync_pss_sub' of module 'sync_pss' has 28 connections declared, but only 27 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/hdl/IP_sync_v1_0_S00_AXI.v:456]
-WARNING: [Synth 8-3848] Net sync_odat_re in module/entity IP_sync_v1_0_S00_AXI does not have driver. [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/hdl/IP_sync_v1_0_S00_AXI.v:36]
-WARNING: [Synth 8-3848] Net sync_odat_im in module/entity IP_sync_v1_0_S00_AXI does not have driver. [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/hdl/IP_sync_v1_0_S00_AXI.v:37]
+WARNING: [Synth 8-7023] instance 'sync_pss_sub' of module 'sync_pss' has 28 connections declared, but only 27 given [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/hdl/IP_sync_v1_0_S00_AXI.v:456]
+WARNING: [Synth 8-3848] Net sync_odat_re in module/entity IP_sync_v1_0_S00_AXI does not have driver. [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/hdl/IP_sync_v1_0_S00_AXI.v:36]
+WARNING: [Synth 8-3848] Net sync_odat_im in module/entity IP_sync_v1_0_S00_AXI does not have driver. [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/hdl/IP_sync_v1_0_S00_AXI.v:37]
 WARNING: [Synth 8-7023] instance 'IP_sync_0' of module 'design_1_IP_sync_0_3' has 39 connections declared, but only 36 given [F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/synth/design_1.v:5054]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_spi_0' [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_axi_spi_0/synth/design_1_axi_spi_0.vhd:97]
 	Parameter Async_Clk bound to: 0 - type: integer 
@@ -4648,7 +4646,7 @@ WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected p
 WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[7]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:04:23 ; elapsed = 00:04:32 . Memory (MB): peak = 1769.426 ; gain = 1056.656
+Finished RTL Elaboration : Time (s): cpu = 00:04:33 ; elapsed = 00:04:44 . Memory (MB): peak = 1775.660 ; gain = 1062.059
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -4661,14 +4659,14 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:30 ; elapsed = 00:04:40 . Memory (MB): peak = 1769.426 ; gain = 1056.656
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:40 ; elapsed = 00:04:52 . Memory (MB): peak = 1775.660 ; gain = 1062.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:30 ; elapsed = 00:04:40 . Memory (MB): peak = 1769.426 ; gain = 1056.656
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:40 ; elapsed = 00:04:52 . Memory (MB): peak = 1775.660 ; gain = 1062.059
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 607 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/single_end_clk_gen.ibufg_clk_inst' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -5105,7 +5103,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2023.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1979.641 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 268 instances were transformed.
   DSP48E => DSP48E1: 60 instances
@@ -5117,9 +5115,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 32 instances
   SRL16 => SRL16E: 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2023.973 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1979.641 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:05:35 ; elapsed = 00:05:50 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Constraint Validation : Time (s): cpu = 00:05:42 ; elapsed = 00:05:58 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -5127,7 +5125,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:05:35 ; elapsed = 00:05:50 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:42 ; elapsed = 00:05:59 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -6149,7 +6147,7 @@ Applied set_property DONT_TOUCH = true for design_1_i/AXI_Peripheral/AXI_C2C/ins
 Applied set_property DONT_TOUCH = true for design_1_i/SPI_MOD/axi_spi/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.RX_FIFO_II . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/SPI_MOD/axi_spi/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.TX_FIFO_II /\xpm_fifo_instance.xpm_fifo_async_inst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:39 ; elapsed = 00:05:54 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:45 ; elapsed = 00:06:02 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "adc_data_p" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-4471] merging register 'up_dac_dds_scale_tc_2_reg[15:0]' into 'up_dac_dds_scale_tc_1_reg[15:0]' [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/common/up_dac_channel.v:367]
@@ -6681,7 +6679,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'design_1_clk_wiz_0_0_slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:07:45 ; elapsed = 00:08:08 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:07:47 ; elapsed = 00:08:12 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -6720,21 +6718,18 @@ Report RTL Partitions:
 |26    |axi_chip2chip_v5_0_5__GC0                    |           1|      9516|
 |27    |AXI_Peripheral_imp_1PLQHVD__GC0              |           1|      6506|
 |28    |CLK_AXI_imp_ROVM9__GC0                       |           1|      1446|
-|29    |adder__GBM0                                  |           1|     15099|
-|30    |adder__GBM1                                  |           1|     13360|
-|31    |adder__GBM2                                  |           1|      9940|
-|32    |adder__GBM3                                  |           1|      9683|
-|33    |sync_sign__GCBM0                             |           1|     26374|
-|34    |sync_sign__GCBM1                             |           1|     11960|
-|35    |sync_sign__GCBM2                             |           1|     12894|
-|36    |sync_pss__GC0                                |           1|      4536|
-|37    |IP_sync_v1_0_S00_AXI__GC0                    |           1|       557|
-|38    |design_1_clk_wiz_0_0_clk_wiz__GC0            |           1|         3|
-|39    |case__3821_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|     54847|
-|40    |design_1_clk_wiz_0_0_mmcm_drp__GB1           |           1|     10302|
-|41    |design_1_clk_wiz_0_0_clk_wiz_drp__GC0        |           1|      3709|
-|42    |design_1_clk_wiz_0_0_axi_clk_config__GC0     |           1|       282|
-|43    |design_1__GC0                                |           1|     33338|
+|29    |adder                                        |           2|     20680|
+|30    |sync_sign__GCBM0                             |           1|     26784|
+|31    |sync_sign__GCBM1                             |           1|     11928|
+|32    |sync_sign__GCBM2                             |           1|     12516|
+|33    |sync_pss__GC0                                |           1|      4547|
+|34    |IP_sync_v1_0_S00_AXI__GC0                    |           1|       557|
+|35    |design_1_clk_wiz_0_0_clk_wiz__GC0            |           1|         3|
+|36    |case__3821_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|     54847|
+|37    |design_1_clk_wiz_0_0_mmcm_drp__GB1           |           1|     10302|
+|38    |design_1_clk_wiz_0_0_clk_wiz_drp__GC0        |           1|      3709|
+|39    |design_1_clk_wiz_0_0_axi_clk_config__GC0     |           1|       282|
+|40    |design_1__GC0                                |           1|     33338|
 +------+---------------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -6751,28 +6746,28 @@ Detailed RTL Component Info :
 	   2 Input     15 Bit       Adders := 14    
 	   2 Input     14 Bit       Adders := 39    
 	   2 Input     13 Bit       Adders := 58    
-	   2 Input     12 Bit       Adders := 4093  
-	   2 Input     11 Bit       Adders := 7     
+	   2 Input     12 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 15    
 	   4 Input     10 Bit       Adders := 6     
-	   2 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 18    
 	   3 Input     10 Bit       Adders := 4     
 	   4 Input      9 Bit       Adders := 21    
-	   2 Input      9 Bit       Adders := 7     
+	   2 Input      9 Bit       Adders := 39    
 	   3 Input      9 Bit       Adders := 14    
 	   4 Input      8 Bit       Adders := 21    
 	   3 Input      8 Bit       Adders := 5     
-	   2 Input      8 Bit       Adders := 5     
-	   2 Input      7 Bit       Adders := 7     
+	   2 Input      8 Bit       Adders := 69    
+	   2 Input      7 Bit       Adders := 135   
 	   4 Input      7 Bit       Adders := 4     
-	   2 Input      6 Bit       Adders := 82    
+	   2 Input      6 Bit       Adders := 338   
 	   3 Input      6 Bit       Adders := 13    
-	   2 Input      5 Bit       Adders := 30    
+	   2 Input      5 Bit       Adders := 542   
 	   3 Input      5 Bit       Adders := 6     
 	   4 Input      5 Bit       Adders := 6     
-	   2 Input      4 Bit       Adders := 35    
+	   2 Input      4 Bit       Adders := 1059  
 	   4 Input      4 Bit       Adders := 6     
 	   3 Input      4 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 11    
+	   2 Input      3 Bit       Adders := 2059  
 	   2 Input      2 Bit       Adders := 15    
 	   4 Input      2 Bit       Adders := 9     
 	   2 Input      1 Bit       Adders := 8     
@@ -6817,8 +6812,8 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 477   
 	               15 Bit    Registers := 14    
 	               14 Bit    Registers := 41    
-	               13 Bit    Registers := 60    
-	               12 Bit    Registers := 4300  
+	               13 Bit    Registers := 61    
+	               12 Bit    Registers := 4299  
 	               11 Bit    Registers := 10    
 	               10 Bit    Registers := 34    
 	                9 Bit    Registers := 114   
@@ -6880,7 +6875,8 @@ Detailed RTL Component Info :
 	   2 Input     15 Bit        Muxes := 3     
 	   2 Input     14 Bit        Muxes := 3     
 	   7 Input     14 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 38    
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 37    
 	   5 Input     12 Bit        Muxes := 17    
 	  13 Input     12 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 15    
@@ -11765,7 +11761,16 @@ Detailed RTL Component Info :
 Module adder 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     12 Bit       Adders := 1023  
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 16    
+	   2 Input      7 Bit       Adders := 32    
+	   2 Input      6 Bit       Adders := 64    
+	   2 Input      5 Bit       Adders := 128   
+	   2 Input      4 Bit       Adders := 256   
+	   2 Input      3 Bit       Adders := 512   
 +---Registers : 
 	               12 Bit    Registers := 1023  
 	                1 Bit    Registers := 1     
@@ -11827,13 +11832,15 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 1     
 	               19 Bit    Registers := 1     
-	               12 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
 	               11 Bit    Registers := 4     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 7     
 +---Muxes : 
 	   2 Input     19 Bit        Muxes := 2     
-	   2 Input     12 Bit        Muxes := 4     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
 	   2 Input     11 Bit        Muxes := 2     
 	   3 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 2     
@@ -13114,42 +13121,42 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GE
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[10]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[9]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[9]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[8]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[8]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[7]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[7]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[6]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[6]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[4]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[5]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[3]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[3]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[2]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[2]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[1]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[1]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_22/sync_detect_sub/ocorr_max_addr_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/IP_sync_0/sync_pss_subi_22/\sync_detect_sub/ocorr_max_addr_reg[0] )
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[0]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[4]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[1]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[4]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[2]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[4]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[3]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[4]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[4]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[5]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[9]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[8]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/addr_shift_reg[12]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/time_sop_reg[0]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/time_sop_reg[1]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[0]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[1]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[2]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/time_sop_reg[2]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/time_sop_reg[3]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/time_sop_reg[4]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/time_sop_reg[5]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/time_sop_reg[6]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/time_sop_reg[18]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[3]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[4]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[5]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[6]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_22/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[10]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[9]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[8]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[7]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[6]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[5]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[3]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[2]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[1]' (FDCE) to 'design_1_i/IP_sync_0/sync_pss_subi_6/sync_detect_sub/ocorr_max_addr_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/IP_sync_0/sync_pss_subi_6/\sync_detect_sub/ocorr_max_addr_reg[0] )
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[0]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[4]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[1]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[4]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[2]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[4]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[3]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[4]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[4]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[5]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[9]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[8]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/addr_shift_reg[12]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/time_sop_reg[0]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/time_sop_reg[1]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[0]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[1]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[2]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/time_sop_reg[2]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/time_sop_reg[3]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/time_sop_reg[4]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/time_sop_reg[5]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/time_sop_reg[6]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/time_sop_reg[18]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[3]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[4]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[5]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[6]' (FDC) to 'design_1_i/IP_sync_0/sync_pss_subi_6/frame_time_reg[23]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/IP_sync_0/sync_pss_subi_22/\sync_detect_sub/ostat_data_reg[31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/IP_sync_0/IP_sync_v1_0_S00_AXI_insti_23/\axi_rresp_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/IP_sync_0/IP_sync_v1_0_S00_AXI_insti_23/\axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/IP_sync_0/sync_pss_subi_6/\sync_detect_sub/ostat_data_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/IP_sync_0/IP_sync_v1_0_S00_AXI_insti_7/\axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/IP_sync_0/IP_sync_v1_0_S00_AXI_insti_7/\axi_bresp_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_Ii_4/\clk_mon_error_reg_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_Ii_4/\clk_mon_error_reg_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_Ii_4/\clk_mon_error_reg_reg[2] )
@@ -13288,7 +13295,7 @@ INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGA
 INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi.
 INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:09:15 ; elapsed = 00:09:43 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:09:21 ; elapsed = 00:09:50 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -13363,21 +13370,21 @@ INFO: [Synth 8-6837] The timing for the instance design_1_i/AD9361_1i_1/adc_fifo
 INFO: [Synth 8-6837] The timing for the instance design_1_i/AD9361_3i_3/adc_fifo_ad9361_3/inst/i_0/i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance design_1_i/AD9364i_5/adc_fifo_ad9364_0/inst/i_0/i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance design_1_i/AXI_Peripherali_6/AXI_DMA/inst/i_0/i_transfer/i_request_arb/i_store_and_forward/i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_0/SSS_ram_sub/rom_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_27/sync_fifo_sub/ram_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_30/PSS_ram_sub/odat_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_22/i_30/PSS_ram_sub/odat_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_0/SSS_ram_sub/rom_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_27/sync_fifo_sub/ram_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_30/PSS_ram_sub/odat_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/sync_pss_subi_6/i_30/PSS_ram_sub/odat_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
 +------+---------------------------------------------+------------+----------+
@@ -13411,21 +13418,18 @@ Report RTL Partitions:
 |26    |axi_chip2chip_v5_0_5__GC0                    |           1|      7684|
 |27    |AXI_Peripheral_imp_1PLQHVD__GC0              |           1|      4212|
 |28    |CLK_AXI_imp_ROVM9__GC0                       |           1|       295|
-|29    |adder__GBM0                                  |           4|      8679|
-|30    |adder__GBM1                                  |           4|      7680|
-|31    |adder__GBM2                                  |           4|      4620|
-|32    |adder__GBM3                                  |           4|      4522|
-|33    |sync_sign__GCBM0                             |           2|      6921|
-|34    |sync_sign__GCBM1                             |           2|      4180|
-|35    |sync_sign__GCBM2                             |           2|      3544|
-|36    |sync_pss__GC0                                |           1|      1828|
-|37    |IP_sync_v1_0_S00_AXI__GC0                    |           1|       256|
-|38    |design_1_clk_wiz_0_0_clk_wiz__GC0            |           1|         3|
-|39    |case__3821_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|       674|
-|40    |design_1_clk_wiz_0_0_mmcm_drp__GB1           |           1|      1781|
-|41    |design_1_clk_wiz_0_0_clk_wiz_drp__GC0        |           1|      2607|
-|42    |design_1_clk_wiz_0_0_axi_clk_config__GC0     |           1|       291|
-|43    |design_1__GC0                                |           1|     13426|
+|29    |adder                                        |           4|     21233|
+|30    |sync_sign__GCBM0                             |           2|      7006|
+|31    |sync_sign__GCBM1                             |           2|      3918|
+|32    |sync_sign__GCBM2                             |           2|      3718|
+|33    |sync_pss__GC0                                |           1|      2054|
+|34    |IP_sync_v1_0_S00_AXI__GC0                    |           1|       256|
+|35    |design_1_clk_wiz_0_0_clk_wiz__GC0            |           1|         3|
+|36    |case__3821_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|       674|
+|37    |design_1_clk_wiz_0_0_mmcm_drp__GB1           |           1|      1781|
+|38    |design_1_clk_wiz_0_0_clk_wiz_drp__GC0        |           1|      2607|
+|39    |design_1_clk_wiz_0_0_axi_clk_config__GC0     |           1|       291|
+|40    |design_1__GC0                                |           1|     13426|
 +------+---------------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -13435,7 +13439,7 @@ WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 69
 WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 74 of f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_DMA_0/design_1_AXI_DMA_0_constr.xdc. [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ip/design_1_AXI_DMA_0/design_1_AXI_DMA_0_constr.xdc:74]
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:09:50 ; elapsed = 00:10:19 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:09:55 ; elapsed = 00:10:26 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -13449,7 +13453,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:10:16 ; elapsed = 00:10:46 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Timing Optimization : Time (s): cpu = 00:10:21 ; elapsed = 00:10:51 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -13529,26 +13533,23 @@ Report RTL Partitions:
 |26    |axi_chip2chip_v5_0_5__GC0                    |           1|      7684|
 |27    |AXI_Peripheral_imp_1PLQHVD__GC0              |           1|      4212|
 |28    |CLK_AXI_imp_ROVM9__GC0                       |           1|       295|
-|29    |adder__GBM0                                  |           4|      7079|
-|30    |adder__GBM1                                  |           4|      6280|
-|31    |adder__GBM2                                  |           4|      4620|
-|32    |adder__GBM3                                  |           4|      4522|
-|33    |sync_sign__GCBM0                             |           2|      6921|
-|34    |sync_sign__GCBM1                             |           2|      3980|
-|35    |sync_sign__GCBM2                             |           2|      3544|
-|36    |design_1_clk_wiz_0_0_clk_wiz__GC0            |           1|         3|
-|37    |case__3821_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|       490|
-|38    |design_1_clk_wiz_0_0_mmcm_drp__GB1           |           1|      1780|
-|39    |design_1_clk_wiz_0_0_clk_wiz_drp__GC0        |           1|      2607|
-|40    |design_1_clk_wiz_0_0_axi_clk_config__GC0     |           1|       291|
-|41    |design_1__GC0                                |           1|     13426|
-|42    |design_1_IP_sync_0_3_GT0                     |           1|      2087|
+|29    |adder                                        |           4|     21232|
+|30    |sync_sign__GCBM0                             |           2|      7006|
+|31    |sync_sign__GCBM1                             |           2|      3763|
+|32    |sync_sign__GCBM2                             |           2|      3672|
+|33    |design_1_clk_wiz_0_0_clk_wiz__GC0            |           1|         3|
+|34    |case__3821_design_1_clk_wiz_0_0_mmcm_drp__GD |           1|       490|
+|35    |design_1_clk_wiz_0_0_mmcm_drp__GB1           |           1|      1780|
+|36    |design_1_clk_wiz_0_0_clk_wiz_drp__GC0        |           1|      2607|
+|37    |design_1_clk_wiz_0_0_axi_clk_config__GC0     |           1|       291|
+|38    |design_1__GC0                                |           1|     13426|
+|39    |design_1_IP_sync_0_3_GT0                     |           1|      2310|
 +------+---------------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/1e9c/src/sync_pss.sv:106]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [f:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.srcs/sources_1/bd/design_1/ipshared/8c0a/src/sync_pss.sv:106]
 INFO: [Synth 8-6837] The timing for the instance design_1_i/AD9361_CTRL/AD9361_1/adc_fifo_ad9361_1/inst/i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance design_1_i/AD9361_CTRL/AD9361_3/adc_fifo_ad9361_3/inst/i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance design_1_i/AD9364/adc_fifo_ad9364_0/inst/i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
@@ -13570,7 +13571,7 @@ INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/inst/IP_sy
 INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/inst/IP_sync_v1_0_S00_AXI_inst/sync_pss_sub/PSS_ram_sub/odat_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance design_1_i/IP_sync_0/inst/IP_sync_v1_0_S00_AXI_inst/sync_pss_sub/PSS_ram_sub/odat_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:21:18 ; elapsed = 00:21:50 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Technology Mapping : Time (s): cpu = 00:11:35 ; elapsed = 00:12:08 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -13590,8 +13591,8 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5365] Flop inst/IP_sync_v1_0_S00_AXI_inst/sync_pss_sub/addr_shift_reg[11] is being inverted and renamed to inst/IP_sync_v1_0_S00_AXI_inst/sync_pss_sub/addr_shift_reg[11]_inv.
 INFO: [Synth 8-5365] Flop inst/IP_sync_v1_0_S00_AXI_inst/sync_pss_sub/addr_shift_reg[10] is being inverted and renamed to inst/IP_sync_v1_0_S00_AXI_inst/sync_pss_sub/addr_shift_reg[10]_inv.
+INFO: [Synth 8-5365] Flop inst/IP_sync_v1_0_S00_AXI_inst/sync_pss_sub/addr_shift_reg[11] is being inverted and renamed to inst/IP_sync_v1_0_S00_AXI_inst/sync_pss_sub/addr_shift_reg[11]_inv.
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
@@ -13599,7 +13600,7 @@ WARNING: [Synth 8-3295] tying undriven pin master_fpga_gen.axi_chip2chip_master_
 WARNING: [Synth 8-3295] tying undriven pin master_fpga_gen.axi_chip2chip_master_phy_inst/axi_chip2chip_phy_init_inst/aurora_rst_out_r1_inferred:in0 to constant 0
 WARNING: [Synth 8-3295] tying undriven pin master_fpga_gen.axi_chip2chip_master_phy_inst/axi_chip2chip_phy_init_inst/aurora_rst_out_r2_inferred:in0 to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:21:27 ; elapsed = 00:22:00 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished IO Insertion : Time (s): cpu = 00:11:41 ; elapsed = 00:12:13 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -13612,7 +13613,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:21:29 ; elapsed = 00:22:02 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Renaming Generated Instances : Time (s): cpu = 00:11:42 ; elapsed = 00:12:14 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -13624,25 +13625,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:21:54 ; elapsed = 00:22:27 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:11:55 ; elapsed = 00:12:27 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:21:55 ; elapsed = 00:22:28 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Renaming Generated Ports : Time (s): cpu = 00:11:55 ; elapsed = 00:12:28 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:22:04 ; elapsed = 00:22:37 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Handling Custom Attributes : Time (s): cpu = 00:12:03 ; elapsed = 00:12:36 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:22:05 ; elapsed = 00:22:38 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Renaming Generated Nets : Time (s): cpu = 00:12:04 ; elapsed = 00:12:36 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -13735,7 +13736,7 @@ Report Cell Usage:
 |59    |DSP48E__67  |     1|
 |60    |DSP48E__9   |     1|
 |61    |BUFG        |    14|
-|62    |CARRY4      | 13306|
+|62    |CARRY4      |  1594|
 |63    |DSP48E1     |     1|
 |64    |DSP48E1_1   |     1|
 |65    |IDDR        |    28|
@@ -13743,12 +13744,12 @@ Report Cell Usage:
 |67    |IDELAYCTRL  |     5|
 |68    |IDELAYE2    |    28|
 |69    |IDELAYE2_1  |    17|
-|70    |LUT1        |   407|
-|71    |LUT2        | 52850|
-|72    |LUT3        |  6698|
-|73    |LUT4        |  3678|
-|74    |LUT5        |  3141|
-|75    |LUT6        |  6712|
+|70    |LUT1        |   657|
+|71    |LUT2        |  7415|
+|72    |LUT3        |  7958|
+|73    |LUT4        |  9160|
+|74    |LUT5        |  3936|
+|75    |LUT6        | 10323|
 |76    |MMCME2_ADV  |     4|
 |77    |MUXF7       |   344|
 |78    |MUXF8       |   107|
@@ -13776,10 +13777,10 @@ Report Cell Usage:
 |100   |SRL16       |     3|
 |101   |SRL16E      |     2|
 |102   |FD          |     8|
-|103   |FDCE        | 17604|
+|103   |FDCE        | 17591|
 |104   |FDPE        |   116|
 |105   |FDR         |    85|
-|106   |FDRE        | 68044|
+|106   |FDRE        | 33348|
 |107   |FDSE        |   799|
 |108   |IBUF        |    32|
 |109   |IBUFDS      |    28|
@@ -13793,24 +13794,24 @@ Report Instance Areas:
 +------+-----------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
 |      |Instance                                                                           |Module                                                            |Cells  |
 +------+-----------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
-|1     |top                                                                                |                                                                  | 183697|
-|2     |  design_1_i                                                                       |design_1                                                          | 183645|
-|3     |    IP_sync_0                                                                      |design_1_IP_sync_0_3                                              | 131814|
-|4     |      inst                                                                         |IP_sync_v1_0                                                      | 131806|
-|5     |        IP_sync_v1_0_S00_AXI_inst                                                  |IP_sync_v1_0_S00_AXI                                              | 131806|
-|6     |          sync_pss_sub                                                             |sync_pss                                                          | 131671|
+|1     |top                                                                                |                                                                  | 103239|
+|2     |  design_1_i                                                                       |design_1                                                          | 103187|
+|3     |    IP_sync_0                                                                      |design_1_IP_sync_0_3                                              |  51356|
+|4     |      inst                                                                         |IP_sync_v1_0                                                      |  51348|
+|5     |        IP_sync_v1_0_S00_AXI_inst                                                  |IP_sync_v1_0_S00_AXI                                              |  51348|
+|6     |          sync_pss_sub                                                             |sync_pss                                                          |  51213|
 |7     |            PSS_ram_sub                                                            |PSS_ram                                                           |     32|
 |8     |            SSS_ram_sub                                                            |SSS_ram                                                           |      2|
-|9     |            sync_detect_sub                                                        |sync_detect                                                       |    870|
+|9     |            sync_detect_sub                                                        |sync_detect                                                       |    861|
 |10    |              sync_stat_sub_0                                                      |sync_stat                                                         |    152|
 |11    |              sync_stat_sub_1                                                      |sync_stat_384                                                     |    120|
 |12    |            sync_fifo_sub                                                          |sync_fifo                                                         |     12|
-|13    |            sync_sign_0                                                            |sync_sign                                                         |  65088|
-|14    |              adder_im                                                             |adder_382                                                         |  27621|
-|15    |              adder_re                                                             |adder_383                                                         |  27638|
-|16    |            sync_sign_1                                                            |sync_sign_380                                                     |  65392|
-|17    |              adder_im                                                             |adder                                                             |  27621|
-|18    |              adder_re                                                             |adder_381                                                         |  27638|
+|13    |            sync_sign_0                                                            |sync_sign                                                         |  24831|
+|14    |              adder_im                                                             |adder_382                                                         |   6097|
+|15    |              adder_re                                                             |adder_383                                                         |   8994|
+|16    |            sync_sign_1                                                            |sync_sign_380                                                     |  25190|
+|17    |              adder_im                                                             |adder                                                             |   6097|
+|18    |              adder_re                                                             |adder_381                                                         |   8994|
 |19    |    clk_wiz_0                                                                      |design_1_clk_wiz_0_0                                              |   3009|
 |20    |      inst                                                                         |design_1_clk_wiz_0_0_axi_clk_config                               |   3009|
 |21    |        AXI_LITE_IPIF_I                                                            |design_1_clk_wiz_0_0_axi_lite_ipif                                |    269|
@@ -15006,13 +15007,13 @@ Report Instance Areas:
 |1211  |      on_off_f1956_data                                                            |design_1_on_off_f1956_data_0                                      |      1|
 +------+-----------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:22:05 ; elapsed = 00:22:38 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Finished Writing Synthesis Report : Time (s): cpu = 00:12:04 ; elapsed = 00:12:37 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4665 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:16:36 ; elapsed = 00:21:39 . Memory (MB): peak = 2025.078 ; gain = 1056.656
-Synthesis Optimization Complete : Time (s): cpu = 00:22:05 ; elapsed = 00:22:42 . Memory (MB): peak = 2025.078 ; gain = 1312.309
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:28 ; elapsed = 00:11:41 . Memory (MB): peak = 1980.312 ; gain = 1062.059
+Synthesis Optimization Complete : Time (s): cpu = 00:12:04 ; elapsed = 00:12:41 . Memory (MB): peak = 1980.312 ; gain = 1266.711
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 14350 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2638 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/single_end_clk_gen.ibufg_clk_inst' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -15027,7 +15028,7 @@ WARNING: [Shape Builder 18-132] Instance design_1_i/SPI_MOD/axi_spi/U0/NO_DUAL_Q
 WARNING: [Shape Builder 18-132] Instance design_1_i/SPI_MOD/axi_spi/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance design_1_i/SPI_MOD/axi_spi/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST cannot be placed in site OLOGIC_X1Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
 WARNING: [Shape Builder 18-132] Instance design_1_i/SPI_MOD/axi_spi/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance design_1_i/SPI_MOD/axi_spi/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST cannot be placed in site OLOGIC_X1Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2062.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1980.312 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 236 instances were transformed.
   DSP48E => DSP48E1: 60 instances
@@ -15045,12 +15046,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1218 Infos, 365 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:22:52 ; elapsed = 00:23:37 . Memory (MB): peak = 2062.355 ; gain = 1674.352
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 2062.355 ; gain = 0.000
+synth_design: Time (s): cpu = 00:12:33 ; elapsed = 00:13:15 . Memory (MB): peak = 1980.312 ; gain = 1592.160
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1980.312 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'F:/work/Izhevsk_project/projects/Kintex_DSP_Lite/Kintex_DSP_Lite.runs/synth_1/design_1_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:38 ; elapsed = 00:00:29 . Memory (MB): peak = 2062.355 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1980.312 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2062.355 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Jun  6 14:17:09 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 26 14:40:34 2023...

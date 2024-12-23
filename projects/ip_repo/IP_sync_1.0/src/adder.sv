@@ -1,14 +1,14 @@
 module adder
 #(
   parameter int  pDAT_W = 12,
-  parameter int  pDAT_Num   = 2048
+  parameter int  pDAT_Num   = 1024
   
 )
 (
    input  logic  iclk,
   //
    input  logic  iena,
-   input  logic  signed [pDAT_W-1:0]  idat 	[0:pDAT_Num-1],
+   input  logic  signed [1:0]  idat 	[0:pDAT_Num-1],
   //
    output  logic oena,
    output  logic signed [pDAT_W-1:0]  odat
@@ -39,7 +39,8 @@ module adder
 
           always_ff @(posedge iclk) begin
              begin
-              acc[stage][i] <= idat[2*i] + idat[2*i+1];
+              //acc[stage][i] <= idat[2*i] + idat[2*i+1];
+			   acc[stage][i][2:0] <= (idat[2*i] + idat[2*i+1]);
             end
           end
 
@@ -48,7 +49,8 @@ module adder
 
           always_ff @(posedge iclk) begin
             begin
-              acc[stage][i] <= acc[stage-1][2*i] + acc[stage-1][2*i+1];
+              //acc[stage][i] <= acc[stage-1][2*i] + acc[stage-1][2*i+1];
+			  acc[stage][i][stage+3-1:0] <= ($signed(acc[stage-1][2*i][stage+3-2:0]) + $signed(acc[stage-1][2*i+1][stage+3-2:0]));
             end
           end
         end // stage_gen

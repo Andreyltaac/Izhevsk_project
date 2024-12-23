@@ -98,12 +98,12 @@ module sync_pss
   logic        wr_buff_lable;
   logic        w_axi_en;
   logic [22:0] abs_corr; 
+  logic [pDAT_W : 0] data_corr;
  
  
  
- 
- 
-  assign odata_corr   = abs_corr >> 9;
+  assign odata_corr   = data_corr>>1;
+  assign data_corr   = abs_corr >> 9;
   assign req_data     = req_data_rg[0]&~req_data_rg[1];
   assign corr_str_fr  = corr_str_rg[0] & ~corr_str_rg[1];
   assign Q2_pos_ram   = 48 - ((idata_ctrl[27:24]<<3)+(idata_ctrl[27:24]<<2))-(idata_ctrl[23:16]<<1);
@@ -434,7 +434,7 @@ module sync_pss
     .trh_auto       (idata_ctrl[12]),
     .frame_time     (frame_time),
     .time_sop       (time_sop),		
-	.icorr	        (odata_corr),
+	.icorr	        (data_corr),
     .ocorr_mlvl     (odata_mlvl),
     .ocorr_max_addr (ocorr_maddr),
     .osop           (osop_sync),
