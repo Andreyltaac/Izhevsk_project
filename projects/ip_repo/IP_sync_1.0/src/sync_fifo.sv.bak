@@ -1,8 +1,8 @@
-module sync_fifo
+module fr_sync_fifo
 #(
 
 	parameter DATA_W	=	24, 
-	parameter ADDR_W	=	13
+	parameter ADDR_W	=	14
 
 )
 

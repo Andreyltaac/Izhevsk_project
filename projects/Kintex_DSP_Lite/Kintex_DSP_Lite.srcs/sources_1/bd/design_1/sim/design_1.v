@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Mon Jun 26 14:26:05 2023
+//Date        : Tue Apr 15 11:19:32 2025
 //Host        : TOR00094 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -505,8 +505,8 @@ module AD9361_2_imp_GMWOOB
   wire Conn1_WVALID;
   wire [15:0]RAshift16_4_up_0_output_bus;
   wire [15:0]RAshift16_4_up_1_output_bus;
-  wire [15:0]RAshift16_4_up_2_output_bus;
-  wire [15:0]RAshift16_4_up_3_output_bus;
+  (* DEBUG = "true" *) wire [15:0]RAshift16_4_up_2_output_bus;
+  (* DEBUG = "true" *) wire [15:0]RAshift16_4_up_3_output_bus;
   wire [0:0]TDD_SYNC2_dout;
   wire [5:0]ad9361_2_P1_N_1;
   wire [5:0]ad9361_2_P1_P_1;
@@ -1417,8 +1417,8 @@ module AD9361_CTRL_imp_9MHREM
   wire AD9361_2_ad9361_TX_FRAME2_N;
   wire AD9361_2_ad9361_TX_FRAME2_P;
   wire AD9361_2_adc_valid_i0;
-  wire [15:0]AD9361_2_dout_data_4;
-  wire [15:0]AD9361_2_dout_data_5;
+  (* DEBUG = "true" *) wire [15:0]AD9361_2_dout_data_4;
+  (* DEBUG = "true" *) wire [15:0]AD9361_2_dout_data_5;
   wire [15:0]AD9361_2_dout_data_6;
   wire [15:0]AD9361_2_dout_data_7;
   wire [5:0]AD9361_3_ad9361_3_P0_N;
@@ -4176,8 +4176,8 @@ module design_1
   output spi_sclk_1;
 
   wire [0:0]AD9361_CTRL_clk_out1;
-  wire [15:0]AD9361_CTRL_dout_data_4;
-  wire [15:0]AD9361_CTRL_dout_data_5;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [15:0]AD9361_CTRL_dout_data_4;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [15:0]AD9361_CTRL_dout_data_5;
   wire [0:0]AD9361_CTRL_peripheral_aresetn1;
   wire [0:0]AD9361_ctrl_data_rate;
   wire AD9364_ad9361_FB_CLK_P;
@@ -4410,7 +4410,7 @@ module design_1
   wire [0:0]Decoder_SPI_0_num_cs_2;
   wire [0:0]Decoder_SPI_0_num_cs_3;
   wire FPGA_REF_40MHZ_1;
-  wire IP_sync_0_LED_en;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire IP_sync_0_LED_en;
   wire [11:0]IP_sync_0_sync_odat_im;
   wire [11:0]IP_sync_0_sync_odat_re;
   wire IP_sync_0_sync_osop;

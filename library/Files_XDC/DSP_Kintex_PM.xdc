@@ -1,35 +1,19 @@
 #-------------------------------------------------------------------------------
 #DIO_KINTEX_v1
 #-------------------------------------------------------------------------------
-#MGTX2
-set_property PACKAGE_PIN H6 [get_ports gt_refclk1_p]
-set_property PACKAGE_PIN H5 [get_ports gt_refclk1_n]
-set_property PACKAGE_PIN D6 [get_ports gt_refclk2_p]
-set_property PACKAGE_PIN D5 [get_ports gt_refclk2_n]
 
-set_property -dict {PACKAGE_PIN R4} [get_ports {rxp_1[0]}]
-set_property -dict {PACKAGE_PIN R3} [get_ports {rxn_1[0]}]
-set_property -dict {PACKAGE_PIN G4} [get_ports {rxp_2[0]}]
-set_property -dict {PACKAGE_PIN G3} [get_ports {rxn_2[0]}]
+#User PINs
+set_property -dict {PACKAGE_PIN K21 IOSTANDARD LVCMOS33} [get_ports PIN_0]
+set_property -dict {PACKAGE_PIN H21 IOSTANDARD LVCMOS33} [get_ports PIN_1]
+set_property -dict {PACKAGE_PIN G21 IOSTANDARD LVCMOS33} [get_ports PIN_2]
+#User PINs
 
-set_property -dict {PACKAGE_PIN P2} [get_ports {txp_1[0]}]
-set_property -dict {PACKAGE_PIN P1} [get_ports {txn_1[0]}]
-set_property -dict {PACKAGE_PIN F2} [get_ports {txp_2[0]}]
-set_property -dict {PACKAGE_PIN F1} [get_ports {txn_2[0]}]
-
-set_property -dict {PACKAGE_PIN AC21 IOSTANDARD LVCMOS33} [get_ports SFP_Disable_1]
-set_property -dict {PACKAGE_PIN AD25 IOSTANDARD LVCMOS33} [get_ports SFP_Disable_2]
-
-set_property -dict {PACKAGE_PIN AD21 IOSTANDARD LVCMOS33} [get_ports SFP1_TX_FAULT]
-set_property -dict {PACKAGE_PIN AF24 IOSTANDARD LVCMOS33} [get_ports SFP2_TX_FAULT]
-
-set_property -dict {PACKAGE_PIN W20 IOSTANDARD LVCMOS33} [get_ports SFP1_RX_LOS]
-set_property -dict {PACKAGE_PIN AD23 IOSTANDARD LVCMOS33} [get_ports SFP2_RX_LOS]
-
+#User LEDS
 set_property -dict {PACKAGE_PIN AA24 IOSTANDARD LVCMOS33} [get_ports LED1]
 set_property -dict {PACKAGE_PIN Y22 IOSTANDARD LVCMOS33} [get_ports LED2]
 set_property -dict {PACKAGE_PIN AA22 IOSTANDARD LVCMOS33} [get_ports LED3]
-#MGTX2
+set_property -dict {PACKAGE_PIN U21 IOSTANDARD LVCMOS33} [get_ports LED4]
+#User LEDS
 
 # Power on of links and services
 set_property -dict {PACKAGE_PIN AC22 IOSTANDARD LVCMOS33} [get_ports som_28v_en_link1]
@@ -263,17 +247,13 @@ set_property -dict {PACKAGE_PIN M21 IOSTANDARD LVCMOS18} [get_ports ad9364_SPI_D
 #TX
 #ad9364_0. OBSERVER CHANNEL.
 
-
-
 #DIO_KINTEX_DSP
 #Pins located here belong to bank 14
 
-#set_property -dict {PACKAGE_PIN C23 IOSTANDARD LVCMOS33} [get_ports RESET_AXI_BRIDGE]         ; ##E11
-
 set_property -dict {PACKAGE_PIN G22 IOSTANDARD LVCMOS33} [get_ports AXI_RX_CLK_OUT]
 set_property -dict {PACKAGE_PIN H26 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[0]}]
-set_property -dict {PACKAGE_PIN B24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[1]}]
-set_property -dict {PACKAGE_PIN A25 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[2]}]
+set_property -dict {PACKAGE_PIN J26 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[1]}];#B24
+set_property -dict {PACKAGE_PIN L23 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[2]}];#A25
 set_property -dict {PACKAGE_PIN E21 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[3]}]
 set_property -dict {PACKAGE_PIN K23 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[4]}]
 set_property -dict {PACKAGE_PIN A22 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[5]}]
@@ -282,21 +262,18 @@ set_property -dict {PACKAGE_PIN G24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA
 set_property -dict {PACKAGE_PIN C22 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[8]}]
 set_property -dict {PACKAGE_PIN E23 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[9]}]
 set_property -dict {PACKAGE_PIN E22 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[10]}]
-set_property -dict {PACKAGE_PIN G25 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[11]}]
-set_property -dict {PACKAGE_PIN A24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[12]}]
-set_property -dict {PACKAGE_PIN F24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[13]}]
-set_property -dict {PACKAGE_PIN D25 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[14]}]
+set_property -dict {PACKAGE_PIN D26 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[11]}];  #G25
+set_property -dict {PACKAGE_PIN G25 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[12]}]; #A24
+set_property -dict {PACKAGE_PIN A24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[13]}]; #F24
+set_property -dict {PACKAGE_PIN F24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[14]}]; #D25
+set_property -dict {PACKAGE_PIN D25 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[15]}]; #C23
+set_property -dict {PACKAGE_PIN C21 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[16]}]; #K22
 
-##Use with ID=12
-set_property -dict {PACKAGE_PIN C23 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[15]}]
-set_property -dict {PACKAGE_PIN K22 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[16]}]
 
-#Orbel DSP v.1
-#set_property -dict {PACKAGE_PIN D26 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[16]}]
 
 
 set_property -dict {PACKAGE_PIN F23 IOSTANDARD LVCMOS33} [get_ports AXI_TX_CLK_IN]
-set_property -dict {PACKAGE_PIN C21 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[0]}]
+set_property -dict {PACKAGE_PIN H23 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[0]}]; #C21
 set_property -dict {PACKAGE_PIN A20 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[1]}]
 set_property -dict {PACKAGE_PIN E26 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[2]}]
 set_property -dict {PACKAGE_PIN B21 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[3]}]
@@ -311,15 +288,10 @@ set_property -dict {PACKAGE_PIN C24 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA
 set_property -dict {PACKAGE_PIN B22 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[12]}]
 set_property -dict {PACKAGE_PIN L22 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[13]}]
 set_property -dict {PACKAGE_PIN B26 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[14]}]
-
-##Use with ID=12
 set_property -dict {PACKAGE_PIN B25 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[15]}]
 set_property -dict {PACKAGE_PIN A23 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[16]}]
 
-##Comment when ID=12
-#set_property -dict {PACKAGE_PIN B25 IOSTANDARD LVCMOS33} [get_ports ip2intc_irpt]
 
-#set_property -dict {PACKAGE_PIN J26 IOSTANDARD LVCMOS33} [get_ports FPGA_REF_40MHZ]
 set_property -dict {PACKAGE_PIN F22 IOSTANDARD LVCMOS33} [get_ports FPGA_REF_40MHZ]
 
 
@@ -332,26 +304,14 @@ create_clock -period 4.000 -name prm_clk_ad2 [get_ports ad9361_DCLK_2_P]
 create_clock -period 4.000 -name prm_clk_ad3 [get_ports ad9361_DCLK_3_P]
 create_clock -period 4.000 -name prm_clk_ad4 [get_ports ad9364_DCLK_P]
 create_clock -period 25.000 -name prm_clk_40 [get_ports FPGA_REF_40MHZ]
-
-create_clock -period 6.400 -name prm_clk_sfp1 [get_ports gt_refclk1_p]
-create_clock -period 6.400 -name prm_clk_sfp2 [get_ports gt_refclk2_p]
 #Primary clocks
 
 
 #Hardware constrains
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/CLK_AXI/ibuf_0/inst/out_ref]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/AXI_Peripheral/AXI_C2C/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/master_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clk_in_ibufg]
-
-set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1]] -group [get_clocks -of_objects [get_pins design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/mmcm_adv_inst/CLKOUT0]]
-set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1]] -group [get_clocks -of_objects [get_pins design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/mmcm_adv_inst/CLKOUT1]]
 #Hardware constrains
 
-
-#Attenuator F1956NGBI
-set_property -dict {PACKAGE_PIN K21 IOSTANDARD LVCMOS33} [get_ports F1956_SPI_DI]
-set_property -dict {PACKAGE_PIN H21 IOSTANDARD LVCMOS33} [get_ports F1956_SPI_CLK]
-set_property -dict {PACKAGE_PIN G21 IOSTANDARD LVCMOS33} [get_ports F1956_SPI_CS]
-#Attenuator F1956NGBI
 
 #Area constrains
 create_pblock pblock_AD9361_2
@@ -367,7 +327,7 @@ resize_pblock [get_pblocks pblock_AD9361_3] -add {RAMB18_X6Y40:RAMB18_X6Y59}
 resize_pblock [get_pblocks pblock_AD9361_3] -add {RAMB36_X6Y20:RAMB36_X6Y29}
 
 create_pblock AXI_BRIDGE
-add_cells_to_pblock [get_pblocks AXI_BRIDGE] [get_cells -quiet [list design_1_i/AXI_Peripheral/AXI_C2C design_1_i/AXI_Peripheral/AXI_C2C_axi_periph design_1_i/AXI_Peripheral/AXI_DMA design_1_i/AXI_Peripheral/util_cpack]]
+add_cells_to_pblock [get_pblocks AXI_BRIDGE] [get_cells -quiet [list design_1_i/AXI_Peripheral/AXI_C2C design_1_i/AXI_Peripheral/AXI_C2C_axi_periph design_1_i/AXI_Peripheral/AXI_DMA]]
 resize_pblock [get_pblocks AXI_BRIDGE] -add {SLICE_X0Y100:SLICE_X23Y149}
 resize_pblock [get_pblocks AXI_BRIDGE] -add {DSP48_X0Y40:DSP48_X1Y59}
 resize_pblock [get_pblocks AXI_BRIDGE] -add {RAMB18_X0Y40:RAMB18_X1Y59}
@@ -396,6 +356,15 @@ resize_pblock [get_pblocks pblock_SPI_MOD] -add {RAMB36_X0Y15:RAMB36_X0Y19}
 #Area constrains
 
 
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1]] -group [get_clocks prm_clk_ad1]
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1]] -group [get_clocks prm_clk_ad2]
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1]] -group [get_clocks prm_clk_ad3]
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1]] -group [get_clocks prm_clk_ad4]
+
+
+
+create_pblock pblock_IP_sync_0
+resize_pblock [get_pblocks pblock_IP_sync_0] -add {CLOCKREGION_X0Y0:CLOCKREGION_X1Y6}
 
 
 
@@ -403,33 +372,29 @@ resize_pblock [get_pblocks pblock_SPI_MOD] -add {RAMB36_X0Y15:RAMB36_X0Y19}
 
 
 
+set_false_path -from [get_clocks -of_objects [get_pins design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/mmcm_adv_inst/CLKOUT0]] -to [get_clocks -of_objects [get_pins design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1]]
+
+
+set_false_path -from [get_clocks -of_objects [get_pins design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1]] -to [get_clocks -of_objects [get_pins design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/mmcm_adv_inst/CLKOUT0]]
 
 
 
-set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/mmcm_adv_inst/CLKOUT0]] -group [get_clocks -of_objects [get_pins design_1_i/AD9361_CTRL/ad9361_clk/clk_DSP/inst/mmcm_adv_inst/CLKOUT1]]
 
-create_pblock Power_meters_1_2
-add_cells_to_pblock [get_pblocks Power_meters_1_2] [get_cells -quiet [list design_1_i/AD9361_CTRL/Power_meters/Power_meter_w512_mov_0 design_1_i/AD9361_CTRL/Power_meters/Power_meter_w512_mov_1]]
-resize_pblock [get_pblocks Power_meters_1_2] -add {SLICE_X114Y51:SLICE_X135Y99}
-resize_pblock [get_pblocks Power_meters_1_2] -add {DSP48_X4Y22:DSP48_X5Y39}
-resize_pblock [get_pblocks Power_meters_1_2] -add {RAMB18_X4Y22:RAMB18_X5Y39}
-resize_pblock [get_pblocks Power_meters_1_2] -add {RAMB36_X4Y11:RAMB36_X5Y19}
-create_pblock Power_meters_3_4
-add_cells_to_pblock [get_pblocks Power_meters_3_4] [get_cells -quiet [list design_1_i/AD9361_CTRL/Power_meters/Power_meter_w512_mov_2 design_1_i/AD9361_CTRL/Power_meters/Power_meter_w512_mov_3]]
-resize_pblock [get_pblocks Power_meters_3_4] -add {SLICE_X114Y100:SLICE_X137Y149}
-resize_pblock [get_pblocks Power_meters_3_4] -add {DSP48_X4Y40:DSP48_X5Y59}
-resize_pblock [get_pblocks Power_meters_3_4] -add {RAMB18_X4Y40:RAMB18_X5Y59}
-resize_pblock [get_pblocks Power_meters_3_4] -add {RAMB36_X4Y20:RAMB36_X5Y29}
 
-create_pblock pblock_Aurora_1
-add_cells_to_pblock [get_pblocks pblock_Aurora_1] [get_cells -quiet [list design_1_i/Aurora_1]]
-resize_pblock [get_pblocks pblock_Aurora_1] -add {SLICE_X132Y200:SLICE_X145Y249}
-resize_pblock [get_pblocks pblock_Aurora_1] -add {DSP48_X5Y80:DSP48_X5Y99}
-resize_pblock [get_pblocks pblock_Aurora_1] -add {RAMB18_X5Y80:RAMB18_X5Y99}
-resize_pblock [get_pblocks pblock_Aurora_1] -add {RAMB36_X5Y40:RAMB36_X5Y49}
-create_pblock pblock_Aurora_2
-add_cells_to_pblock [get_pblocks pblock_Aurora_2] [get_cells -quiet [list design_1_i/Aurora_2]]
-resize_pblock [get_pblocks pblock_Aurora_2] -add {SLICE_X132Y150:SLICE_X145Y199}
-resize_pblock [get_pblocks pblock_Aurora_2] -add {DSP48_X5Y60:DSP48_X5Y79}
-resize_pblock [get_pblocks pblock_Aurora_2] -add {RAMB18_X5Y70:RAMB18_X5Y79}
-resize_pblock [get_pblocks pblock_Aurora_2] -add {RAMB36_X5Y35:RAMB36_X5Y39}
+create_pblock pblock_IP_sync_0_1
+add_cells_to_pblock [get_pblocks pblock_IP_sync_0_1] [get_cells -quiet [list design_1_i/IP_sync_0]]
+resize_pblock [get_pblocks pblock_IP_sync_0_1] -add {SLICE_X18Y202:SLICE_X145Y348}
+resize_pblock [get_pblocks pblock_IP_sync_0_1] -add {RAMB18_X1Y82:RAMB18_X5Y137}
+resize_pblock [get_pblocks pblock_IP_sync_0_1] -add {RAMB36_X1Y41:RAMB36_X5Y68}
+
+
+
+
+
+set_false_path -from [get_clocks -of_objects [get_pins design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1]] -to [get_clocks -of_objects [get_pins design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/mmcm_adv_inst/CLKOUT0]]
+
+set_false_path -from [get_clocks -of_objects [get_pins design_1_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/mmcm_adv_inst/CLKOUT0]] -to [get_clocks -of_objects [get_pins design_1_i/CLK_AXI/CLK_COMMON/inst/mmcm_adv_inst/CLKOUT1]]
+
+
+connect_debug_port dbg_hub/clk [get_nets u_ila_1_clk_out1]
+

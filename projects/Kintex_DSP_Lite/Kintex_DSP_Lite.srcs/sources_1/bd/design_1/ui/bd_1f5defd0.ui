@@ -1,25 +1,25 @@
 {
-   "ExpandedHierarchyInLayout":"",
+   "ExpandedHierarchyInLayout":"/AXI_Peripheral",
    "PinnedBlocks":"/AXI_Peripheral|/CLK_AXI|/AD9364|/AD9361_CTRL|/SPI_MOD|/Control_from_SOM_0|/Current_turning_off_0|",
    "PinnedPorts":"AXI_RX_CLK_OUT|AXI_RX_DATA_OUT|AXI_TX_CLK_IN|AXI_TX_DATA_IN|FPGA_REF_40MHZ|ad9361_EN_1|ad9361_EN_2|ad9361_EN_3|ad9361_TXNRX_1|ad9361_TXNRX_2|ad9361_TXNRX_3|ad9364_EN|ad9364_TXNRX|ad9361_RESET_1|ad9361_RESET_2|ad9361_RESET_3|ad9364_RESET|ad9361_SPI_CS_3|ad9361_SPI_CLK_3|ad9361_SPI_DI_3|ad9361_SPI_CLK_1|ad9361_SPI_CS_1|ad9361_SPI_DI_1|ad9361_SPI_CLK_2|ad9361_SPI_CS_2|ad9361_SPI_DI_2|ad9364_SPI_CLK|ad9364_SPI_CS|ad9364_SPI_DI|ad9361_DCLK_1_P|ad9361_DCLK_1_N|ad9361_DCLK_2_N|ad9361_DCLK_2_P|ad9361_DCLK_3_N|ad9364_DCLK_P|ad9364_DCLK_N|ad9361_RX_FRAME1_P|ad9361_RX_FRAME1_N|ad9361_RX_FRAME2_P|ad9361_RX_FRAME2_N|ad9361_RX_FRAME3_P|ad9364_RX_FRAME_P|ad9361_RX_FRAME3_N|ad9364_RX_FRAME_N|ad9361_1_P1_P|ad9361_1_P1_N|ad9361_2_P1_N|ad9361_2_P1_P|ad9361_3_P1_N|ad9361_3_P1_P|ad9364_P1_N|ad9364_P1_P|ad9361_DCLK_3_P|ad9364_SPI_DO|ad9361_SPI_DO_3|ad9361_SPI_DO_1|ad9361_SPI_DO_2|ad9361_FB_CLK_1_P|ad9361_FB_CLK_1_N|ad9361_TX_FRAME1_N|ad9361_TX_FRAME1_P|ad9361_FB_CLK_2_N|ad9361_FB_CLK_2_P|ad9361_FB_CLK_3_N|ad9361_FB_CLK_3_P|ad9364_FB_CLK_N|ad9364_FB_CLK_P|ad9361_TX_FRAME2_N|ad9361_TX_FRAME2_P|ad9361_TX_FRAME3_N|ad9364_TX_FRAME_N|ad9361_TX_FRAME3_P|ad9364_TX_FRAME_P|ad9361_1_P0_N|ad9361_1_P0_P|ad9361_2_P0_N|ad9361_2_P0_P|ad9361_3_P0_N|ad9361_3_P0_P|ad9364_P0_N|ad9364_P0_P|ad9361_EN_AGC_2|ad9361_EN_AGC_3|ad9361_EN_AGC_1|ad9364_EN_AGC|PIN_1|PIN_2|LED3|LED2|LED1|fpga_28v_en_link1|fpga_28v_en_link2|fpga_28v_en_service1|fpga_28v_en_service2|fpga_28v_en_service3|fpga_28v_en_service4|fpga_5v_en_link|spi_cs_n_0|spi_sclk_0|spi_mosi_0|spi_cs_n_1|spi_sclk_1|spi_mosi_1|som_28v_en_link1|som_28v_en_link2|som_28v_en_service1|som_28v_en_service2|som_28v_en_service3|som_28v_en_service4|som_5v_en_link|spi_miso_0|spi_miso_1|PIN_0|",
    "commentid":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port AXI_RX_CLK_OUT -pg 1 -lvl 10 -x 33630 -y 800 -defaultsOSRD
+preplace port AXI_RX_CLK_OUT -pg 1 -lvl 10 -x 34960 -y 800 -defaultsOSRD
 preplace port AXI_TX_CLK_IN -pg 1 -lvl 0 -x -1390 -y 1280 -defaultsOSRD
 preplace port FPGA_REF_40MHZ -pg 1 -lvl 0 -x -1390 -y 1790 -defaultsOSRD
-preplace port ad9361_EN_3 -pg 1 -lvl 10 -x 33630 -y 880 -defaultsOSRD
-preplace port ad9361_TXNRX_3 -pg 1 -lvl 10 -x 33630 -y 860 -defaultsOSRD
-preplace port ad9364_EN -pg 1 -lvl 10 -x 33630 -y 1830 -defaultsOSRD
-preplace port ad9364_TXNRX -pg 1 -lvl 10 -x 33630 -y 1850 -defaultsOSRD
-preplace port ad9361_SPI_CLK_3 -pg 1 -lvl 10 -x 33630 -y 580 -defaultsOSRD
-preplace port ad9361_SPI_DI_3 -pg 1 -lvl 10 -x 33630 -y 740 -defaultsOSRD
-preplace port ad9361_SPI_CLK_1 -pg 1 -lvl 10 -x 33630 -y 540 -defaultsOSRD
-preplace port ad9361_SPI_DI_1 -pg 1 -lvl 10 -x 33630 -y 680 -defaultsOSRD
-preplace port ad9361_SPI_CLK_2 -pg 1 -lvl 10 -x 33630 -y 560 -defaultsOSRD
-preplace port ad9361_SPI_DI_2 -pg 1 -lvl 10 -x 33630 -y 700 -defaultsOSRD
-preplace port ad9364_SPI_CLK -pg 1 -lvl 10 -x 33630 -y 600 -defaultsOSRD
-preplace port ad9364_SPI_DI -pg 1 -lvl 10 -x 33630 -y 720 -defaultsOSRD
+preplace port ad9361_EN_3 -pg 1 -lvl 10 -x 34960 -y 880 -defaultsOSRD
+preplace port ad9361_TXNRX_3 -pg 1 -lvl 10 -x 34960 -y 860 -defaultsOSRD
+preplace port ad9364_EN -pg 1 -lvl 10 -x 34960 -y 1830 -defaultsOSRD
+preplace port ad9364_TXNRX -pg 1 -lvl 10 -x 34960 -y 1850 -defaultsOSRD
+preplace port ad9361_SPI_CLK_3 -pg 1 -lvl 10 -x 34960 -y 580 -defaultsOSRD
+preplace port ad9361_SPI_DI_3 -pg 1 -lvl 10 -x 34960 -y 740 -defaultsOSRD
+preplace port ad9361_SPI_CLK_1 -pg 1 -lvl 10 -x 34960 -y 540 -defaultsOSRD
+preplace port ad9361_SPI_DI_1 -pg 1 -lvl 10 -x 34960 -y 680 -defaultsOSRD
+preplace port ad9361_SPI_CLK_2 -pg 1 -lvl 10 -x 34960 -y 560 -defaultsOSRD
+preplace port ad9361_SPI_DI_2 -pg 1 -lvl 10 -x 34960 -y 700 -defaultsOSRD
+preplace port ad9364_SPI_CLK -pg 1 -lvl 10 -x 34960 -y 600 -defaultsOSRD
+preplace port ad9364_SPI_DI -pg 1 -lvl 10 -x 34960 -y 720 -defaultsOSRD
 preplace port ad9361_DCLK_1_P -pg 1 -lvl 0 -x -1390 -y 1250 -defaultsOSRD
 preplace port ad9361_DCLK_1_N -pg 1 -lvl 0 -x -1390 -y 1090 -defaultsOSRD
 preplace port ad9361_DCLK_2_N -pg 1 -lvl 0 -x -1390 -y 970 -defaultsOSRD
@@ -40,37 +40,37 @@ preplace port ad9364_SPI_DO -pg 1 -lvl 0 -x -1390 -y 610 -defaultsOSRD
 preplace port ad9361_SPI_DO_3 -pg 1 -lvl 0 -x -1390 -y 690 -defaultsOSRD
 preplace port ad9361_SPI_DO_1 -pg 1 -lvl 0 -x -1390 -y 650 -defaultsOSRD
 preplace port ad9361_SPI_DO_2 -pg 1 -lvl 0 -x -1390 -y 670 -defaultsOSRD
-preplace port ad9361_FB_CLK_1_P -pg 1 -lvl 10 -x 33630 -y 900 -defaultsOSRD
-preplace port ad9361_FB_CLK_1_N -pg 1 -lvl 10 -x 33630 -y 920 -defaultsOSRD
-preplace port ad9361_TX_FRAME1_N -pg 1 -lvl 10 -x 33630 -y 960 -defaultsOSRD
-preplace port ad9361_TX_FRAME1_P -pg 1 -lvl 10 -x 33630 -y 940 -defaultsOSRD
-preplace port ad9361_FB_CLK_2_N -pg 1 -lvl 10 -x 33630 -y 1000 -defaultsOSRD
-preplace port ad9361_FB_CLK_2_P -pg 1 -lvl 10 -x 33630 -y 980 -defaultsOSRD
-preplace port ad9361_FB_CLK_3_N -pg 1 -lvl 10 -x 33630 -y 1080 -defaultsOSRD
-preplace port ad9361_FB_CLK_3_P -pg 1 -lvl 10 -x 33630 -y 1060 -defaultsOSRD
-preplace port ad9364_FB_CLK_N -pg 1 -lvl 10 -x 33630 -y 1890 -defaultsOSRD
-preplace port ad9364_FB_CLK_P -pg 1 -lvl 10 -x 33630 -y 1870 -defaultsOSRD
-preplace port ad9361_TX_FRAME2_N -pg 1 -lvl 10 -x 33630 -y 1040 -defaultsOSRD
-preplace port ad9361_TX_FRAME2_P -pg 1 -lvl 10 -x 33630 -y 1020 -defaultsOSRD
-preplace port ad9361_TX_FRAME3_N -pg 1 -lvl 10 -x 33630 -y 1120 -defaultsOSRD
-preplace port ad9364_TX_FRAME_N -pg 1 -lvl 10 -x 33630 -y 1930 -defaultsOSRD
-preplace port ad9361_TX_FRAME3_P -pg 1 -lvl 10 -x 33630 -y 1100 -defaultsOSRD
-preplace port ad9364_TX_FRAME_P -pg 1 -lvl 10 -x 33630 -y 1910 -defaultsOSRD
-preplace port PIN_1 -pg 1 -lvl 10 -x 33630 -y 100 -defaultsOSRD
-preplace port PIN_2 -pg 1 -lvl 10 -x 33630 -y 140 -defaultsOSRD
-preplace port fpga_28v_en_link1 -pg 1 -lvl 10 -x 33630 -y 2130 -defaultsOSRD
-preplace port fpga_28v_en_link2 -pg 1 -lvl 10 -x 33630 -y 2150 -defaultsOSRD
-preplace port fpga_28v_en_service1 -pg 1 -lvl 10 -x 33630 -y 2170 -defaultsOSRD
-preplace port fpga_28v_en_service2 -pg 1 -lvl 10 -x 33630 -y 2190 -defaultsOSRD
-preplace port fpga_28v_en_service3 -pg 1 -lvl 10 -x 33630 -y 2210 -defaultsOSRD
-preplace port fpga_28v_en_service4 -pg 1 -lvl 10 -x 33630 -y 2230 -defaultsOSRD
-preplace port fpga_5v_en_link -pg 1 -lvl 10 -x 33630 -y 2250 -defaultsOSRD
-preplace port spi_cs_n_0 -pg 1 -lvl 10 -x 33630 -y 2270 -defaultsOSRD
-preplace port spi_sclk_0 -pg 1 -lvl 10 -x 33630 -y 2290 -defaultsOSRD
-preplace port spi_mosi_0 -pg 1 -lvl 10 -x 33630 -y 2310 -defaultsOSRD
-preplace port spi_cs_n_1 -pg 1 -lvl 10 -x 33630 -y 2330 -defaultsOSRD
-preplace port spi_sclk_1 -pg 1 -lvl 10 -x 33630 -y 2350 -defaultsOSRD
-preplace port spi_mosi_1 -pg 1 -lvl 10 -x 33630 -y 2370 -defaultsOSRD
+preplace port ad9361_FB_CLK_1_P -pg 1 -lvl 10 -x 34960 -y 900 -defaultsOSRD
+preplace port ad9361_FB_CLK_1_N -pg 1 -lvl 10 -x 34960 -y 920 -defaultsOSRD
+preplace port ad9361_TX_FRAME1_N -pg 1 -lvl 10 -x 34960 -y 960 -defaultsOSRD
+preplace port ad9361_TX_FRAME1_P -pg 1 -lvl 10 -x 34960 -y 940 -defaultsOSRD
+preplace port ad9361_FB_CLK_2_N -pg 1 -lvl 10 -x 34960 -y 1000 -defaultsOSRD
+preplace port ad9361_FB_CLK_2_P -pg 1 -lvl 10 -x 34960 -y 980 -defaultsOSRD
+preplace port ad9361_FB_CLK_3_N -pg 1 -lvl 10 -x 34960 -y 1080 -defaultsOSRD
+preplace port ad9361_FB_CLK_3_P -pg 1 -lvl 10 -x 34960 -y 1060 -defaultsOSRD
+preplace port ad9364_FB_CLK_N -pg 1 -lvl 10 -x 34960 -y 1890 -defaultsOSRD
+preplace port ad9364_FB_CLK_P -pg 1 -lvl 10 -x 34960 -y 1870 -defaultsOSRD
+preplace port ad9361_TX_FRAME2_N -pg 1 -lvl 10 -x 34960 -y 1040 -defaultsOSRD
+preplace port ad9361_TX_FRAME2_P -pg 1 -lvl 10 -x 34960 -y 1020 -defaultsOSRD
+preplace port ad9361_TX_FRAME3_N -pg 1 -lvl 10 -x 34960 -y 1120 -defaultsOSRD
+preplace port ad9364_TX_FRAME_N -pg 1 -lvl 10 -x 34960 -y 1930 -defaultsOSRD
+preplace port ad9361_TX_FRAME3_P -pg 1 -lvl 10 -x 34960 -y 1100 -defaultsOSRD
+preplace port ad9364_TX_FRAME_P -pg 1 -lvl 10 -x 34960 -y 1910 -defaultsOSRD
+preplace port PIN_1 -pg 1 -lvl 10 -x 34960 -y 100 -defaultsOSRD
+preplace port PIN_2 -pg 1 -lvl 10 -x 34960 -y 140 -defaultsOSRD
+preplace port fpga_28v_en_link1 -pg 1 -lvl 10 -x 34960 -y 2130 -defaultsOSRD
+preplace port fpga_28v_en_link2 -pg 1 -lvl 10 -x 34960 -y 2150 -defaultsOSRD
+preplace port fpga_28v_en_service1 -pg 1 -lvl 10 -x 34960 -y 2170 -defaultsOSRD
+preplace port fpga_28v_en_service2 -pg 1 -lvl 10 -x 34960 -y 2190 -defaultsOSRD
+preplace port fpga_28v_en_service3 -pg 1 -lvl 10 -x 34960 -y 2210 -defaultsOSRD
+preplace port fpga_28v_en_service4 -pg 1 -lvl 10 -x 34960 -y 2230 -defaultsOSRD
+preplace port fpga_5v_en_link -pg 1 -lvl 10 -x 34960 -y 2250 -defaultsOSRD
+preplace port spi_cs_n_0 -pg 1 -lvl 10 -x 34960 -y 2270 -defaultsOSRD
+preplace port spi_sclk_0 -pg 1 -lvl 10 -x 34960 -y 2290 -defaultsOSRD
+preplace port spi_mosi_0 -pg 1 -lvl 10 -x 34960 -y 2310 -defaultsOSRD
+preplace port spi_cs_n_1 -pg 1 -lvl 10 -x 34960 -y 2330 -defaultsOSRD
+preplace port spi_sclk_1 -pg 1 -lvl 10 -x 34960 -y 2350 -defaultsOSRD
+preplace port spi_mosi_1 -pg 1 -lvl 10 -x 34960 -y 2370 -defaultsOSRD
 preplace port som_28v_en_link1 -pg 1 -lvl 0 -x -1390 -y 2160 -defaultsOSRD
 preplace port som_28v_en_link2 -pg 1 -lvl 0 -x -1390 -y 2180 -defaultsOSRD
 preplace port som_28v_en_service1 -pg 1 -lvl 0 -x -1390 -y 2200 -defaultsOSRD
@@ -80,21 +80,21 @@ preplace port som_28v_en_service4 -pg 1 -lvl 0 -x -1390 -y 2260 -defaultsOSRD
 preplace port som_5v_en_link -pg 1 -lvl 0 -x -1390 -y 2280 -defaultsOSRD
 preplace port spi_miso_0 -pg 1 -lvl 0 -x -1390 -y 2300 -defaultsOSRD
 preplace port spi_miso_1 -pg 1 -lvl 0 -x -1390 -y 2320 -defaultsOSRD
-preplace port PIN_0 -pg 1 -lvl 10 -x 33630 -y 120 -defaultsOSRD
-preplace portBus AXI_RX_DATA_OUT -pg 1 -lvl 10 -x 33630 -y 1670 -defaultsOSRD
+preplace port PIN_0 -pg 1 -lvl 10 -x 34960 -y 120 -defaultsOSRD
+preplace portBus AXI_RX_DATA_OUT -pg 1 -lvl 10 -x 34960 -y 1670 -defaultsOSRD
 preplace portBus AXI_TX_DATA_IN -pg 1 -lvl 0 -x -1390 -y 1300 -defaultsOSRD
-preplace portBus ad9361_EN_1 -pg 1 -lvl 10 -x 33630 -y 1260 -defaultsOSRD
-preplace portBus ad9361_EN_2 -pg 1 -lvl 10 -x 33630 -y 1280 -defaultsOSRD
-preplace portBus ad9361_TXNRX_1 -pg 1 -lvl 10 -x 33630 -y 1300 -defaultsOSRD
-preplace portBus ad9361_TXNRX_2 -pg 1 -lvl 10 -x 33630 -y 1320 -defaultsOSRD
-preplace portBus ad9361_RESET_1 -pg 1 -lvl 10 -x 33630 -y 200 -defaultsOSRD
-preplace portBus ad9361_RESET_2 -pg 1 -lvl 10 -x 33630 -y 220 -defaultsOSRD
-preplace portBus ad9361_RESET_3 -pg 1 -lvl 10 -x 33630 -y 240 -defaultsOSRD
-preplace portBus ad9364_RESET -pg 1 -lvl 10 -x 33630 -y 260 -defaultsOSRD
-preplace portBus ad9361_SPI_CS_3 -pg 1 -lvl 10 -x 33630 -y 620 -defaultsOSRD
-preplace portBus ad9361_SPI_CS_1 -pg 1 -lvl 10 -x 33630 -y 640 -defaultsOSRD
-preplace portBus ad9361_SPI_CS_2 -pg 1 -lvl 10 -x 33630 -y 660 -defaultsOSRD
-preplace portBus ad9364_SPI_CS -pg 1 -lvl 10 -x 33630 -y 520 -defaultsOSRD
+preplace portBus ad9361_EN_1 -pg 1 -lvl 10 -x 34960 -y 1260 -defaultsOSRD
+preplace portBus ad9361_EN_2 -pg 1 -lvl 10 -x 34960 -y 1280 -defaultsOSRD
+preplace portBus ad9361_TXNRX_1 -pg 1 -lvl 10 -x 34960 -y 1300 -defaultsOSRD
+preplace portBus ad9361_TXNRX_2 -pg 1 -lvl 10 -x 34960 -y 1320 -defaultsOSRD
+preplace portBus ad9361_RESET_1 -pg 1 -lvl 10 -x 34960 -y 200 -defaultsOSRD
+preplace portBus ad9361_RESET_2 -pg 1 -lvl 10 -x 34960 -y 220 -defaultsOSRD
+preplace portBus ad9361_RESET_3 -pg 1 -lvl 10 -x 34960 -y 240 -defaultsOSRD
+preplace portBus ad9364_RESET -pg 1 -lvl 10 -x 34960 -y 260 -defaultsOSRD
+preplace portBus ad9361_SPI_CS_3 -pg 1 -lvl 10 -x 34960 -y 620 -defaultsOSRD
+preplace portBus ad9361_SPI_CS_1 -pg 1 -lvl 10 -x 34960 -y 640 -defaultsOSRD
+preplace portBus ad9361_SPI_CS_2 -pg 1 -lvl 10 -x 34960 -y 660 -defaultsOSRD
+preplace portBus ad9364_SPI_CS -pg 1 -lvl 10 -x 34960 -y 520 -defaultsOSRD
 preplace portBus ad9361_1_P1_P -pg 1 -lvl 0 -x -1390 -y 1230 -defaultsOSRD
 preplace portBus ad9361_1_P1_N -pg 1 -lvl 0 -x -1390 -y 1070 -defaultsOSRD
 preplace portBus ad9361_2_P1_N -pg 1 -lvl 0 -x -1390 -y 1210 -defaultsOSRD
@@ -103,182 +103,224 @@ preplace portBus ad9361_3_P1_N -pg 1 -lvl 0 -x -1390 -y 1030 -defaultsOSRD
 preplace portBus ad9361_3_P1_P -pg 1 -lvl 0 -x -1390 -y 1050 -defaultsOSRD
 preplace portBus ad9364_P1_N -pg 1 -lvl 0 -x -1390 -y 2000 -defaultsOSRD
 preplace portBus ad9364_P1_P -pg 1 -lvl 0 -x -1390 -y 1980 -defaultsOSRD
-preplace portBus ad9361_1_P0_N -pg 1 -lvl 10 -x 33630 -y 1160 -defaultsOSRD
-preplace portBus ad9361_1_P0_P -pg 1 -lvl 10 -x 33630 -y 1140 -defaultsOSRD
-preplace portBus ad9361_2_P0_N -pg 1 -lvl 10 -x 33630 -y 1200 -defaultsOSRD
-preplace portBus ad9361_2_P0_P -pg 1 -lvl 10 -x 33630 -y 1180 -defaultsOSRD
-preplace portBus ad9361_3_P0_N -pg 1 -lvl 10 -x 33630 -y 1240 -defaultsOSRD
-preplace portBus ad9361_3_P0_P -pg 1 -lvl 10 -x 33630 -y 1220 -defaultsOSRD
-preplace portBus ad9364_P0_N -pg 1 -lvl 10 -x 33630 -y 1970 -defaultsOSRD
-preplace portBus ad9364_P0_P -pg 1 -lvl 10 -x 33630 -y 1950 -defaultsOSRD
-preplace portBus ad9361_EN_AGC_2 -pg 1 -lvl 10 -x 33630 -y 300 -defaultsOSRD
-preplace portBus ad9361_EN_AGC_3 -pg 1 -lvl 10 -x 33630 -y 320 -defaultsOSRD
-preplace portBus ad9361_EN_AGC_1 -pg 1 -lvl 10 -x 33630 -y 280 -defaultsOSRD
-preplace portBus ad9364_EN_AGC -pg 1 -lvl 10 -x 33630 -y 340 -defaultsOSRD
-preplace portBus LED3 -pg 1 -lvl 10 -x 33630 -y 180 -defaultsOSRD
-preplace portBus LED2 -pg 1 -lvl 10 -x 33630 -y 80 -defaultsOSRD
-preplace portBus LED1 -pg 1 -lvl 10 -x 33630 -y 60 -defaultsOSRD
-preplace inst AXI_Peripheral -pg 1 -lvl 2 -x 5480 -y 940 -defaultsOSRD
+preplace portBus ad9361_1_P0_N -pg 1 -lvl 10 -x 34960 -y 1160 -defaultsOSRD
+preplace portBus ad9361_1_P0_P -pg 1 -lvl 10 -x 34960 -y 1140 -defaultsOSRD
+preplace portBus ad9361_2_P0_N -pg 1 -lvl 10 -x 34960 -y 1200 -defaultsOSRD
+preplace portBus ad9361_2_P0_P -pg 1 -lvl 10 -x 34960 -y 1180 -defaultsOSRD
+preplace portBus ad9361_3_P0_N -pg 1 -lvl 10 -x 34960 -y 1240 -defaultsOSRD
+preplace portBus ad9361_3_P0_P -pg 1 -lvl 10 -x 34960 -y 1220 -defaultsOSRD
+preplace portBus ad9364_P0_N -pg 1 -lvl 10 -x 34960 -y 1970 -defaultsOSRD
+preplace portBus ad9364_P0_P -pg 1 -lvl 10 -x 34960 -y 1950 -defaultsOSRD
+preplace portBus ad9361_EN_AGC_2 -pg 1 -lvl 10 -x 34960 -y 300 -defaultsOSRD
+preplace portBus ad9361_EN_AGC_3 -pg 1 -lvl 10 -x 34960 -y 320 -defaultsOSRD
+preplace portBus ad9361_EN_AGC_1 -pg 1 -lvl 10 -x 34960 -y 280 -defaultsOSRD
+preplace portBus ad9364_EN_AGC -pg 1 -lvl 10 -x 34960 -y 340 -defaultsOSRD
+preplace portBus LED3 -pg 1 -lvl 10 -x 34960 -y 180 -defaultsOSRD
+preplace portBus LED2 -pg 1 -lvl 10 -x 34960 -y 80 -defaultsOSRD
+preplace portBus LED1 -pg 1 -lvl 10 -x 34960 -y 60 -defaultsOSRD
+preplace inst AXI_Peripheral -pg 1 -lvl 2 -x 5480 -y 942 -defaultsOSRD
 preplace inst CLK_AXI -pg 1 -lvl 1 -x 4500 -y 1790 -defaultsOSRD
-preplace inst AD9364 -pg 1 -lvl 9 -x 32740 -y 5060 -defaultsOSRD
-preplace inst AD9361_CTRL -pg 1 -lvl 9 -x 32740 -y 3200 -defaultsOSRD
-preplace inst SPI_MOD -pg 1 -lvl 9 -x 32740 -y 1640 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 26 32 30 23 28 33 18 25 20 27 31 24 29 21 22 19} -defaultsOSRD
-preplace inst Control_from_SOM_0 -pg 1 -lvl 9 -x 32740 -y 1240 -defaultsOSRD
-preplace inst Current_turning_off_0 -pg 1 -lvl 9 -x 32740 -y 5406 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 5 -x 30828 -y 1050 -defaultsOSRD
-preplace inst xlconcat_1 -pg 1 -lvl 6 -x 31166 -y 980 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 27480 -y 230 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 8 -x 31900 -y 650 -defaultsOSRD
-preplace inst mqc_t_0 -pg 1 -lvl 9 -x 32740 -y 680 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 7 -x 31540 -y 1070 -defaultsOSRD
-preplace inst IP_sync_0 -pg 1 -lvl 4 -x 28296 -y 1050 -defaultsOSRD
-preplace netloc AXI_Peripheral_AXI_RX_CLK_OUT 1 2 8 5730 320 27610 290 N 290 N 290 N 290 N 290 N 290 33320J
-preplace netloc AXI_Peripheral_AXI_RX_DATA_OUT 1 2 8 5770 360 N 360 N 360 N 360 N 360 N 360 N 360 33310J
-preplace netloc AXI_TX_CLK_IN_1 1 0 2 -1360J 1060 4690
-preplace netloc AXI_TX_DATA_IN_1 1 0 2 -1300J 1070 4700
-preplace netloc clk_wiz_0_axi_periph_clk 1 1 8 4750 1180 5750 1100 27660 1350 N 1350 N 1350 N 1350 N 1350 32310
-preplace netloc rst_sys_ps7_100M_peripheral_aresetn 1 1 8 4730 1160 5760 1120 27630 1360 N 1360 N 1360 N 1360 N 1360 32320
-preplace netloc sys_200m_clk 1 1 8 4760 1790 N 1790 N 1790 N 1790 N 1790 N 1790 N 1790 32170
-preplace netloc AD9364_ad9364_EN 1 9 1 33410J 1830n
-preplace netloc AD9364_ad9364_TXNRX 1 9 1 33420J 1850n
-preplace netloc ad9361_spi_clk_4 1 9 1 33100 540n
-preplace netloc ad9361_spi_mosi_1 1 9 1 33150 680n
-preplace netloc ad9364_DCLK_P_1 1 0 9 NJ 1900 N 1900 N 1900 N 1900 N 1900 N 1900 N 1900 N 1900 32150
-preplace netloc ad9364_DCLK_N_1 1 0 9 NJ 1920 N 1920 N 1920 N 1920 N 1920 N 1920 N 1920 N 1920 32140
-preplace netloc ad9364_TX_FRAME_P_1 1 0 9 NJ 1940 N 1940 N 1940 N 1940 N 1940 N 1940 N 1940 N 1940 32120
-preplace netloc ad9364_TX_FRAME_N_1 1 0 9 NJ 1960 N 1960 N 1960 N 1960 N 1960 N 1960 N 1960 N 1960 32110
-preplace netloc ad9364_P1_P_1 1 0 9 NJ 1980 N 1980 N 1980 N 1980 N 1980 N 1980 N 1980 N 1980 32100
-preplace netloc ad9364_P1_N_1 1 0 9 NJ 2000 N 2000 N 2000 N 2000 N 2000 N 2000 N 2000 N 2000 32090
-preplace netloc Decoder_SPI_0_num_cs_0 1 9 1 33110J 640n
-preplace netloc Decoder_SPI_0_num_cs_1 1 9 1 33140J 660n
-preplace netloc Decoder_SPI_0_num_cs_2 1 9 1 33130J 620n
-preplace netloc Decoder_SPI_0_num_cs_3 1 9 1 33120J 520n
-preplace netloc ad9361_SPI_DO_1_1 1 0 9 -1340J 700 N 700 5710 760 N 760 N 760 N 760 N 760 31660 920 32410
-preplace netloc ad9361_SPI_DO_2_1 1 0 9 -1350J 710 N 710 5700 770 N 770 N 770 N 770 N 770 31640 930 32000
-preplace netloc ad9361_SPI_DO_3_1 1 0 9 -1360J 720 N 720 5680 780 N 780 N 780 N 780 N 780 31620 950 32380
-preplace netloc ad9364_SPI_DO_1 1 0 9 NJ 610 N 610 N 610 N 610 28530 490 N 490 N 490 N 490 32470
-preplace netloc ad9361_DCLK_2_P_1 1 0 9 -1370J 660 N 660 5800 720 N 720 28510 870 N 870 N 870 31630 880 32390
-preplace netloc ad9361_RX_FRAME2_P_1 1 0 9 -1320J 680 N 680 5780 740 N 740 N 740 N 740 N 740 31700 900 32370
-preplace netloc ad9361_DCLK_2_N_1 1 0 9 -1330J 650 N 650 5810 710 N 710 28520 720 N 720 N 720 31680 960 32350
-preplace netloc ad9361_RX_FRAME1_N_1 1 0 9 -1310J 670 N 670 5790 730 N 730 N 730 N 730 N 730 31710 910 32360
-preplace netloc ad9361_RX_FRAME3_N_1 1 0 9 -1300J 690 N 690 5740 750 N 750 N 750 N 750 N 750 31740 840 32400
-preplace netloc ad9361_3_P1_N_1 1 0 9 -1310J 1080 4720 1310 N 1310 27600 1330 N 1330 N 1330 N 1330 N 1330 32260
-preplace netloc ad9361_3_P1_P_1 1 0 9 -1350J 1280 4670 1320 N 1320 27590 1340 N 1340 N 1340 N 1340 N 1340 32230
-preplace netloc ad9361_DCLK_1_N_1 1 0 9 NJ 1090 4780 1230 N 1230 N 1230 N 1230 N 1230 N 1230 N 1230 32330
-preplace netloc ad9361_RX_FRAME1_P_1 1 0 9 NJ 1110 4770 1250 N 1250 N 1250 N 1250 N 1250 N 1250 N 1250 32300
-preplace netloc ad9361_RX_FRAME3_P_1 1 0 9 -1330J 1250 4710 1270 N 1270 27670 1280 N 1280 N 1280 N 1280 N 1280 32270
-preplace netloc ad9361_DCLK_3_N_1 1 0 9 NJ 1150 N 1150 N 1150 27690 1260 N 1260 N 1260 N 1260 N 1260 32280
-preplace netloc ad9361_RX_FRAME2_N_1 1 0 9 NJ 1170 N 1170 N 1170 27680 1270 N 1270 N 1270 N 1270 N 1270 32250
-preplace netloc ad9361_2_P1_P_1 1 0 9 NJ 1190 4700 1300 N 1300 27610 1320 N 1320 N 1320 N 1320 N 1320 32200
-preplace netloc ad9361_2_P1_N_1 1 0 9 -1370J 1270 4680 1290 N 1290 27620 1300 N 1300 N 1300 N 1300 N 1300 32210
-preplace netloc ad9361_DCLK_1_P_1 1 0 9 -1340J 1240 N 1240 N 1240 N 1240 N 1240 N 1240 N 1240 N 1240 32240
-preplace netloc DSP_ad9361_TXNRX_3 1 9 1 33160J 860n
-preplace netloc DSP_ad9361_EN_3 1 9 1 33170J 880n
-preplace netloc ad9361_DCLK_3_P_1 1 0 9 NJ 1520 N 1520 N 1520 N 1520 N 1520 N 1520 N 1520 N 1520 32180
-preplace netloc DSP_ad9361_FB_CLK_1_P 1 9 1 33180J 900n
-preplace netloc DSP_ad9361_FB_CLK_1_N 1 9 1 33190J 920n
-preplace netloc DSP_ad9361_TX_FRAME1_P 1 9 1 33200J 940n
-preplace netloc DSP_ad9361_TX_FRAME1_N 1 9 1 33210J 960n
-preplace netloc DSP_ad9361_FB_CLK_2_P 1 9 1 33220J 980n
-preplace netloc DSP_ad9361_FB_CLK_2_N 1 9 1 33230J 1000n
-preplace netloc DSP_ad9361_TX_FRAME2_P 1 9 1 33240J 1020n
-preplace netloc DSP_ad9361_TX_FRAME2_N 1 9 1 33250J 1040n
-preplace netloc DSP_ad9361_FB_CLK_3_P 1 9 1 33260J 1060n
-preplace netloc DSP_ad9361_FB_CLK_3_N 1 9 1 33270J 1080n
-preplace netloc DSP_ad9361_TX_FRAME3_P 1 9 1 33280J 1100n
-preplace netloc DSP_ad9361_TX_FRAME3_N 1 9 1 33290J 1120n
-preplace netloc AD9364_ad9361_FB_CLK_P 1 9 1 33430J 1870n
-preplace netloc AD9364_ad9364_FB_CLK_N 1 9 1 33440J 1890n
-preplace netloc AD9364_ad9364_TX_FRAME_P1 1 9 1 33450J 1910n
-preplace netloc AD9364_ad9364_TX_FRAME_N1 1 9 1 33460J 1930n
-preplace netloc DSP_ad9361_1_P0_P 1 9 1 33300J 1140n
-preplace netloc DSP_ad9361_1_P0_N 1 9 1 33320J 1160n
-preplace netloc DSP_ad9361_2_P0_P 1 9 1 33330J 1180n
-preplace netloc DSP_ad9361_2_P0_N 1 9 1 33340J 1200n
-preplace netloc DSP_ad9361_3_P0_P 1 9 1 33350J 1220n
-preplace netloc DSP_ad9361_3_P0_N 1 9 1 33360J 1240n
-preplace netloc AD9364_ad9364_P0_P 1 9 1 33470J 1950n
-preplace netloc AD9364_ad9364_P0_N 1 9 1 33480J 1970n
-preplace netloc SPI_MOD_ip2intc_irpt 1 1 9 4820 1780 N 1780 N 1780 N 1780 N 1780 N 1780 N 1780 N 1780 32920
-preplace netloc DSP_ad9361_EN_1 1 9 1 33370J 1260n
-preplace netloc DSP_ad9361_EN_2 1 9 1 33380J 1280n
-preplace netloc DSP_ad9361_TXNRX_1 1 9 1 33390J 1300n
-preplace netloc DSP_ad9361_TXNRX_2 1 9 1 33400J 1320n
-preplace netloc ad9361_1_P1_P_1 1 0 9 NJ 1230 4740 1260 N 1260 27650 1310 N 1310 N 1310 N 1310 N 1310 32190
-preplace netloc ad9361_1_P1_N_1 1 0 9 -1320J 1260 4690 1280 N 1280 27640 1290 N 1290 N 1290 N 1290 N 1290 32290
-preplace netloc ibuf_0_out_ref 1 1 8 N 1830 N 1830 N 1830 N 1830 N 1830 N 1830 N 1830 32160
-preplace netloc AD9361_ctrl_data_rate 1 1 9 4790 3670 N 3670 N 3670 N 3670 N 3670 N 3670 N 3670 32490 3670 32940
-preplace netloc up_txnrx_1 1 8 2 32520 4050 32930
-preplace netloc clk_axi_reset_n 1 1 8 N 1810 N 1810 N 1810 N 1810 N 1810 N 1810 N 1810 32130
-preplace netloc reset_1 1 1 9 4830 1990 N 1990 N 1990 N 1990 N 1990 N 1990 N 1990 N 1990 32920
-preplace netloc Current_turning_off_0_fpga_en_28v_l1 1 9 1 33490J 2130n
-preplace netloc Current_turning_off_0_fpga_en_28v_l2 1 9 1 33500J 2150n
-preplace netloc Current_turning_off_0_fpga_en_28v_s1 1 9 1 33510J 2170n
-preplace netloc Current_turning_off_0_fpga_en_28v_s2 1 9 1 33520J 2190n
-preplace netloc Current_turning_off_0_fpga_en_28v_s3 1 9 1 33530J 2210n
-preplace netloc Current_turning_off_0_fpga_en_28v_s4 1 9 1 33540J 2230n
-preplace netloc Current_turning_off_0_fpga_en_5v_s 1 9 1 33550J 2250n
-preplace netloc Current_turning_off_0_spi_cs_n_0 1 9 1 33560J 2270n
-preplace netloc Current_turning_off_0_spi_sclk_0 1 9 1 33570J 2290n
-preplace netloc Current_turning_off_0_spi_mosi_0 1 9 1 33580J 2310n
-preplace netloc Current_turning_off_0_spi_cs_n_1 1 9 1 33590J 2330n
-preplace netloc Current_turning_off_0_spi_sclk_1 1 9 1 33600J 2350n
-preplace netloc Current_turning_off_0_spi_mosi_1 1 9 1 33610J 2370n
-preplace netloc som_en_28v_l1_1 1 0 9 NJ 2160 N 2160 N 2160 N 2160 N 2160 N 2160 N 2160 N 2160 32080
-preplace netloc som_en_28v_l2_1 1 0 9 NJ 2180 N 2180 N 2180 N 2180 N 2180 N 2180 N 2180 N 2180 32070
-preplace netloc som_en_28v_s1_1 1 0 9 NJ 2200 N 2200 N 2200 N 2200 N 2200 N 2200 N 2200 N 2200 32060
-preplace netloc som_en_28v_s2_1 1 0 9 NJ 2220 N 2220 N 2220 N 2220 N 2220 N 2220 N 2220 N 2220 32050
-preplace netloc som_en_28v_s3_1 1 0 9 NJ 2240 N 2240 N 2240 N 2240 N 2240 N 2240 N 2240 N 2240 32040
-preplace netloc som_en_28v_s4_1 1 0 9 NJ 2260 N 2260 N 2260 N 2260 N 2260 N 2260 N 2260 N 2260 32030
-preplace netloc som_en_5v_s_1 1 0 9 NJ 2280 N 2280 N 2280 N 2280 N 2280 N 2280 N 2280 N 2280 32020
-preplace netloc spi_miso_0_1 1 0 9 NJ 2300 N 2300 N 2300 N 2300 N 2300 N 2300 N 2300 N 2300 32010
-preplace netloc spi_miso_1_1 1 0 9 NJ 2320 N 2320 N 2320 N 2320 N 2320 N 2320 N 2320 N 2320 32000
-preplace netloc Control_from_SOM_0_ad9361_1_reset 1 9 1 33020J 200n
-preplace netloc Control_from_SOM_0_ad9361_2_reset 1 9 1 33030J 220n
-preplace netloc Control_from_SOM_0_ad9361_2_en_agc 1 9 1 33070J 300n
-preplace netloc Control_from_SOM_0_ad9361_1_en_agc 1 9 1 33060J 280n
-preplace netloc Control_from_SOM_0_ad9364_en_agc 1 9 1 33090J 340n
-preplace netloc Control_from_SOM_0_ad9361_3_en_agc 1 9 1 33080J 320n
-preplace netloc Control_from_SOM_0_ad9364_reset 1 9 1 33050J 260n
-preplace netloc Control_from_SOM_0_ad9361_3_reset 1 9 1 33040J 240n
+preplace inst AD9364 -pg 1 -lvl 9 -x 34070 -y 5060 -defaultsOSRD
+preplace inst AD9361_CTRL -pg 1 -lvl 9 -x 34070 -y 3200 -defaultsOSRD
+preplace inst SPI_MOD -pg 1 -lvl 9 -x 34070 -y 1640 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 26 32 30 23 28 33 18 25 20 27 31 24 29 21 22 19} -defaultsOSRD
+preplace inst Control_from_SOM_0 -pg 1 -lvl 9 -x 34070 -y 1240 -defaultsOSRD
+preplace inst Current_turning_off_0 -pg 1 -lvl 9 -x 34070 -y 5406 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -x 32154 -y 1050 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 6 -x 32492 -y 980 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 28806 -y 230 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 8 -x 33230 -y 650 -defaultsOSRD
+preplace inst mqc_t_0 -pg 1 -lvl 9 -x 34070 -y 680 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 7 -x 32866 -y 1070 -defaultsOSRD
+preplace inst IP_sync_0 -pg 1 -lvl 4 -x 29622 -y 1050 -defaultsOSRD
+preplace inst AXI_Peripheral|Concat -pg 1 -lvl 2 -x 5790 -y 1232 -defaultsOSRD
+preplace inst AXI_Peripheral|GND -pg 1 -lvl 1 -x 5490 -y 1242 -defaultsOSRD
+preplace inst AXI_Peripheral|VCC -pg 1 -lvl 1 -x 5490 -y 922 -defaultsOSRD
+preplace inst AXI_Peripheral|AXI_C2C -pg 1 -lvl 3 -x 6200 -y 1002 -defaultsOSRD
+preplace inst AXI_Peripheral|AXI_C2C_axi_periph -pg 1 -lvl 4 -x 6600 -y 1182 -defaultsOSRD
+preplace inst AXI_Peripheral|AXI_DMA -pg 1 -lvl 2 -x 5790 -y 932 -defaultsOSRD
+preplace inst AXI_Peripheral|xlconcat_1 -pg 1 -lvl 1 -x 5490 -y 1032 -defaultsOSRD
+preplace netloc AXI_Peripheral_AXI_RX_CLK_OUT 1 2 8 7080 100 N 100 N 100 N 100 N 100 N 100 N 100 34490J
+preplace netloc AXI_Peripheral_AXI_RX_DATA_OUT 1 2 8 N 1612 N 1612 N 1612 N 1612 N 1612 N 1612 33650 1780 34610J
+preplace netloc AXI_TX_CLK_IN_1 1 0 2 NJ 1280 4890
+preplace netloc AXI_TX_DATA_IN_1 1 0 2 NJ 1300 4910
+preplace netloc clk_wiz_0_axi_periph_clk 1 1 8 4880 712 7160 810 28950 1290 N 1290 N 1290 N 1290 N 1290 33610
+preplace netloc rst_sys_ps7_100M_peripheral_aresetn 1 1 8 4900 722 7170 820 28930 1300 N 1300 N 1300 N 1300 N 1300 33620
+preplace netloc sys_200m_clk 1 1 8 4920 1770 N 1770 N 1770 N 1770 N 1770 N 1770 N 1770 33520
+preplace netloc AD9364_ad9364_EN 1 9 1 34740J 1830n
+preplace netloc AD9364_ad9364_TXNRX 1 9 1 34750J 1850n
+preplace netloc ad9361_spi_clk_4 1 9 1 34430 540n
+preplace netloc ad9361_spi_mosi_1 1 9 1 34480 680n
+preplace netloc ad9364_DCLK_P_1 1 0 9 NJ 1900 N 1900 N 1900 N 1900 N 1900 N 1900 N 1900 N 1900 33500
+preplace netloc ad9364_DCLK_N_1 1 0 9 NJ 1920 N 1920 N 1920 N 1920 N 1920 N 1920 N 1920 N 1920 33480
+preplace netloc ad9364_TX_FRAME_P_1 1 0 9 NJ 1940 N 1940 N 1940 N 1940 N 1940 N 1940 N 1940 N 1940 33460
+preplace netloc ad9364_TX_FRAME_N_1 1 0 9 NJ 1960 N 1960 N 1960 N 1960 N 1960 N 1960 N 1960 N 1960 33450
+preplace netloc ad9364_P1_P_1 1 0 9 NJ 1980 N 1980 N 1980 N 1980 N 1980 N 1980 N 1980 N 1980 33440
+preplace netloc ad9364_P1_N_1 1 0 9 NJ 2000 N 2000 N 2000 N 2000 N 2000 N 2000 N 2000 N 2000 33430
+preplace netloc Decoder_SPI_0_num_cs_0 1 9 1 34440J 640n
+preplace netloc Decoder_SPI_0_num_cs_1 1 9 1 34470J 660n
+preplace netloc Decoder_SPI_0_num_cs_2 1 9 1 34460J 620n
+preplace netloc Decoder_SPI_0_num_cs_3 1 9 1 34450J 520n
+preplace netloc ad9361_SPI_DO_1_1 1 0 9 -1220J 1010 4780 500 N 500 N 500 29800 480 N 480 N 480 33000 420 33830
+preplace netloc ad9361_SPI_DO_2_1 1 0 9 -1270J 1020 4790 510 N 510 N 510 29810 490 N 490 N 490 33020 450 33800
+preplace netloc ad9361_SPI_DO_3_1 1 0 9 -1310J 1030 4800 520 N 520 N 520 29850 500 N 500 N 500 33010 440 33810
+preplace netloc ad9364_SPI_DO_1 1 0 9 -1260J 1040 4810 550 N 550 N 550 N 550 N 550 N 550 33080 490 33740
+preplace netloc ad9361_DCLK_2_P_1 1 0 9 -1370J 920 4690 300 7040 130 28960 180 N 180 N 180 N 180 N 180 33340
+preplace netloc ad9361_RX_FRAME2_P_1 1 0 9 -1350J 940 4710 320 N 320 N 320 N 320 N 320 N 320 N 320 33820
+preplace netloc ad9361_DCLK_2_N_1 1 0 9 -1360J 930 4700 310 7150 140 28920 170 N 170 N 170 N 170 N 170 33840
+preplace netloc ad9361_RX_FRAME1_N_1 1 0 9 NJ 990 4760 480 N 480 28980 450 N 450 N 450 N 450 32960 390 33750
+preplace netloc ad9361_RX_FRAME3_N_1 1 0 9 -1320J 960 4730 340 N 340 N 340 N 340 N 340 N 340 N 340 33760
+preplace netloc ad9361_3_P1_N_1 1 0 9 -1320J 1090 4860 692 7100 840 N 840 29830 860 32250 900 N 900 32970 910 33630
+preplace netloc ad9361_3_P1_P_1 1 0 9 -1330J 1100 4870 702 7090 860 N 860 29810 870 32240 910 N 910 32950 920 33600
+preplace netloc ad9361_DCLK_1_N_1 1 0 9 -1340J 910 4680 290 7030 120 28990 150 N 150 N 150 N 150 N 150 33780
+preplace netloc ad9361_RX_FRAME1_P_1 1 0 9 -1290J 970 4740 460 N 460 N 460 N 460 N 460 N 460 32970 400 33700
+preplace netloc ad9361_RX_FRAME3_P_1 1 0 9 -1240J 1000 4770 490 N 490 N 490 29780 470 N 470 N 470 32990 410 33690
+preplace netloc ad9361_DCLK_3_N_1 1 0 9 -1250J 980 4750 470 N 470 28970 440 N 440 N 440 N 440 32950 380 33710
+preplace netloc ad9361_RX_FRAME2_N_1 1 0 9 -1280J 950 4720 330 N 330 28920 310 N 310 N 310 N 310 N 310 33720
+preplace netloc ad9361_2_P1_P_1 1 0 9 -1210J 1080 4850 682 7110 800 N 800 29880 840 32290 890 N 890 33020 900 33550
+preplace netloc ad9361_2_P1_N_1 1 0 9 -1220J 1070 4840 672 7120 790 N 790 29890 800 N 800 N 800 N 800 33570
+preplace netloc ad9361_DCLK_1_P_1 1 0 9 -1300J 900 4670 280 7020 110 29010 160 N 160 N 160 N 160 N 160 33730
+preplace netloc DSP_ad9361_TXNRX_3 1 9 1 34490J 860n
+preplace netloc DSP_ad9361_EN_3 1 9 1 34500J 880n
+preplace netloc ad9361_DCLK_3_P_1 1 0 9 NJ 1520 4700 1690 N 1690 N 1690 N 1690 N 1690 N 1690 N 1690 33530
+preplace netloc DSP_ad9361_FB_CLK_1_P 1 9 1 34510J 900n
+preplace netloc DSP_ad9361_FB_CLK_1_N 1 9 1 34520J 920n
+preplace netloc DSP_ad9361_TX_FRAME1_P 1 9 1 34530J 940n
+preplace netloc DSP_ad9361_TX_FRAME1_N 1 9 1 34540J 960n
+preplace netloc DSP_ad9361_FB_CLK_2_P 1 9 1 34550J 980n
+preplace netloc DSP_ad9361_FB_CLK_2_N 1 9 1 34560J 1000n
+preplace netloc DSP_ad9361_TX_FRAME2_P 1 9 1 34570J 1020n
+preplace netloc DSP_ad9361_TX_FRAME2_N 1 9 1 34580J 1040n
+preplace netloc DSP_ad9361_FB_CLK_3_P 1 9 1 34590J 1060n
+preplace netloc DSP_ad9361_FB_CLK_3_N 1 9 1 34600J 1080n
+preplace netloc DSP_ad9361_TX_FRAME3_P 1 9 1 34620J 1100n
+preplace netloc DSP_ad9361_TX_FRAME3_N 1 9 1 34630J 1120n
+preplace netloc AD9364_ad9361_FB_CLK_P 1 9 1 34760J 1870n
+preplace netloc AD9364_ad9364_FB_CLK_N 1 9 1 34770J 1890n
+preplace netloc AD9364_ad9364_TX_FRAME_P1 1 9 1 34780J 1910n
+preplace netloc AD9364_ad9364_TX_FRAME_N1 1 9 1 34790J 1930n
+preplace netloc DSP_ad9361_1_P0_P 1 9 1 34640J 1140n
+preplace netloc DSP_ad9361_1_P0_N 1 9 1 34650J 1160n
+preplace netloc DSP_ad9361_2_P0_P 1 9 1 34660J 1180n
+preplace netloc DSP_ad9361_2_P0_N 1 9 1 34670J 1200n
+preplace netloc DSP_ad9361_3_P0_P 1 9 1 34680J 1220n
+preplace netloc DSP_ad9361_3_P0_N 1 9 1 34690J 1240n
+preplace netloc AD9364_ad9364_P0_P 1 9 1 34800J 1950n
+preplace netloc AD9364_ad9364_P0_N 1 9 1 34810J 1970n
+preplace netloc SPI_MOD_ip2intc_irpt 1 1 9 4950 1790 N 1790 N 1790 N 1790 N 1790 N 1790 N 1790 N 1790 34250
+preplace netloc DSP_ad9361_EN_1 1 9 1 34700J 1260n
+preplace netloc DSP_ad9361_EN_2 1 9 1 34710J 1280n
+preplace netloc DSP_ad9361_TXNRX_1 1 9 1 34720J 1300n
+preplace netloc DSP_ad9361_TXNRX_2 1 9 1 34730J 1320n
+preplace netloc ad9361_1_P1_P_1 1 0 9 -1230J 1060 4830 662 7140 780 N 780 29910 790 N 790 N 790 N 790 33580
+preplace netloc ad9361_1_P1_N_1 1 0 9 -1260J 1050 4820 652 7150 770 N 770 29920 780 N 780 N 780 33080 890 33640
+preplace netloc ibuf_0_out_ref 1 1 8 N 1830 N 1830 N 1830 N 1830 N 1830 N 1830 N 1830 33510
+preplace netloc AD9361_ctrl_data_rate 1 1 9 4940 3670 N 3670 N 3670 N 3670 N 3670 N 3670 N 3670 33850 3670 34270
+preplace netloc up_txnrx_1 1 8 2 33880 4050 34260
+preplace netloc clk_axi_reset_n 1 1 8 N 1810 N 1810 N 1810 N 1810 N 1810 N 1810 N 1810 33470
+preplace netloc reset_1 1 1 9 4960 1990 N 1990 N 1990 N 1990 N 1990 N 1990 N 1990 N 1990 34250
+preplace netloc Current_turning_off_0_fpga_en_28v_l1 1 9 1 34820J 2130n
+preplace netloc Current_turning_off_0_fpga_en_28v_l2 1 9 1 34830J 2150n
+preplace netloc Current_turning_off_0_fpga_en_28v_s1 1 9 1 34840J 2170n
+preplace netloc Current_turning_off_0_fpga_en_28v_s2 1 9 1 34850J 2190n
+preplace netloc Current_turning_off_0_fpga_en_28v_s3 1 9 1 34860J 2210n
+preplace netloc Current_turning_off_0_fpga_en_28v_s4 1 9 1 34870J 2230n
+preplace netloc Current_turning_off_0_fpga_en_5v_s 1 9 1 34880J 2250n
+preplace netloc Current_turning_off_0_spi_cs_n_0 1 9 1 34890J 2270n
+preplace netloc Current_turning_off_0_spi_sclk_0 1 9 1 34900J 2290n
+preplace netloc Current_turning_off_0_spi_mosi_0 1 9 1 34910J 2310n
+preplace netloc Current_turning_off_0_spi_cs_n_1 1 9 1 34920J 2330n
+preplace netloc Current_turning_off_0_spi_sclk_1 1 9 1 34930J 2350n
+preplace netloc Current_turning_off_0_spi_mosi_1 1 9 1 34940J 2370n
+preplace netloc som_en_28v_l1_1 1 0 9 NJ 2160 N 2160 N 2160 N 2160 N 2160 N 2160 N 2160 N 2160 33420
+preplace netloc som_en_28v_l2_1 1 0 9 NJ 2180 N 2180 N 2180 N 2180 N 2180 N 2180 N 2180 N 2180 33410
+preplace netloc som_en_28v_s1_1 1 0 9 NJ 2200 N 2200 N 2200 N 2200 N 2200 N 2200 N 2200 N 2200 33400
+preplace netloc som_en_28v_s2_1 1 0 9 NJ 2220 N 2220 N 2220 N 2220 N 2220 N 2220 N 2220 N 2220 33390
+preplace netloc som_en_28v_s3_1 1 0 9 NJ 2240 N 2240 N 2240 N 2240 N 2240 N 2240 N 2240 N 2240 33380
+preplace netloc som_en_28v_s4_1 1 0 9 NJ 2260 N 2260 N 2260 N 2260 N 2260 N 2260 N 2260 N 2260 33370
+preplace netloc som_en_5v_s_1 1 0 9 NJ 2280 N 2280 N 2280 N 2280 N 2280 N 2280 N 2280 N 2280 33360
+preplace netloc spi_miso_0_1 1 0 9 NJ 2300 N 2300 N 2300 N 2300 N 2300 N 2300 N 2300 N 2300 33350
+preplace netloc spi_miso_1_1 1 0 9 NJ 2320 N 2320 N 2320 N 2320 N 2320 N 2320 N 2320 N 2320 33330
+preplace netloc Control_from_SOM_0_ad9361_1_reset 1 9 1 34350J 200n
+preplace netloc Control_from_SOM_0_ad9361_2_reset 1 9 1 34360J 220n
+preplace netloc Control_from_SOM_0_ad9361_2_en_agc 1 9 1 34400J 300n
+preplace netloc Control_from_SOM_0_ad9361_1_en_agc 1 9 1 34390J 280n
+preplace netloc Control_from_SOM_0_ad9364_en_agc 1 9 1 34420J 340n
+preplace netloc Control_from_SOM_0_ad9361_3_en_agc 1 9 1 34410J 320n
+preplace netloc Control_from_SOM_0_ad9364_reset 1 9 1 34380J 260n
+preplace netloc Control_from_SOM_0_ad9361_3_reset 1 9 1 34370J 240n
 preplace netloc FPGA_REF_40MHZ_1 1 0 1 NJ 1790
-preplace netloc AD9361_CTRL_peripheral_aresetn1 1 3 7 27650 280 N 280 N 280 N 280 N 280 32520 280 33010
-preplace netloc IP_sync_0_LED_en 1 4 6 28490 60 N 60 N 60 N 60 N 60 N
-preplace netloc IP_sync_0_sync_osop 1 4 6 28460 120 N 120 N 120 N 120 N 120 N
-preplace netloc AD9361_CTRL_dout_data_4 1 3 7 27660 800 N 800 30910 260 N 260 N 260 N 260 33000
-preplace netloc AD9361_CTRL_dout_data_5 1 3 7 27690 870 28470 880 30920 270 N 270 N 270 N 270 32990
-preplace netloc mqc_t_0_odata_buff_0 1 1 9 4800 340 N 340 N 340 N 340 N 340 N 340 N 340 N 340 32940
-preplace netloc mqc_t_0_odata_buff_1 1 1 9 4810 350 N 350 N 350 N 350 N 350 N 350 N 350 N 350 32930
-preplace netloc IP_sync_0_sync_odat_re 1 4 5 28560 470 N 470 N 470 N 470 32500
-preplace netloc IP_sync_0_sync_odat_im 1 4 5 28550 460 N 460 N 460 N 460 32510
-preplace netloc mqc_t_0_oready_buff 1 3 7 27630 300 NJ 300 N 300 N 300 N 300 N 300 32980
-preplace netloc IP_sync_0_sync_trh_hold 1 4 6 28480 180 N 180 N 180 N 180 N 180 NJ
-preplace netloc xlconstant_0_dout 1 5 4 30930 890 N 890 N 890 32500
-preplace netloc xlconcat_1_dout 1 6 3 N 980 N 980 32240
-preplace netloc IP_sync_0_sync_vrf_oval 1 4 6 28450 80 NJ 80 NJ 80 N 80 N 80 NJ
-preplace netloc IP_sync_0_sync_rdy_wr_buff 1 4 5 28530 710 NJ 710 NJ 710 31680 510 32480
-preplace netloc AD9361_CTRL_clk_out1 1 2 8 5810 440 N 440 N 440 N 440 N 440 31730 440 32530 370 32970
-preplace netloc Net 1 3 6 27620 430 NJ 430 NJ 430 NJ 430 31740 430 N
-preplace netloc IP_sync_0_sync_osop_buff 1 4 5 28570 480 NJ 480 NJ 480 N 480 32490
-preplace netloc IP_sync_0_sync_str_frame 1 4 6 28540 100 NJ 100 NJ 100 N 100 N 100 NJ
-preplace netloc AXI_Peripheral_fifo_wr_xfer_req 1 2 7 5720J 700 NJ 700 NJ 700 NJ 700 NJ 700 31620 500 32490
-preplace netloc IP_sync_0_sync_val_osop 1 4 6 28500 140 NJ 140 NJ 140 N 140 N 140 NJ
-preplace netloc mqc_t_0_datac 1 7 3 31760 310 NJ 310 32960
-preplace netloc mqc_t_0_dt 1 7 3 31770 330 NJ 330 32950
-preplace netloc mqc_t_0_buff_r_addr 1 7 3 31750 320 NJ 320 32920
-preplace netloc blk_mem_gen_0_doutb 1 7 2 31770 940 32330
-preplace netloc xlconstant_1_dout 1 7 1 31720 650n
-preplace netloc AXI_Peripheral_M00_AXI 1 2 7 5670 790 N 790 N 790 N 790 N 790 N 790 32430
-preplace netloc AXI_Peripheral_M04_AXI 1 2 7 5710 840 N 840 N 840 N 840 N 840 31690 850 32460
-preplace netloc AXI_Peripheral_M14_AXI 1 2 7 5810 860 N 860 N 860 N 860 N 860 31650 870 32220
-preplace netloc AXI_Peripheral_M02_AXI 1 2 7 N 820 N 820 N 820 N 820 N 820 N 820 32420
-preplace netloc AXI_Peripheral_M12_AXI 1 2 1 5690 200n
-preplace netloc AXI_Peripheral_M03_AXI 1 2 7 5700 830 N 830 N 830 N 830 N 830 N 830 32340
-preplace netloc AXI_Peripheral_M10_AXI 1 2 2 5810 980 N
-preplace netloc AXI_Peripheral_M01_AXI 1 2 7 5670 810 N 810 N 810 N 810 N 810 N 810 32450
-preplace netloc AXI_Peripheral_M06_AXI 1 2 7 5740 850 N 850 N 850 N 850 N 850 31670 860 32440
-levelinfo -pg 1 -1390 4500 5480 27480 28296 30828 31166 31540 31900 32740 33630
-pagesize -pg 1 -db -bbox -sgen -1600 -4680 33850 7500
+preplace netloc AD9361_CTRL_peripheral_aresetn1 1 3 7 29010 290 N 290 N 290 N 290 N 290 33880 320 34320
+preplace netloc IP_sync_0_LED_en 1 4 6 29860 60 N 60 N 60 N 60 N 60 N
+preplace netloc IP_sync_0_sync_osop 1 4 6 29790 110 N 110 N 110 N 110 N 110 34510
+preplace netloc AD9361_CTRL_dout_data_4 1 3 7 29020 870 29800 880 32260 250 N 250 N 250 N 250 34340
+preplace netloc AD9361_CTRL_dout_data_5 1 3 7 29000 850 N 850 32270 260 N 260 N 260 N 260 34330
+preplace netloc mqc_t_0_odata_buff_0 1 1 9 4960 530 N 530 N 530 29890 510 N 510 N 510 32980 270 N 270 34290
+preplace netloc mqc_t_0_odata_buff_1 1 1 9 4930 350 N 350 28930 330 N 330 N 330 N 330 32950 300 N 300 34280
+preplace netloc IP_sync_0_sync_odat_re 1 4 5 29950 530 N 530 N 530 33060 470 33860
+preplace netloc IP_sync_0_sync_odat_im 1 4 5 29940 520 N 520 N 520 33030 460 33870
+preplace netloc mqc_t_0_oready_buff 1 3 7 28990 280 NJ 280 N 280 N 280 N 280 N 280 34310
+preplace netloc IP_sync_0_sync_trh_hold 1 4 6 29840 190 N 190 N 190 N 190 33720 180 NJ
+preplace netloc xlconstant_0_dout 1 5 4 32280 880 N 880 N 880 33890
+preplace netloc xlconcat_1_dout 1 6 3 N 980 N 980 33560
+preplace netloc IP_sync_0_sync_vrf_oval 1 4 6 29820 130 NJ 130 NJ 130 N 130 N 130 34350J
+preplace netloc IP_sync_0_sync_rdy_wr_buff 1 4 5 29930 770 NJ 770 NJ 770 33100 510 33770
+preplace netloc AD9361_CTRL_clk_out1 1 2 8 7180 360 N 360 N 360 N 360 N 360 33050 360 33890 360 34300
+preplace netloc Net 1 3 6 28960 430 NJ 430 NJ 430 NJ 430 33040 430 N
+preplace netloc IP_sync_0_sync_osop_buff 1 4 5 29960 540 NJ 540 NJ 540 33070 480 33850
+preplace netloc IP_sync_0_sync_str_frame 1 4 6 29900 120 NJ 120 NJ 120 N 120 N 120 34500J
+preplace netloc AXI_Peripheral_fifo_wr_xfer_req 1 2 7 7130J 760 NJ 760 NJ 760 NJ 760 NJ 760 33090 500 33790
+preplace netloc IP_sync_0_sync_val_osop 1 4 6 29870 140 NJ 140 NJ 140 N 140 N 140 NJ
+preplace netloc mqc_t_0_datac 1 7 3 33130 370 NJ 370 34250
+preplace netloc mqc_t_0_dt 1 7 3 33110 330 NJ 330 34270
+preplace netloc mqc_t_0_buff_r_addr 1 7 3 33120 350 NJ 350 34260
+preplace netloc blk_mem_gen_0_doutb 1 7 2 33130 930 N
+preplace netloc xlconstant_1_dout 1 7 1 33110 650n
+preplace netloc AXI_Peripheral_M02_AXI 1 2 7 7070 1230 28940 1240 N 1240 N 1240 N 1240 N 1240 33560
+preplace netloc AXI_Peripheral_M03_AXI 1 2 7 7060 1240 28920 1260 N 1260 N 1260 N 1260 N 1260 33540
+preplace netloc AXI_Peripheral_M01_AXI 1 2 7 N 1032 28970 1230 N 1230 N 1230 N 1230 N 1230 33660
+preplace netloc AXI_Peripheral_M00_AXI 1 2 7 7120 830 N 830 N 830 N 830 N 830 N 830 33680
+preplace netloc AXI_Peripheral_M06_AXI 1 2 7 7040 1270 N 1270 N 1270 N 1270 N 1270 N 1270 33670
+preplace netloc AXI_Peripheral_M04_AXI 1 2 7 7050 1250 N 1250 N 1250 N 1250 N 1250 N 1250 33590
+preplace netloc AXI_Peripheral_M10_AXI 1 2 2 7030 980 N
+preplace netloc AXI_Peripheral_M14_AXI 1 2 7 7020 1280 N 1280 N 1280 N 1280 N 1280 N 1280 33490
+preplace netloc AXI_Peripheral_M12_AXI 1 2 1 7010 200n
+preplace netloc AXI_Peripheral|GND_dout 1 1 1 5600 1242n
+preplace netloc AXI_Peripheral|In0_1 1 0 2 NJ 1172 5610
+preplace netloc AXI_Peripheral|M12_ARESETN_1 1 0 4 NJ 1112 5600 772 5980 852 6450
+preplace netloc AXI_Peripheral|Net 1 0 4 NJ 1152 5620 1092 5940 862 6440
+preplace netloc AXI_Peripheral|axi_dmac_0_irq 1 1 2 5650 1142 5930
+preplace netloc AXI_Peripheral|idelay_ref_clk_1 1 0 3 NJ 1132 NJ 1132 5970
+preplace netloc AXI_Peripheral|AXI_TX_CLK_IN_1 1 0 3 5370J 1102 NJ 1102 5950
+preplace netloc AXI_Peripheral|AXI_TX_DATA_IN_1 1 0 3 5350J 1122 NJ 1122 5980
+preplace netloc AXI_Peripheral|AXI_C2C_axi_c2c_selio_tx_data_out 1 3 2 6420 1612 NJ
+preplace netloc AXI_Peripheral|AXI_C2C_axi_c2c_selio_tx_clk_out 1 3 2 6430 1602 6790J
+preplace netloc AXI_Peripheral|AXI_DMA_fifo_wr_xfer_req 1 1 4 5640 1652 NJ 1652 NJ 1652 NJ
+preplace netloc AXI_Peripheral|fifo_wr_clk_1 1 0 2 5370J 1182 5630
+preplace netloc AXI_Peripheral|VCC_dout 1 1 1 5590 872n
+preplace netloc AXI_Peripheral|fifo_wr_data_0_1 1 0 1 5360 1022n
+preplace netloc AXI_Peripheral|fifo_wr_data_1_1 1 0 1 5380 1042n
+preplace netloc AXI_Peripheral|xlconcat_1_dout 1 1 1 5610 892n
+preplace netloc AXI_Peripheral|Concat_dout 1 2 1 5960 982n
+preplace netloc AXI_Peripheral|AXI_C2C_axi_periph_M11_AXI 1 4 1 6820 1112n
+preplace netloc AXI_Peripheral|AXI_DMA_m_dest_axi 1 2 1 N 922
+preplace netloc AXI_Peripheral|Conn7 1 4 1 N 1272
+preplace netloc AXI_Peripheral|Conn6 1 4 1 N 1232
+preplace netloc AXI_Peripheral|AXI_C2C_axi_periph_M06_AXI 1 4 1 6800 1092n
+preplace netloc AXI_Peripheral|Conn2 1 4 1 N 1172
+preplace netloc AXI_Peripheral|Conn3 1 4 1 6830 1132n
+preplace netloc AXI_Peripheral|Conn4 1 4 1 N 1192
+preplace netloc AXI_Peripheral|AXI_C2C_axi_periph_M02_AXI 1 4 1 6780 1032n
+preplace netloc AXI_Peripheral|Conn1 1 4 1 6810 1132n
+preplace netloc AXI_Peripheral|Conn5 1 4 1 N 1212
+preplace netloc AXI_Peripheral|AXI_C2C_m_axi_lite 1 3 1 6420 822n
+preplace netloc AXI_Peripheral|AXI_C2C_axi_periph_M00_AXI 1 4 1 6770 1032n
+preplace netloc AXI_Peripheral|AXI_C2C_axi_periph_M01_AXI 1 4 1 6760 1012n
+preplace netloc AXI_Peripheral|AXI_C2C_axi_periph_M03_AXI 1 4 1 6790 1072n
+preplace netloc AXI_Peripheral|AXI_C2C_axi_periph_M04_AXI 1 1 4 5610 762 NJ 762 NJ 762 6750
+levelinfo -pg 1 -1390 4500 5480 28806 29622 32154 32492 32866 33230 34070 34960
+levelinfo -hier AXI_Peripheral * 5490 5790 6200 6600 *
+pagesize -pg 1 -db -bbox -sgen -1600 -4680 35180 7500
+pagesize -hier AXI_Peripheral -db -bbox -sgen 5320 752 6860 1662
 "
 }
 {

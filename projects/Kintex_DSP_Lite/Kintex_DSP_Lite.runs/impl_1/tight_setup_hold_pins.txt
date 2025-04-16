@@ -1,0 +1,52 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][23]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[11]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                               u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][7]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][21]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][12]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                               u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][8]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                               u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][3]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][19]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[10]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][11]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[9]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                               u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][4]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][17]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                               u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][9]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                               u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][1]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][15]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][13]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][16]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                               u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][0]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][20]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                               u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][5]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[8]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                               u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][6]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[5]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                               u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][2]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][14]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][22]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][18]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |                                              u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][10]_srl8/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[8]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[7]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[4]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[9]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[1]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[4]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[10]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[7]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[11]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[5]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]/D|
+| sample_rate_30_72_design_1_clk_DSP_0 |              prm_clk_ad2 |u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[1]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

@@ -2082,7 +2082,9 @@ proc create_root_design { parentCell } {
   # Create port connections
   connect_bd_net -net AD9361_CTRL_clk_out1 [get_bd_pins AD9361_CTRL/clk_out1] [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins mqc_t_0/iclk_dsp]
   connect_bd_net -net AD9361_CTRL_dout_data_4 [get_bd_pins AD9361_CTRL/dout_data_4] [get_bd_pins IP_sync_0/sync_idat_re] [get_bd_pins xlconcat_1/In0]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets AD9361_CTRL_dout_data_4]
   connect_bd_net -net AD9361_CTRL_dout_data_5 [get_bd_pins AD9361_CTRL/dout_data_5] [get_bd_pins IP_sync_0/sync_idat_im] [get_bd_pins xlconcat_1/In1]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets AD9361_CTRL_dout_data_5]
   connect_bd_net -net AD9361_CTRL_peripheral_aresetn1 [get_bd_pins AD9361_CTRL/peripheral_aresetn1] [get_bd_pins IP_sync_0/sync_ireset] [get_bd_pins mqc_t_0/ireset]
   connect_bd_net -net AD9361_ctrl_data_rate [get_bd_pins AD9361_CTRL/data_rate] [get_bd_pins AD9364/dout_clk] [get_bd_pins AXI_Peripheral/fifo_wr_clk]
   connect_bd_net -net AD9364_ad9361_FB_CLK_P [get_bd_ports ad9364_FB_CLK_P] [get_bd_pins AD9364/ad9361_FB_CLK_P]
@@ -2149,6 +2151,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net Decoder_SPI_0_num_cs_3 [get_bd_ports ad9364_SPI_CS] [get_bd_pins SPI_MOD/ad9364_SPI_CS]
   connect_bd_net -net FPGA_REF_40MHZ_1 [get_bd_ports FPGA_REF_40MHZ] [get_bd_pins CLK_AXI/FPGA_REF_40MHZ]
   connect_bd_net -net IP_sync_0_LED_en [get_bd_ports LED1] [get_bd_pins IP_sync_0/LED_en]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets IP_sync_0_LED_en]
   connect_bd_net -net IP_sync_0_sync_odat_im [get_bd_pins IP_sync_0/sync_odat_im] [get_bd_pins mqc_t_0/idata_im]
   connect_bd_net -net IP_sync_0_sync_odat_re [get_bd_pins IP_sync_0/sync_odat_re] [get_bd_pins mqc_t_0/idata_re]
   connect_bd_net -net IP_sync_0_sync_osop [get_bd_ports PIN_0] [get_bd_pins IP_sync_0/sync_osop]
@@ -2221,13 +2224,13 @@ proc create_root_design { parentCell } {
   create_bd_addr_seg -range 0x00010000 -offset 0x83CB0000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs AXI_Peripheral/AXI_DMA/s_axi/axi_lite] SEG_AXI_DMA_axi_lite
   create_bd_addr_seg -range 0x00010000 -offset 0x83C10000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs Control_from_SOM_0/S00_AXI/S00_AXI_reg] SEG_Control_from_SOM_0_S00_AXI_reg
   create_bd_addr_seg -range 0x00010000 -offset 0x83CE0000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs Current_turning_off_0/S00_AXI/S00_AXI_reg] SEG_Current_turning_off_0_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x83C20000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs IP_sync_0/S00_AXI/S00_AXI_reg] SEG_IP_sync_0_S00_AXI_reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x8AC20000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs IP_sync_0/S00_AXI/S00_AXI_reg] SEG_IP_sync_0_S00_AXI_reg
   create_bd_addr_seg -range 0x00010000 -offset 0x83C70000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs AD9361_CTRL/AD9361_1/axi_ad9361_1/s_axi/axi_lite] SEG_axi_ad9361_1_axi_lite
   create_bd_addr_seg -range 0x00010000 -offset 0x83C80000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs AD9361_CTRL/AD9361_2/axi_ad9361_2/s_axi/axi_lite] SEG_axi_ad9361_2_axi_lite
   create_bd_addr_seg -range 0x00010000 -offset 0x83C90000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs AD9361_CTRL/AD9361_3/axi_ad9361_3/s_axi/axi_lite] SEG_axi_ad9361_3_axi_lite
   create_bd_addr_seg -range 0x00010000 -offset 0x83CA0000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs AD9364/axi_ad9364/s_axi/axi_lite] SEG_axi_ad9364_axi_lite
   create_bd_addr_seg -range 0x00010000 -offset 0x83C00000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs SPI_MOD/axi_spi/AXI_LITE/Reg] SEG_axi_spi_Reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x83C30000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs clk_wiz_0/s_axi_lite/Reg] SEG_clk_wiz_0_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x8AC30000 [get_bd_addr_spaces AXI_Peripheral/AXI_C2C/MAXI-Lite] [get_bd_addr_segs clk_wiz_0/s_axi_lite/Reg] SEG_clk_wiz_0_Reg
   create_bd_addr_seg -range 0x40000000 -offset 0x00000000 [get_bd_addr_spaces AXI_Peripheral/AXI_DMA/m_dest_axi] [get_bd_addr_segs AXI_Peripheral/AXI_C2C/s_axi/Mem0] SEG_AXI_C2C_Mem0
 
 

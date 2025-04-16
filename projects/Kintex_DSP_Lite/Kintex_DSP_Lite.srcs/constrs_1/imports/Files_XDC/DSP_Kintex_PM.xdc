@@ -12,6 +12,7 @@ set_property -dict {PACKAGE_PIN G21 IOSTANDARD LVCMOS33} [get_ports PIN_2]
 set_property -dict {PACKAGE_PIN AA24 IOSTANDARD LVCMOS33} [get_ports LED1]
 set_property -dict {PACKAGE_PIN Y22 IOSTANDARD LVCMOS33} [get_ports LED2]
 set_property -dict {PACKAGE_PIN AA22 IOSTANDARD LVCMOS33} [get_ports LED3]
+set_property -dict {PACKAGE_PIN U21 IOSTANDARD LVCMOS33} [get_ports LED4]
 #User LEDS
 
 # Power on of links and services
@@ -251,8 +252,8 @@ set_property -dict {PACKAGE_PIN M21 IOSTANDARD LVCMOS18} [get_ports ad9364_SPI_D
 
 set_property -dict {PACKAGE_PIN G22 IOSTANDARD LVCMOS33} [get_ports AXI_RX_CLK_OUT]
 set_property -dict {PACKAGE_PIN H26 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[0]}]
-set_property -dict {PACKAGE_PIN B24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[1]}]
-set_property -dict {PACKAGE_PIN A25 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[2]}]
+set_property -dict {PACKAGE_PIN J26 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[1]}]
+set_property -dict {PACKAGE_PIN L23 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[2]}]
 set_property -dict {PACKAGE_PIN E21 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[3]}]
 set_property -dict {PACKAGE_PIN K23 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[4]}]
 set_property -dict {PACKAGE_PIN A22 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[5]}]
@@ -261,18 +262,18 @@ set_property -dict {PACKAGE_PIN G24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA
 set_property -dict {PACKAGE_PIN C22 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[8]}]
 set_property -dict {PACKAGE_PIN E23 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[9]}]
 set_property -dict {PACKAGE_PIN E22 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[10]}]
-set_property -dict {PACKAGE_PIN G25 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[11]}]
-set_property -dict {PACKAGE_PIN A24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[12]}]
-set_property -dict {PACKAGE_PIN F24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[13]}]
-set_property -dict {PACKAGE_PIN D25 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[14]}]
-set_property -dict {PACKAGE_PIN C23 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[15]}]
-set_property -dict {PACKAGE_PIN K22 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[16]}]
+set_property -dict {PACKAGE_PIN D26 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[11]}]
+set_property -dict {PACKAGE_PIN G25 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[12]}]
+set_property -dict {PACKAGE_PIN A24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[13]}]
+set_property -dict {PACKAGE_PIN F24 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[14]}]
+set_property -dict {PACKAGE_PIN D25 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[15]}]
+set_property -dict {PACKAGE_PIN C21 IOSTANDARD LVCMOS33} [get_ports {AXI_RX_DATA_OUT[16]}]
 
 
 
 
 set_property -dict {PACKAGE_PIN F23 IOSTANDARD LVCMOS33} [get_ports AXI_TX_CLK_IN]
-set_property -dict {PACKAGE_PIN C21 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[0]}]
+set_property -dict {PACKAGE_PIN H23 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[0]}]
 set_property -dict {PACKAGE_PIN A20 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[1]}]
 set_property -dict {PACKAGE_PIN E26 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[2]}]
 set_property -dict {PACKAGE_PIN B21 IOSTANDARD LVCMOS33} [get_ports {AXI_TX_DATA_IN[3]}]
@@ -397,3 +398,30 @@ set_false_path -from [get_clocks -of_objects [get_pins design_1_i/clk_wiz_0/inst
 
 connect_debug_port dbg_hub/clk [get_nets u_ila_1_clk_out1]
 
+
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list design_1_i/AD9361_CTRL/AD9361_2/axi_ad9361_2/inst/i_dev_if/i_clk/clk]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 12 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {design_1_i/AD9361_CTRL_dout_data_4[4]} {design_1_i/AD9361_CTRL_dout_data_4[5]} {design_1_i/AD9361_CTRL_dout_data_4[6]} {design_1_i/AD9361_CTRL_dout_data_4[7]} {design_1_i/AD9361_CTRL_dout_data_4[8]} {design_1_i/AD9361_CTRL_dout_data_4[9]} {design_1_i/AD9361_CTRL_dout_data_4[10]} {design_1_i/AD9361_CTRL_dout_data_4[11]} {design_1_i/AD9361_CTRL_dout_data_4[12]} {design_1_i/AD9361_CTRL_dout_data_4[13]} {design_1_i/AD9361_CTRL_dout_data_4[14]} {design_1_i/AD9361_CTRL_dout_data_4[15]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 12 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {design_1_i/AD9361_CTRL_dout_data_5[4]} {design_1_i/AD9361_CTRL_dout_data_5[5]} {design_1_i/AD9361_CTRL_dout_data_5[6]} {design_1_i/AD9361_CTRL_dout_data_5[7]} {design_1_i/AD9361_CTRL_dout_data_5[8]} {design_1_i/AD9361_CTRL_dout_data_5[9]} {design_1_i/AD9361_CTRL_dout_data_5[10]} {design_1_i/AD9361_CTRL_dout_data_5[11]} {design_1_i/AD9361_CTRL_dout_data_5[12]} {design_1_i/AD9361_CTRL_dout_data_5[13]} {design_1_i/AD9361_CTRL_dout_data_5[14]} {design_1_i/AD9361_CTRL_dout_data_5[15]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list design_1_i/IP_sync_0_LED_en]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets u_ila_0_clk]
